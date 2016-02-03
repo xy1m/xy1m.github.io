@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title></title>
+    <link>/</link>
+    <description>Recent content on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 03 Feb 2016 11:16:17 -0500</lastBuildDate>
+    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>first</title>
+      <link>/post/first/</link>
+      <pubDate>Wed, 03 Feb 2016 11:16:17 -0500</pubDate>
+      
+      <guid>/post/first/</guid>
+      <description>
+
+&lt;h3 id=&#34;hello-world:e8fb9c67eba912c72729806db31eaa1b&#34;&gt;Hello World&lt;/h3&gt;
+
+&lt;p&gt;This is my first hugo page&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>about</title>
+      <link>/about/</link>
+      <pubDate>Wed, 03 Feb 2016 10:58:27 -0500</pubDate>
+      
+      <guid>/about/</guid>
+      <description>
+
+&lt;h3 id=&#34;hello-hugo:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Hello Hugo&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;aaa&lt;/li&gt;
+&lt;li&gt;bbb&lt;/li&gt;
+&lt;li&gt;ccc&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
