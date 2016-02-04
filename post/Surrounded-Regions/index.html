@@ -45,27 +45,115 @@
         <article class="post">
             <a class="btn" href="https://crazymole.github.io/" title="Back to home">&laquo; Back to home</a>
             
-<h1><a href="https://crazymole.github.io/about/" title="about">about</a></h1>
+<h1><a href="https://crazymole.github.io/post/Surrounded-Regions/" title="Surrounded Regions">Surrounded Regions</a></h1>
 
-<footer class="post-info">Posted on <span class="post-meta"><time datetime="2016.02.03">2016.02.03</time>
+<footer class="post-info">Posted on <span class="post-meta"><time datetime="2016.02.04">2016.02.04</time>
+&middot; Tagged in
+    
+    <a href="https://crazymole.github.io/tags/leetcode">leetcode</a>, 
+    
+    <a href="https://crazymole.github.io/tags/string">string</a>
+    
 
-            
+</span>
+</footer>
 
-<h3 id="hello-hugo:6083a88ee3411b0d17ce02d738f69d47">Hello Hugo</h3>
+            <p>Given a 2D board containing &lsquo;X&rsquo; and &lsquo;O&rsquo;, capture all regions surrounded by &lsquo;X&rsquo;.</p>
+
+<p>A region is captured by flipping all &lsquo;O&rsquo;s into &lsquo;X&rsquo;s in that surrounded region.</p>
+
+<p>For example,</p>
+
+<pre><code>X X X X
+X O O X
+X X O X
+X O X X
+</code></pre>
+
+<p>After running your function, the board should be:</p>
+
+<pre><code>X X X X
+X X X X
+X X X X
+X O X X
+</code></pre>
+
+<pre><code>public class Solution {
+    public void solve(char[][] board) {
+        //left top to right down
+        int n=board.length;
+        if(n==0){
+            return;
+        }
+        int m=board[0].length;
+        if(n&lt;=2||m&lt;=2){
+            return;
+        }
+        for(int i=0;i&lt;n;i++){
+            if(board[i][0]=='O'){
+                board[i][0]='P';
+            }
+            if(board[i][m-1]=='O'){
+                board[i][m-1]='P';
+            }
+        }
+        for(int i=0;i&lt;m;i++){
+            if(board[0][i]=='O'){
+                board[0][i]='P';
+            }
+            if(board[n-1][i]=='O'){
+                board[n-1][i]='P';
+            }
+        }
+        for(int i=1;i&lt;n-1;i++){
+            trigger(board,i,1);
+            trigger(board,i,m-2);
+        }
+        for(int i=1;i&lt;m-1;i++){
+            trigger(board,1,i);
+            trigger(board,n-2,i);
+        }
+        for(int i=0;i&lt;n;i++){
+            for(int j=0;j&lt;m;j++){
+                if(board[i][j]=='O'){
+                    board[i][j]='X';
+                }else if(board[i][j]=='P'){
+                    board[i][j]='O';
+                }
+            }
+        }
+        
+    }
+    public void trigger(char[][] board,int i,int j){
+        int n=board.length;
+        int m=board[0].length;
+        if(board[i][j]=='O'){
+            if(board[i][j-1]=='P'||board[i][j+1]=='P'||board[i-1][j]=='P'||board[i+1][j]=='P'){
+                board[i][j]='P';
+                trigger(board,i+1,j);
+                trigger(board,i-1,j);
+                trigger(board,i,j+1);
+                trigger(board,i,j-1);
+            }
+        }
+    }
+    
+}
+</code></pre>
 
             <ul class="share-buttons">
     <li>Share this article:</li>
     <li>
-        <a class="icon-facebook-squared" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fcrazymole.github.io%2fabout%2f" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;" title="Share on Facebook"></a>
+        <a class="icon-facebook-squared" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fcrazymole.github.io%2fpost%2fSurrounded-Regions%2f" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;" title="Share on Facebook"></a>
     </li>
     <li>
-        <a class="icon-twitter" href="https://twitter.com/share?text=about&amp;url=https%3a%2f%2fcrazymole.github.io%2fabout%2f" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" title="Tweet this article"></a>
+        <a class="icon-twitter" href="https://twitter.com/share?text=Surrounded%20Regions&amp;url=https%3a%2f%2fcrazymole.github.io%2fpost%2fSurrounded-Regions%2f" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" title="Tweet this article"></a>
     </li>
     <li>
-        <a class="icon-gplus" href="https://plus.google.com/share?url=https%3a%2f%2fcrazymole.github.io%2fabout%2f" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;" title="Share on Google&#43;"></a>
+        <a class="icon-gplus" href="https://plus.google.com/share?url=https%3a%2f%2fcrazymole.github.io%2fpost%2fSurrounded-Regions%2f" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;" title="Share on Google&#43;"></a>
     </li>
     <li>
-        <a class="icon-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fcrazymole.github.io%2fabout%2f&title=about" onclick="window.open(this.href, 'linkedin-share', 'width=600,height=494');return false;" title="Share on Linkedin"></a>
+        <a class="icon-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fcrazymole.github.io%2fpost%2fSurrounded-Regions%2f&title=Surrounded%20Regions" onclick="window.open(this.href, 'linkedin-share', 'width=600,height=494');return false;" title="Share on Linkedin"></a>
     </li>
 </ul>
 
@@ -75,9 +163,9 @@
             <div id="disqus_thread"></div>
 <script type="text/javascript">
     var disqus_shortname = 'excareers';
-    var disqus_identifier = 'https:\/\/crazymole.github.io\/about\/';
-    var disqus_title = 'about';
-    var disqus_url = 'https:\/\/crazymole.github.io\/about\/';
+    var disqus_identifier = 'https:\/\/crazymole.github.io\/post\/Surrounded-Regions\/';
+    var disqus_title = 'Surrounded Regions';
+    var disqus_url = 'https:\/\/crazymole.github.io\/post\/Surrounded-Regions\/';
 
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;

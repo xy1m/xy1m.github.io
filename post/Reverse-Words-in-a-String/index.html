@@ -45,27 +45,95 @@
         <article class="post">
             <a class="btn" href="https://crazymole.github.io/" title="Back to home">&laquo; Back to home</a>
             
-<h1><a href="https://crazymole.github.io/about/" title="about">about</a></h1>
+<h1><a href="https://crazymole.github.io/post/Reverse-Words-in-a-String/" title="Reverse Words in a String">Reverse Words in a String</a></h1>
 
-<footer class="post-info">Posted on <span class="post-meta"><time datetime="2016.02.03">2016.02.03</time>
+<footer class="post-info">Posted on <span class="post-meta"><time datetime="2016.02.04">2016.02.04</time>
+&middot; Tagged in
+    
+    <a href="https://crazymole.github.io/tags/leetcode">leetcode</a>, 
+    
+    <a href="https://crazymole.github.io/tags/string">string</a>
+    
 
-            
+</span>
+</footer>
 
-<h3 id="hello-hugo:6083a88ee3411b0d17ce02d738f69d47">Hello Hugo</h3>
+            <p>Given an input string, reverse the string word by word.</p>
+
+<p>For example,</p>
+
+<p>Given s = <code>&quot;the sky is blue&quot;</code>,</p>
+
+<p>return <code>&quot;blue is sky the&quot;</code>.</p>
+
+<p>Update (2015-02-12):
+For C programmers: Try to solve it in-place in O(1) space.</p>
+
+<p><strong>Clarification:</strong></p>
+
+<ul>
+<li>What constitutes a word?
+
+<ul>
+<li>A sequence of non-space characters constitutes a word.</li>
+</ul></li>
+<li>Could the input string contain leading or trailing spaces?
+
+<ul>
+<li>Yes. However, your reversed string should not contain leading or trailing spaces.</li>
+</ul></li>
+<li>How about multiple spaces between two words?
+
+<ul>
+<li>Reduce them to a single space in the reversed string.</li>
+</ul></li>
+</ul>
+
+<pre><code>public class Solution {
+    public String reverseWords(String s) {
+        String[] arr=s.split(&quot; &quot;);
+        StringBuilder sb=new StringBuilder();
+        for(int i=arr.length-1;i&gt;=0;i--){
+            if(!arr[i].trim().equals(&quot;&quot;)){
+                if(sb.length()!=0){
+                    sb.append(&quot; &quot;);
+                }
+                sb.append(arr[i]);
+            }
+        }
+        return sb.toString();
+    }
+    public String reverse(String s){
+        if(s!=null){
+            char[] ch=s.toCharArray();
+            int l=0,r=ch.length-1;
+            while(l&lt;r){
+                char c=ch[l];
+                ch[l]=ch[r];
+                ch[r]=c;
+                l++;
+                r--;
+            }
+            return new String(ch,0,ch.length);
+        }
+        return null;
+    }
+}
+</code></pre>
 
             <ul class="share-buttons">
     <li>Share this article:</li>
     <li>
-        <a class="icon-facebook-squared" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fcrazymole.github.io%2fabout%2f" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;" title="Share on Facebook"></a>
+        <a class="icon-facebook-squared" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fcrazymole.github.io%2fpost%2fReverse-Words-in-a-String%2f" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;" title="Share on Facebook"></a>
     </li>
     <li>
-        <a class="icon-twitter" href="https://twitter.com/share?text=about&amp;url=https%3a%2f%2fcrazymole.github.io%2fabout%2f" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" title="Tweet this article"></a>
+        <a class="icon-twitter" href="https://twitter.com/share?text=Reverse%20Words%20in%20a%20String&amp;url=https%3a%2f%2fcrazymole.github.io%2fpost%2fReverse-Words-in-a-String%2f" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" title="Tweet this article"></a>
     </li>
     <li>
-        <a class="icon-gplus" href="https://plus.google.com/share?url=https%3a%2f%2fcrazymole.github.io%2fabout%2f" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;" title="Share on Google&#43;"></a>
+        <a class="icon-gplus" href="https://plus.google.com/share?url=https%3a%2f%2fcrazymole.github.io%2fpost%2fReverse-Words-in-a-String%2f" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;" title="Share on Google&#43;"></a>
     </li>
     <li>
-        <a class="icon-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fcrazymole.github.io%2fabout%2f&title=about" onclick="window.open(this.href, 'linkedin-share', 'width=600,height=494');return false;" title="Share on Linkedin"></a>
+        <a class="icon-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fcrazymole.github.io%2fpost%2fReverse-Words-in-a-String%2f&title=Reverse%20Words%20in%20a%20String" onclick="window.open(this.href, 'linkedin-share', 'width=600,height=494');return false;" title="Share on Linkedin"></a>
     </li>
 </ul>
 
@@ -75,9 +143,9 @@
             <div id="disqus_thread"></div>
 <script type="text/javascript">
     var disqus_shortname = 'excareers';
-    var disqus_identifier = 'https:\/\/crazymole.github.io\/about\/';
-    var disqus_title = 'about';
-    var disqus_url = 'https:\/\/crazymole.github.io\/about\/';
+    var disqus_identifier = 'https:\/\/crazymole.github.io\/post\/Reverse-Words-in-a-String\/';
+    var disqus_title = 'Reverse Words in a String';
+    var disqus_url = 'https:\/\/crazymole.github.io\/post\/Reverse-Words-in-a-String\/';
 
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;

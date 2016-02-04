@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>404 Page not found &middot; George Playground</title>
+        <title>George Playground</title>
         <meta name="author">
         <meta name="description" content="George&#39;s blog about code, thoughts and life">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -39,11 +39,90 @@
           </div>
         </header>
 
+
 <div class="container clearfix">
     <main role="main" class="content">
+        <article class="post">
             <a class="btn" href="https://crazymole.github.io/" title="Back to home">&laquo; Back to home</a>
-            <h1>404 - page not found</h1>
-            <p>The content you&#39;re looking for doesn&#39;t seem to exist.</p>
+            
+<h1><a href="https://crazymole.github.io/post/Number-of-Digit-One/" title="Number of Digit One">Number of Digit One</a></h1>
+
+<footer class="post-info">Posted on <span class="post-meta"><time datetime="2016.02.04">2016.02.04</time>
+&middot; Tagged in
+    
+    <a href="https://crazymole.github.io/tags/leetcode">leetcode</a>, 
+    
+    <a href="https://crazymole.github.io/tags/math">math</a>
+    
+
+</span>
+</footer>
+
+            <p>Given an integer n, count the total number of digit 1 appearing in all non-negative integers less than or equal to n.</p>
+
+<p>For example:</p>
+
+<p>Given n = 13,
+Return 6, because digit 1 occurred in the following numbers: 1, 10, 11, 12, 13.</p>
+
+<pre><code>public class Solution {
+    public int countDigitOne(int n) {
+        long count=0;
+        long factor=1;
+        while(n/factor!=0){
+            long high=n/factor/10;
+            long low=n%factor;
+            long cur=n/factor%10;
+            if(cur&gt;=2){
+                count+=(high+1)*factor;
+            }else if(cur==1){
+                count+=high*factor;
+                count+=low+1;
+            }else{
+                count+=high*factor;
+            }
+            factor*=10;
+        }
+        return (int)count;
+    }
+}
+</code></pre>
+
+            <ul class="share-buttons">
+    <li>Share this article:</li>
+    <li>
+        <a class="icon-facebook-squared" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fcrazymole.github.io%2fpost%2fNumber-of-Digit-One%2f" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;" title="Share on Facebook"></a>
+    </li>
+    <li>
+        <a class="icon-twitter" href="https://twitter.com/share?text=Number%20of%20Digit%20One&amp;url=https%3a%2f%2fcrazymole.github.io%2fpost%2fNumber-of-Digit-One%2f" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" title="Tweet this article"></a>
+    </li>
+    <li>
+        <a class="icon-gplus" href="https://plus.google.com/share?url=https%3a%2f%2fcrazymole.github.io%2fpost%2fNumber-of-Digit-One%2f" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;" title="Share on Google&#43;"></a>
+    </li>
+    <li>
+        <a class="icon-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fcrazymole.github.io%2fpost%2fNumber-of-Digit-One%2f&title=Number%20of%20Digit%20One" onclick="window.open(this.href, 'linkedin-share', 'width=600,height=494');return false;" title="Share on Linkedin"></a>
+    </li>
+</ul>
+
+        </article>
+        <div class="comments">
+            <h3>Comments</h3>
+            <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'excareers';
+    var disqus_identifier = 'https:\/\/crazymole.github.io\/post\/Number-of-Digit-One\/';
+    var disqus_title = 'Number of Digit One';
+    var disqus_url = 'https:\/\/crazymole.github.io\/post\/Number-of-Digit-One\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        </div>
     </main>
     <aside class="author">
   <img class="profile-image" src="https://crazymole.github.io/images/coding-mole.gif" alt="George Zhang" />
@@ -79,6 +158,7 @@
 </aside>
 
 </div>
+
 <footer class="main-footer">
   <div class="container clearfix">
         <a class="icon-rss" href="https://crazymole.github.io/post/index.xml" title="RSS"></a>

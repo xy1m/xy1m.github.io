@@ -45,27 +45,99 @@
         <article class="post">
             <a class="btn" href="https://crazymole.github.io/" title="Back to home">&laquo; Back to home</a>
             
-<h1><a href="https://crazymole.github.io/about/" title="about">about</a></h1>
+<h1><a href="https://crazymole.github.io/post/Range-Sum-Query-2D-Immutable/" title="Range Sum Query 2D Immutable">Range Sum Query 2D Immutable</a></h1>
 
-<footer class="post-info">Posted on <span class="post-meta"><time datetime="2016.02.03">2016.02.03</time>
+<footer class="post-info">Posted on <span class="post-meta"><time datetime="2016.02.04">2016.02.04</time>
+&middot; Tagged in
+    
+    <a href="https://crazymole.github.io/tags/leetcode">leetcode</a>, 
+    
+    <a href="https://crazymole.github.io/tags/dynamic-programming">dynamic programming</a>
+    
 
-            
+</span>
+</footer>
 
-<h3 id="hello-hugo:6083a88ee3411b0d17ce02d738f69d47">Hello Hugo</h3>
+            <p>Given a 2D matrix matrix, find the sum of the elements inside the rectangle defined by its upper left corner (row1, col1) and lower right corner (row2, col2).</p>
+
+<p>The above rectangle (with the red border) is defined by (row1, col1) = (2, 1) and (row2, col2) = (4, 3), which contains sum = 8.</p>
+
+<p>Example:</p>
+
+<pre><code>Given matrix = [
+  [3, 0, 1, 4, 2],
+  [5, 6, 3, 2, 1],
+  [1, 2, 0, 1, 5],
+  [4, 1, 0, 1, 7],
+  [1, 0, 3, 0, 5]
+]
+
+sumRegion(2, 1, 4, 3) -&gt; 8
+sumRegion(1, 1, 2, 2) -&gt; 11
+sumRegion(1, 2, 2, 4) -&gt; 12
+</code></pre>
+
+<p><strong>Note</strong>:</p>
+
+<ol>
+<li>You may assume that the matrix does not change.</li>
+<li>There are many calls to sumRegion function.</li>
+<li>You may assume that row1 ≤ row2 and col1 ≤ col2.</li>
+</ol>
+
+<pre><code>public class NumMatrix {
+    int[][] p=null;
+    public NumMatrix(int[][] matrix) {
+        int n=matrix.length;
+        if(n==0){
+            return;
+        }
+        int m=matrix[0].length;
+        if(m==0){
+            return;
+        }
+        p=new int[n+1][m+1];
+        for(int i=0;i&lt;=n;i++){
+            p[i][0]=0;
+        }
+        for(int i=0;i&lt;=m;i++){
+            p[0][i]=0;
+        }
+        for(int i=1;i&lt;=n;i++){
+            for(int j=1;j&lt;=m;j++){
+                p[i][j]=p[i-1][j]+p[i][j-1]-p[i-1][j-1]+matrix[i-1][j-1];
+            }
+        }
+    }
+
+    public int sumRegion(int row1, int col1, int row2, int col2) {
+        if(p==null){
+            return 0;
+        }
+        return p[row2+1][col2+1]-p[row2+1][col1]-p[row1][col2+1]+p[row1][col1];
+    }
+}
+
+
+// Your NumMatrix object will be instantiated and called as such:
+// NumMatrix numMatrix = new NumMatrix(matrix);
+// numMatrix.sumRegion(0, 1, 2, 3);
+// numMatrix.sumRegion(1, 2, 3, 4);
+</code></pre>
 
             <ul class="share-buttons">
     <li>Share this article:</li>
     <li>
-        <a class="icon-facebook-squared" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fcrazymole.github.io%2fabout%2f" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;" title="Share on Facebook"></a>
+        <a class="icon-facebook-squared" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fcrazymole.github.io%2fpost%2fRange-Sum-Query-2D-Immutable%2f" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;" title="Share on Facebook"></a>
     </li>
     <li>
-        <a class="icon-twitter" href="https://twitter.com/share?text=about&amp;url=https%3a%2f%2fcrazymole.github.io%2fabout%2f" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" title="Tweet this article"></a>
+        <a class="icon-twitter" href="https://twitter.com/share?text=Range%20Sum%20Query%202D%20Immutable&amp;url=https%3a%2f%2fcrazymole.github.io%2fpost%2fRange-Sum-Query-2D-Immutable%2f" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" title="Tweet this article"></a>
     </li>
     <li>
-        <a class="icon-gplus" href="https://plus.google.com/share?url=https%3a%2f%2fcrazymole.github.io%2fabout%2f" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;" title="Share on Google&#43;"></a>
+        <a class="icon-gplus" href="https://plus.google.com/share?url=https%3a%2f%2fcrazymole.github.io%2fpost%2fRange-Sum-Query-2D-Immutable%2f" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;" title="Share on Google&#43;"></a>
     </li>
     <li>
-        <a class="icon-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fcrazymole.github.io%2fabout%2f&title=about" onclick="window.open(this.href, 'linkedin-share', 'width=600,height=494');return false;" title="Share on Linkedin"></a>
+        <a class="icon-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fcrazymole.github.io%2fpost%2fRange-Sum-Query-2D-Immutable%2f&title=Range%20Sum%20Query%202D%20Immutable" onclick="window.open(this.href, 'linkedin-share', 'width=600,height=494');return false;" title="Share on Linkedin"></a>
     </li>
 </ul>
 
@@ -75,9 +147,9 @@
             <div id="disqus_thread"></div>
 <script type="text/javascript">
     var disqus_shortname = 'excareers';
-    var disqus_identifier = 'https:\/\/crazymole.github.io\/about\/';
-    var disqus_title = 'about';
-    var disqus_url = 'https:\/\/crazymole.github.io\/about\/';
+    var disqus_identifier = 'https:\/\/crazymole.github.io\/post\/Range-Sum-Query-2D-Immutable\/';
+    var disqus_title = 'Range Sum Query 2D Immutable';
+    var disqus_url = 'https:\/\/crazymole.github.io\/post\/Range-Sum-Query-2D-Immutable\/';
 
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;

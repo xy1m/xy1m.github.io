@@ -45,27 +45,63 @@
         <article class="post">
             <a class="btn" href="https://crazymole.github.io/" title="Back to home">&laquo; Back to home</a>
             
-<h1><a href="https://crazymole.github.io/about/" title="about">about</a></h1>
+<h1><a href="https://crazymole.github.io/post/Longest-Palindromic-Substring/" title="Longest Palindromic Substring">Longest Palindromic Substring</a></h1>
 
-<footer class="post-info">Posted on <span class="post-meta"><time datetime="2016.02.03">2016.02.03</time>
+<footer class="post-info">Posted on <span class="post-meta"><time datetime="2016.02.04">2016.02.04</time>
+&middot; Tagged in
+    
+    <a href="https://crazymole.github.io/tags/leetcode">leetcode</a>, 
+    
+    <a href="https://crazymole.github.io/tags/string">string</a>
+    
 
-            
+</span>
+</footer>
 
-<h3 id="hello-hugo:6083a88ee3411b0d17ce02d738f69d47">Hello Hugo</h3>
+            <p>Given a string S, find the longest palindromic substring in S. You may assume that the maximum length of S is 1000, and there exists one unique longest palindromic substring.</p>
+
+<pre><code>public class Solution {
+    public String longestPalindrome(String s) {
+        if(s==null||s.equals(&quot;&quot;)){
+            return &quot;&quot;;
+        }
+        String p=expendPalindrome(s,0,0);
+        for(int i=0;i&lt;s.length();i++){
+            String p1=expendPalindrome(s,i,i);
+            if(p1.length()&gt;p.length()){
+                p=p1;
+            }
+            String p2=expendPalindrome(s,i,i+1);
+            if(p2.length()&gt;p.length()){
+                p=p2;
+            }
+        }
+        return p;
+    }
+    public String expendPalindrome(String s,int l,int r){
+        int n=s.length();
+        while(l&gt;=0&amp;&amp;r&lt;=n-1&amp;&amp;s.charAt(l)==s.charAt(r)){
+            l--;
+            r++;
+        }
+        return s.substring(l+1,r);
+    }
+}
+</code></pre>
 
             <ul class="share-buttons">
     <li>Share this article:</li>
     <li>
-        <a class="icon-facebook-squared" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fcrazymole.github.io%2fabout%2f" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;" title="Share on Facebook"></a>
+        <a class="icon-facebook-squared" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fcrazymole.github.io%2fpost%2fLongest-Palindromic-Substring%2f" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;" title="Share on Facebook"></a>
     </li>
     <li>
-        <a class="icon-twitter" href="https://twitter.com/share?text=about&amp;url=https%3a%2f%2fcrazymole.github.io%2fabout%2f" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" title="Tweet this article"></a>
+        <a class="icon-twitter" href="https://twitter.com/share?text=Longest%20Palindromic%20Substring&amp;url=https%3a%2f%2fcrazymole.github.io%2fpost%2fLongest-Palindromic-Substring%2f" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" title="Tweet this article"></a>
     </li>
     <li>
-        <a class="icon-gplus" href="https://plus.google.com/share?url=https%3a%2f%2fcrazymole.github.io%2fabout%2f" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;" title="Share on Google&#43;"></a>
+        <a class="icon-gplus" href="https://plus.google.com/share?url=https%3a%2f%2fcrazymole.github.io%2fpost%2fLongest-Palindromic-Substring%2f" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;" title="Share on Google&#43;"></a>
     </li>
     <li>
-        <a class="icon-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fcrazymole.github.io%2fabout%2f&title=about" onclick="window.open(this.href, 'linkedin-share', 'width=600,height=494');return false;" title="Share on Linkedin"></a>
+        <a class="icon-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fcrazymole.github.io%2fpost%2fLongest-Palindromic-Substring%2f&title=Longest%20Palindromic%20Substring" onclick="window.open(this.href, 'linkedin-share', 'width=600,height=494');return false;" title="Share on Linkedin"></a>
     </li>
 </ul>
 
@@ -75,9 +111,9 @@
             <div id="disqus_thread"></div>
 <script type="text/javascript">
     var disqus_shortname = 'excareers';
-    var disqus_identifier = 'https:\/\/crazymole.github.io\/about\/';
-    var disqus_title = 'about';
-    var disqus_url = 'https:\/\/crazymole.github.io\/about\/';
+    var disqus_identifier = 'https:\/\/crazymole.github.io\/post\/Longest-Palindromic-Substring\/';
+    var disqus_title = 'Longest Palindromic Substring';
+    var disqus_url = 'https:\/\/crazymole.github.io\/post\/Longest-Palindromic-Substring\/';
 
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;

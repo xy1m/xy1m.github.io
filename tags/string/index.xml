@@ -1,51 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on George Playground</title>
-    <link>https://crazymole.github.io/post/</link>
-    <description>Recent content in Posts on George Playground</description>
+    <title>String on George Playground</title>
+    <link>https://crazymole.github.io/tags/string/</link>
+    <description>Recent content in String on George Playground</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 04 Feb 2016 00:17:36 -0500</lastBuildDate>
-    <atom:link href="https://crazymole.github.io/post/index.xml" rel="self" type="application/rss+xml" />
-    
-    <item>
-      <title>Number of Digit One</title>
-      <link>https://crazymole.github.io/post/Number-of-Digit-One/</link>
-      <pubDate>Thu, 04 Feb 2016 00:17:36 -0500</pubDate>
-      
-      <guid>https://crazymole.github.io/post/Number-of-Digit-One/</guid>
-      <description>&lt;p&gt;Given an integer n, count the total number of digit 1 appearing in all non-negative integers less than or equal to n.&lt;/p&gt;
-
-&lt;p&gt;For example:&lt;/p&gt;
-
-&lt;p&gt;Given n = 13,
-Return 6, because digit 1 occurred in the following numbers: 1, 10, 11, 12, 13.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;public class Solution {
-    public int countDigitOne(int n) {
-        long count=0;
-        long factor=1;
-        while(n/factor!=0){
-            long high=n/factor/10;
-            long low=n%factor;
-            long cur=n/factor%10;
-            if(cur&amp;gt;=2){
-                count+=(high+1)*factor;
-            }else if(cur==1){
-                count+=high*factor;
-                count+=low+1;
-            }else{
-                count+=high*factor;
-            }
-            factor*=10;
-        }
-        return (int)count;
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
-</description>
-    </item>
+    <lastBuildDate>Thu, 04 Feb 2016 00:17:00 -0500</lastBuildDate>
+    <atom:link href="https://crazymole.github.io/tags/string/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Longest Palindromic Substring</title>
@@ -82,81 +44,6 @@ Return 6, because digit 1 occurred in the following numbers: 1, 10, 11, 12, 13.&
         return s.substring(l+1,r);
     }
 }
-&lt;/code&gt;&lt;/pre&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Range Sum Query 2D Immutable</title>
-      <link>https://crazymole.github.io/post/Range-Sum-Query-2D-Immutable/</link>
-      <pubDate>Thu, 04 Feb 2016 00:16:24 -0500</pubDate>
-      
-      <guid>https://crazymole.github.io/post/Range-Sum-Query-2D-Immutable/</guid>
-      <description>&lt;p&gt;Given a 2D matrix matrix, find the sum of the elements inside the rectangle defined by its upper left corner (row1, col1) and lower right corner (row2, col2).&lt;/p&gt;
-
-&lt;p&gt;The above rectangle (with the red border) is defined by (row1, col1) = (2, 1) and (row2, col2) = (4, 3), which contains sum = 8.&lt;/p&gt;
-
-&lt;p&gt;Example:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;Given matrix = [
-  [3, 0, 1, 4, 2],
-  [5, 6, 3, 2, 1],
-  [1, 2, 0, 1, 5],
-  [4, 1, 0, 1, 7],
-  [1, 0, 3, 0, 5]
-]
-
-sumRegion(2, 1, 4, 3) -&amp;gt; 8
-sumRegion(1, 1, 2, 2) -&amp;gt; 11
-sumRegion(1, 2, 2, 4) -&amp;gt; 12
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;You may assume that the matrix does not change.&lt;/li&gt;
-&lt;li&gt;There are many calls to sumRegion function.&lt;/li&gt;
-&lt;li&gt;You may assume that row1 ≤ row2 and col1 ≤ col2.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;pre&gt;&lt;code&gt;public class NumMatrix {
-    int[][] p=null;
-    public NumMatrix(int[][] matrix) {
-        int n=matrix.length;
-        if(n==0){
-            return;
-        }
-        int m=matrix[0].length;
-        if(m==0){
-            return;
-        }
-        p=new int[n+1][m+1];
-        for(int i=0;i&amp;lt;=n;i++){
-            p[i][0]=0;
-        }
-        for(int i=0;i&amp;lt;=m;i++){
-            p[0][i]=0;
-        }
-        for(int i=1;i&amp;lt;=n;i++){
-            for(int j=1;j&amp;lt;=m;j++){
-                p[i][j]=p[i-1][j]+p[i][j-1]-p[i-1][j-1]+matrix[i-1][j-1];
-            }
-        }
-    }
-
-    public int sumRegion(int row1, int col1, int row2, int col2) {
-        if(p==null){
-            return 0;
-        }
-        return p[row2+1][col2+1]-p[row2+1][col1]-p[row1][col2+1]+p[row1][col1];
-    }
-}
-
-
-// Your NumMatrix object will be instantiated and called as such:
-// NumMatrix numMatrix = new NumMatrix(matrix);
-// numMatrix.sumRegion(0, 1, 2, 3);
-// numMatrix.sumRegion(1, 2, 3, 4);
 &lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
