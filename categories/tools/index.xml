@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tools on 心猿译码</title>
+    <link>https://crazymole.github.io/categories/tools/</link>
+    <description>Recent content in Tools on 心猿译码</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 17 Mar 2016 09:24:23 -0400</lastBuildDate>
+    <atom:link href="https://crazymole.github.io/categories/tools/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Markdown基本语法</title>
+      <link>https://crazymole.github.io/post/Markdown-Tutorial/</link>
+      <pubDate>Thu, 17 Mar 2016 09:24:23 -0400</pubDate>
+      
+      <guid>https://crazymole.github.io/post/Markdown-Tutorial/</guid>
+      <description>
+
+&lt;blockquote&gt;
+&lt;p&gt;Markdown 是一种轻量级标记语言，创始人为約翰·格魯伯（John Gruber）。它允许人们“使用易读易写的纯文本格式编写文档，然后转换成有效的XHTML(或者HTML)文档”。[3]这种语言吸收了很多在电子邮件中已有的纯文本标记的特性。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;以上摘自维基百科，既然你已经看到了这篇文章，就不用过多介绍Markdown了
+&lt;a href=&#34;https://daringfireball.net/projects/markdown/basics&#34;&gt;John Gruber&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;干货:c494e2a3b39e7190e05bc775f5fb4b8b&#34;&gt;干货&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;#header&#34;&gt;标题&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#bold&#34;&gt;粗体斜体&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#blockquote&#34;&gt;引用&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#line&#34;&gt;分割线&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#unsorted-list&#34;&gt;无序列表&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#sorted-list&#34;&gt;有序列表&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#image&#34;&gt;图片&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#link&#34;&gt;链接&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#reference-link&#34;&gt;索引链接&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#auto-link&#34;&gt;自动链接&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#code&#34;&gt;单行代码&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#pre&#34;&gt;多行代码&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#escape&#34;&gt;转义符&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#table&#34;&gt;表格&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#other&#34;&gt;其他&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#reference&#34;&gt;参考&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;a class=&#34;h2&#34; id=&#34;header&#34; href=&#34;#header&#34;&gt;&lt;span class=&#34;fa fa-link&#34;&gt;&lt;/span&gt;标题&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;标题前输入多个#对应级别的HTML标题，h1和h2可在标题的下一行加任意数量=或-实现&lt;/p&gt;
+
+&lt;p class=&#34;text-warning&#34;&gt;&lt;span class=&#34;fa fa-warning&#34;&gt;#和标题之间空格不能少&lt;/p&gt;
+
+&lt;h1 id=&#34;一级标题:c494e2a3b39e7190e05bc775f5fb4b8b&#34;&gt;一级标题&lt;/h1&gt;
+
+&lt;h2 id=&#34;二级标题:c494e2a3b39e7190e05bc775f5fb4b8b&#34;&gt;二级标题&lt;/h2&gt;
+
+&lt;h1 id=&#34;标题1:c494e2a3b39e7190e05bc775f5fb4b8b&#34;&gt;标题1&lt;/h1&gt;
+
+&lt;h3 id=&#34;标题3:c494e2a3b39e7190e05bc775f5fb4b8b&#34;&gt;标题3&lt;/h3&gt;
+
+&lt;h6 id=&#34;标题6:c494e2a3b39e7190e05bc775f5fb4b8b&#34;&gt;标题6&lt;/h6&gt;
+
+&lt;pre&gt;&lt;code&gt;一级标题
+===================
+二级标题
+--------------------
+# 标题1
+### 标题3
+###### 标题6
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;a class=&#34;h2&#34; id=&#34;bold&#34; href=&#34;#bold&#34;&gt;&lt;span class=&#34;fa fa-link&#34;&gt;&lt;/span&gt;粗体 斜体&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;我是粗体&lt;/strong&gt;
+&lt;em&gt;我是斜体&lt;/em&gt;
+&lt;strong&gt;&lt;em&gt;我是粗斜体&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;**我是粗体**
+_我是斜体_
+**_我是粗斜体_**
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;a class=&#34;h2&#34; id=&#34;blockquote&#34; href=&#34;#blockquote&#34;&gt;&lt;span class=&#34;fa fa-link&#34;&gt;&lt;/span&gt;引用&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;My life for AIUR&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a class=&#34;h2&#34; id=&#34;line&#34; href=&#34;#line&#34;&gt;&lt;span class=&#34;fa fa-link&#34;&gt;&lt;/span&gt;分割线&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;3个或以上的短横线、星号或者下划线实现。短横线和星号之间可以输入任意空格&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;hr /&gt;
+
+&lt;hr /&gt;
+
+&lt;hr /&gt;
+
+&lt;hr /&gt;
+
+&lt;pre&gt;&lt;code&gt;* * *
+***
+*****
+- - -
+---------------------------------------
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;a class=&#34;h2&#34; id=&#34;unsorted-list&#34; href=&#34;#unsorted-list&#34;&gt;&lt;span class=&#34;fa fa-link&#34;&gt;&lt;/span&gt;无序列表&lt;/a&gt;&lt;/p&gt;
+
+&lt;p class=&#34;text-warning&#34;&gt;&lt;span class=&#34;fa fa-warning&#34;&gt;+-*和项目之间空格不能少&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;项目1&lt;/li&gt;
+&lt;li&gt;项目2
+
+&lt;ul&gt;
+&lt;li&gt;项目3&lt;/li&gt;
+&lt;li&gt;项目4&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;* 项目1
+* 项目2
+  - 项目3
+  + 项目4
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;a class=&#34;h2&#34; id=&#34;sorted-list&#34; href=&#34;#sorted-list&#34;&gt;&lt;span class=&#34;fa fa-link&#34;&gt;&lt;/span&gt;有序列表&lt;/a&gt;&lt;/p&gt;
+
+&lt;p class=&#34;text-warning&#34;&gt;&lt;span class=&#34;fa fa-warning&#34;&gt;数字可无序，.和空格不能少&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;项目1&lt;/li&gt;
+&lt;li&gt;项目2
+
+&lt;ul&gt;
+&lt;li&gt;项目3&lt;/li&gt;
+&lt;li&gt;项目4&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;pre&gt;&lt;code&gt;1. 项目1
+1. 项目2
+	* 项目3
+	* 项目4
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;a class=&#34;h2&#34; id=&#34;image&#34; href=&#34;#image&#34;&gt;&lt;span class=&#34;fa fa-link&#34;&gt;&lt;/span&gt;图片&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://crazymole.github.io/images/avatar.jpg&#34; alt=&#34;alt信息&#34; title=&#34;标题&#34; /&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;![alt信息](/images/avatar.jpg &amp;quot;标题&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;a class=&#34;h2&#34; id=&#34;link&#34; href=&#34;#link&#34;&gt;&lt;span class=&#34;fa fa-link&#34;&gt;&lt;/span&gt;链接&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://github.com&#34; title=&#34;Go to github&#34;&gt;GitHub&lt;/a&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[链接文字](链接地址 标题)
+[GitHub](http://github.com &amp;quot;Go to github&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;a class=&#34;h2&#34; id=&#34;reference-link&#34; href=&#34;#reference-link&#34;&gt;&lt;span class=&#34;fa fa-link&#34;&gt;&lt;/span&gt;索引链接&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://google.com&#34; title=&#34;Google&#34;&gt;Google&lt;/a&gt;
+&lt;a href=&#34;http://search.yahoo.com&#34; title=&#34;Yahoo serach&#34;&gt;Yahoo&lt;/a&gt;
+&lt;img src=&#34;https://crazymole.github.io/images/avatar.jpg&#34; alt=&#34;mole&#34; title=&#34;mole&#34; /&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[链接文字][索引id]
+
+
+[Google][g]
+[Yahoo][y]
+![mole][m]
+
+
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;a class=&#34;h2&#34; id=&#34;auto-link&#34; href=&#34;#auto-link&#34;&gt;&lt;span class=&#34;fa fa-link&#34;&gt;&lt;/span&gt;自动链接&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;尖括号或者直接输入地址&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://google.com&#34;&gt;http://google.com&lt;/a&gt;
+&lt;code&gt;&amp;lt;http://google.com&amp;gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a class=&#34;h2&#34; id=&#34;code&#34; href=&#34;#code&#34;&gt;&lt;span class=&#34;fa fa-link&#34;&gt;&lt;/span&gt;行内代码&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;System.out.println(&amp;quot;Hello World&amp;quot;);&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;`System.out.println(&amp;ldquo;Hello World&amp;rdquo;);`&lt;/p&gt;
+
+&lt;p&gt;&lt;a class=&#34;h2&#34; id=&#34;pre&#34; href=&#34;#pre&#34;&gt;&lt;span class=&#34;fa fa-link&#34;&gt;&lt;/span&gt;多行代码&lt;/a&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;	```
+	public static void main(String args[]){
+		System.out.println(&amp;quot;Hello World&amp;quot;);
+	}
+	```
+	或者4个空格或者1个Tab
+	public static void main(String args[]){
+		System.out.println(&amp;quot;Hello World&amp;quot;);
+	}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;a class=&#34;h2&#34; id=&#34;escape&#34; href=&#34;#escape&#34;&gt;&lt;span class=&#34;fa fa-link&#34;&gt;&lt;/span&gt;转义符&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;\ 反斜杠
+` 反引号
+* 星号
+_ 下划线
+{} 大括号
+[] 中括号
+() 小括号
+# 井号
++ 加号
+- 减号
+. 英文句号
+! 感叹号&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;\\ 反斜杠
+\` 反引号
+\* 星号
+\_ 下划线
+\{\} 大括号
+\[\] 中括号
+\(\) 小括号
+\# 井号
+\+ 加号
+\- 减号
+\. 英文句号
+\! 感叹号
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;a class=&#34;h2&#34; id=&#34;table&#34; href=&#34;#table&#34;&gt;&lt;span class=&#34;fa fa-link&#34;&gt;&lt;/span&gt;表格&lt;/a&gt;&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Tables&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Are&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;Cool&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;col 1 is&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;left-aligned&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;$1600&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;col 2 is&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;centered&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;$12&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;col 3 is&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;right-aligned&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;$1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;a class=&#34;h2&#34; id=&#34;other&#34; href=&#34;#other&#34;&gt;&lt;span class=&#34;fa fa-link&#34;&gt;&lt;/span&gt;其他&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;可以写HTML，前后加空行&lt;/p&gt;
+
+&lt;p&gt;&lt;a class=&#34;h2&#34; id=&#34;reference&#34; href=&#34;#reference&#34;&gt;&lt;span class=&#34;fa fa-link&#34;&gt;&lt;/span&gt;参考&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://daringfireball.net/projects/markdown/basics&#34;&gt;https://daringfireball.net/projects/markdown/basics&lt;/a&gt;
+&lt;a href=&#34;http://ibruce.info/2013/11/26/markdown/&#34;&gt;http://ibruce.info/2013/11/26/markdown/&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
