@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="generator" content="Hugo 0.15" />
+    <title>Markdown基本语法 | 新猿一码</title>
+    <meta name="author" content="George Zhang">
+    <meta name="keywords" content="[]">
+    <meta name="description" content=" Markdown 是一种轻量级标记语言，创始人为約翰·格魯伯（John Gruber）。它允许人们“使用易读易写的纯文本格式编写文档，然后转换成有效的XHTML(或者HTML)文档”。[3]这种语言吸收了很多在电子邮件中已有的纯文本标记的特性。 以上摘自维基百科，既然你已经看到了这篇文章，就不用过多介绍Markdown了 John Gruber 注意空格 标题 标题前输入多个#对应级别的HTML标题，h1和h2可在标题的下一行加任意数量=或-实现 一级标题 二级标题 标题1 标题3 标题6 一级标题 =================== 二级标题 -------------------- # 标题1 ### 标题3 ###### 标题6 粗体/斜体 我是粗体 我是斜体 我是粗斜体 **我是粗体** _我是斜体_ **_我是粗斜体_** 引用 My life for AIUR &gt; My life for AIUR 分割线 3个或以上的短横线、星号或者下划线实现。短横线和星号之间可以输入任意空格 * * * *** ***** - - - --------------------------------------- 无序列表 项目1 项目2 项目3 项目4 * 项目1 * 项目2 - 项目3 &#43; 项目4 有序列表 项目1 项目2 项目3 项目4 1.">
+    <link href="https://crazymole.github.io/post/index.xml" rel="alternate" type="application/rss+xml" title="新猿一码" />
+    <link href="https://crazymole.github.io/post/index.xml" rel="feed" type="application/rss+xml" title="新猿一码" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/fontawesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bootswatch/3.3.5/flatly/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/highlight.js/9.1.0/styles/monokai_sublime.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,300,700|Noto+Serif:400,400italic,700,700italic">
+    <link rel="icon" href="https://crazymole.github.io/app-logo.png">
+    <link rel="apple-touch-icon" href="https://crazymole.github.io/app-logo.png">
+    <link rel="stylesheet" href="https://crazymole.github.io/css/global.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://crazymole.github.io/">新猿一码</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Categories <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            
+              <li><a href="/categories/language">language</a></li>
+            
+              <li><a href="/categories/leetcode">leetcode</a></li>
+            
+              <li><a href="/categories/tools">tools</a></li>
+            
+          </ul>
+        </li>
+      </ul>
+      </div>
+    </div>
+  </nav>
+    
+    <header class="jumbotron bg">
+      <div class="container"><h1 class="text-center">Markdown基本语法</h1></div>
+    </header>
+<div class="container clearfix">
+    <aside class="col-md-3">
+	<div class="thumbnail">
+		<img class="img-circle img-responsive" src="https://crazymole.github.io/images/coding-mole.gif" alt="George Zhang">
+		<div class="text-center">
+			<p class="name"><strong>George Zhang</strong></p>
+			<p class="address">Waterloo, ON, Canada</p>
+			<ul class="list-inline">
+				
+
+
+<li><a href="//linkedin.com/in/zhangzhpeng" target="_blank" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+
+
+
+
+
+<li><a href="//github.com/CrazyMole" target="_blank" title="Github"><i class="fa fa-github"></i></a></li>
+
+
+<li><a href="https://crazymole.github.io/post/index.xml" target="_blank" title="RSS"><i class="fa fa-rss"></i></a></li>
+			</ul>
+		</div>
+	</div>
+</aside>
+    <main role="main" class="col-md-9">
+    <article class="post">
+        <footer>
+	<ul class="list-inline">
+		<li><i class="fa fa-calendar"></i></li>
+		<li><time datetime="Thursday, Mar 17, 2016">Thursday, Mar 17, 2016</time></li>
+		
+		<li><i class="fa fa-tag"></i></li>
+		
+		<li><a class="label label-default" href="https://crazymole.github.io/tags/markdown">markdown</a></li>
+		
+		
+	</ul>
+</footer>
+        
+
+<blockquote>
+<p>Markdown 是一种轻量级标记语言，创始人为約翰·格魯伯（John Gruber）。它允许人们“使用易读易写的纯文本格式编写文档，然后转换成有效的XHTML(或者HTML)文档”。[3]这种语言吸收了很多在电子邮件中已有的纯文本标记的特性。</p>
+</blockquote>
+
+<p>以上摘自维基百科，既然你已经看到了这篇文章，就不用过多介绍Markdown了
+<a href="https://daringfireball.net/projects/markdown/basics">John Gruber</a></p>
+
+<p class="text-warning"><span class="fa fa-warning">注意空格</p>
+
+<h2 id="标题:e77435f84038bcc5acc4c0efe3683d5e">标题</h2>
+
+<p>标题前输入多个#对应级别的HTML标题，h1和h2可在标题的下一行加任意数量=或-实现</p>
+
+<h1 id="一级标题:e77435f84038bcc5acc4c0efe3683d5e">一级标题</h1>
+
+<h2 id="二级标题:e77435f84038bcc5acc4c0efe3683d5e">二级标题</h2>
+
+<h1 id="标题1:e77435f84038bcc5acc4c0efe3683d5e">标题1</h1>
+
+<h3 id="标题3:e77435f84038bcc5acc4c0efe3683d5e">标题3</h3>
+
+<h6 id="标题6:e77435f84038bcc5acc4c0efe3683d5e">标题6</h6>
+
+<pre><code>一级标题
+===================
+二级标题
+--------------------
+# 标题1
+### 标题3
+###### 标题6
+</code></pre>
+
+<h2 id="粗体-斜体:e77435f84038bcc5acc4c0efe3683d5e">粗体/斜体</h2>
+
+<p><strong>我是粗体</strong>
+<em>我是斜体</em>
+<strong><em>我是粗斜体</em></strong></p>
+
+<pre><code>**我是粗体**
+_我是斜体_
+**_我是粗斜体_**
+</code></pre>
+
+<h2 id="引用:e77435f84038bcc5acc4c0efe3683d5e">引用</h2>
+
+<blockquote>
+<p>My life for AIUR</p>
+</blockquote>
+
+<pre><code>&gt; My life for AIUR
+</code></pre>
+
+<h2 id="分割线:e77435f84038bcc5acc4c0efe3683d5e">分割线</h2>
+
+<p>3个或以上的短横线、星号或者下划线实现。短横线和星号之间可以输入任意空格</p>
+
+<hr />
+
+<hr />
+
+<hr />
+
+<hr />
+
+<hr />
+
+<pre><code>* * *
+***
+*****
+- - -
+---------------------------------------
+</code></pre>
+
+<h2 id="无序列表:e77435f84038bcc5acc4c0efe3683d5e">无序列表</h2>
+
+<ul>
+<li>项目1</li>
+<li>项目2
+
+<ul>
+<li>项目3</li>
+<li>项目4</li>
+</ul></li>
+</ul>
+
+<pre><code>* 项目1
+* 项目2
+  - 项目3
+  + 项目4
+</code></pre>
+
+<h2 id="有序列表:e77435f84038bcc5acc4c0efe3683d5e">有序列表</h2>
+
+<ol>
+<li>项目1</li>
+<li>项目2
+
+<ul>
+<li>项目3</li>
+<li>项目4</li>
+</ul></li>
+</ol>
+
+<pre><code>1. 项目1
+1. 项目2
+	* 项目3
+	* 项目4
+</code></pre>
+
+<h2 id="图片:e77435f84038bcc5acc4c0efe3683d5e">图片</h2>
+
+<p><img src="/images/avatar.jpg" alt="alt信息" title="标题" /></p>
+
+<pre><code>![alt信息](/images/avatar.jpg &quot;标题&quot;)
+</code></pre>
+
+<h2 id="链接:e77435f84038bcc5acc4c0efe3683d5e">链接</h2>
+
+<p><a href="http://github.com" title="Go to github">GitHub</a></p>
+
+<pre><code>[链接文字](链接地址 标题)
+[GitHub](http://github.com &quot;Go to github&quot;)
+</code></pre>
+
+<h2 id="索引链接:e77435f84038bcc5acc4c0efe3683d5e">索引链接</h2>
+
+<p><a href="http://google.com" title="Google">Google</a>
+<a href="http://search.yahoo.com" title="Yahoo serach">Yahoo</a>
+<img src="/images/avatar.jpg" alt="mole" title="mole" /></p>
+
+<pre><code>[链接文字][索引id]
+`[索引id]:索引地址 标题`
+
+[Google][g]
+[Yahoo][y]
+![mole][m]
+
+`[g]:http://google.com &quot;Google&quot;`
+`[y]:http://search.yahoo.com &quot;Yahoo serach&quot;`
+`[m]:/images/avatar.jpg &quot;mole&quot;`
+</code></pre>
+
+<h2 id="自动链接:e77435f84038bcc5acc4c0efe3683d5e">自动链接</h2>
+
+<p>尖括号或者直接输入地址</p>
+
+<p><a href="http://google.com">http://google.com</a>
+<code>&lt;http://google.com&gt;</code></p>
+
+<h2 id="行内代码:e77435f84038bcc5acc4c0efe3683d5e">行内代码</h2>
+
+<p><code>System.out.println(&quot;Hello World&quot;);</code></p>
+
+<p>`System.out.println(&ldquo;Hello World&rdquo;);`</p>
+
+<h2 id="多行代码:e77435f84038bcc5acc4c0efe3683d5e">多行代码</h2>
+
+<pre><code>	```
+	public static void main(String args[]){
+		System.out.println(&quot;Hello World&quot;);
+	}
+	```
+	或者4个空格或者1个Tab
+	public static void main(String args[]){
+		System.out.println(&quot;Hello World&quot;);
+	}
+</code></pre>
+
+<h2 id="转义符:e77435f84038bcc5acc4c0efe3683d5e">转义符</h2>
+
+<p>\ 反斜杠
+` 反引号
+* 星号
+_ 下划线
+{} 大括号
+[] 中括号
+() 小括号
+# 井号
++ 加号
+- 减号
+. 英文句号
+! 感叹号</p>
+
+<pre><code>\\ 反斜杠
+\` 反引号
+\* 星号
+\_ 下划线
+\{\} 大括号
+\[\] 中括号
+\(\) 小括号
+\# 井号
+\+ 加号
+\- 减号
+\. 英文句号
+\! 感叹号
+</code></pre>
+
+<h2 id="表格:e77435f84038bcc5acc4c0efe3683d5e">表格</h2>
+
+<table>
+<thead>
+<tr>
+<th>Tables</th>
+<th align="center">Are</th>
+<th align="right">Cool</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>col 1 is</td>
+<td align="center">left-aligned</td>
+<td align="right">$1600</td>
+</tr>
+
+<tr>
+<td>col 2 is</td>
+<td align="center">centered</td>
+<td align="right">$12</td>
+</tr>
+
+<tr>
+<td>col 3 is</td>
+<td align="center">right-aligned</td>
+<td align="right">$1</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="其他:e77435f84038bcc5acc4c0efe3683d5e">其他</h2>
+
+<p>可以写HTML，前后加空行</p>
+
+<h2 id="参考:e77435f84038bcc5acc4c0efe3683d5e">参考</h2>
+
+<p><a href="https://daringfireball.net/projects/markdown/basics">https://daringfireball.net/projects/markdown/basics</a>
+<a href="http://ibruce.info/2013/11/26/markdown/">http://ibruce.info/2013/11/26/markdown/</a></p>
+
+        <hr>
+<ul class="list-inline">
+    <li>Share this article</li>
+    <li>
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fcrazymole.github.io%2fpost%2fMarkdown-Basic%2f" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;" title="Share on Facebook"><i class="fa fa-facebook"></i></a>
+    </li>
+    <li>
+        <a href="https://twitter.com/share?text=Markdown%e5%9f%ba%e6%9c%ac%e8%af%ad%e6%b3%95&amp;url=https%3a%2f%2fcrazymole.github.io%2fpost%2fMarkdown-Basic%2f" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" title="Share on Twitter"><i class="fa fa-twitter"></i></a>
+    </li>
+    <li>
+        <a href="https://plus.google.com/share?url=https%3a%2f%2fcrazymole.github.io%2fpost%2fMarkdown-Basic%2f" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;" title="Share on Google Plus"><i class="fa fa-twitter"></i></a>
+    </li>
+    <li>
+        <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fcrazymole.github.io%2fpost%2fMarkdown-Basic%2f&title=Markdown%e5%9f%ba%e6%9c%ac%e8%af%ad%e6%b3%95" onclick="window.open(this.href, 'linkedin-share', 'width=600,height=494');return false;" title="Share on LinkedIn"><i class="fa fa-linkedin"></i></a>
+    </li>
+</ul>
+    </article>
+    <div class="comments">
+        <h3></h3>
+        <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'excareers';
+    var disqus_identifier = 'https:\/\/crazymole.github.io\/post\/Markdown-Basic\/';
+    var disqus_title = 'Markdown基本语法';
+    var disqus_url = 'https:\/\/crazymole.github.io\/post\/Markdown-Basic\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+    </main>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="text-center"><a href="https://crazymole.github.io/post/index.xml" target="_blank" title="RSS"><i class="fa fa-rss"></i></a> &copy; 2016 &middot; Powered by <a href="http://gohugo.io">Hugo</a>.</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/highlight.js/9.1.0/highlight.min.js"></script>
+
+<script>hljs.initHighlightingOnLoad();</script>
+
+</body>
+</html>
