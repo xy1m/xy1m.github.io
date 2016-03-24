@@ -11,10 +11,10 @@
     <meta name="keywords" content="[]">
     <meta name="description" content=" Given a string S, find the longest palindromic substring in S. You may assume that the maximum length of S is 1000, and there exists one unique longest palindromic substring.
 ">
-    <link href="https://crazymole.github.io/post/index.xml" rel="alternate" type="application/rss+xml" title="新猿一码" />
-    <link href="https://crazymole.github.io/post/index.xml" rel="feed" type="application/rss+xml" title="新猿一码" />
+    <link href="https://crazymole.github.io/post/index.xml" rel="alternate" type="application/rss+xml" title="新猿一码" >
+    <link href="https://crazymole.github.io/post/index.xml" rel="feed" type="application/rss+xml" title="新猿一码" >
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/fontawesome/4.4.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bootswatch/3.3.5/flatly/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bootswatch/3.3.5/paper/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/highlight.js/9.1.0/styles/monokai_sublime.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,300,700|Noto+Serif:400,400italic,700,700italic">
     <link rel="icon" href="https://crazymole.github.io/app-logo.png">
@@ -39,6 +39,8 @@
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Categories <span class="caret"></span></a>
           <ul class="dropdown-menu">
             
+              <li><a href="/categories/language">language</a></li>
+            
               <li><a href="/categories/leetcode">leetcode</a></li>
             
               <li><a href="/categories/tools">tools</a></li>
@@ -46,13 +48,13 @@
           </ul>
         </li>
       </ul>
-      </div>
     </div>
-  </nav>
+  </div>
+</nav>
     
-    <header class="jumbotron bg">
+    <div class="jumbotron">
       <div class="container"><h1 class="text-center">Longest Palindromic Substring</h1></div>
-    </header>
+    </div>
 <div class="container clearfix">
     <aside class="col-md-3">
 	<div class="thumbnail">
@@ -91,8 +93,8 @@
 		
 		<li><a class="label label-default" href="https://crazymole.github.io/tags/string">string</a></li>
 		
+		
 	</ul>
-	
 </footer>
         <p>Given a string S, find the longest palindromic substring in S. You may assume that the maximum length of S is 1000, and there exists one unique longest palindromic substring.</p>
 
@@ -125,7 +127,8 @@
 }
 </code></pre>
 
-        <ul class="list-inline">
+        <hr>
+<ul class="list-inline">
     <li>Share this article</li>
     <li>
         <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fcrazymole.github.io%2fpost%2fLongest-Palindromic-Substring%2f" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;" title="Share on Facebook"><i class="fa fa-facebook"></i></a>
@@ -166,12 +169,14 @@
     <p class="text-center"><a href="https://crazymole.github.io/post/index.xml" target="_blank" title="RSS"><i class="fa fa-rss"></i></a> &copy; 2016 &middot; Powered by <a href="http://gohugo.io">Hugo</a>.</p>
   </div>
 </footer>
-
 <script src="https://cdn.jsdelivr.net/jquery/2.1.4/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/highlight.js/9.1.0/highlight.min.js"></script>
-
-<script>hljs.initHighlightingOnLoad();</script>
+<script>
+$('pre').each(function(i, block) {
+  hljs.highlightBlock(block);
+});
+</script>
 
 </body>
 </html>
