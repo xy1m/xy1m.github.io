@@ -25,7 +25,7 @@
 		}
 	}*/
 	var offset = 300;
-    var duration = 500;
+    var duration = 1000;
     jQuery(window).scroll(function() {
         if (jQuery(this).scrollTop() > offset) {
             jQuery('.backtotop').fadeIn(duration);

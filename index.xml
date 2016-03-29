@@ -5,7 +5,8 @@
     <link>https://crazymole.github.io/</link>
     <description>Recent content on 新猿一码</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>zh-CN</language>
+    <copyright>Powered by [Hugo](http://gohugo.io).</copyright>
     <lastBuildDate>Mon, 21 Mar 2016 14:32:43 -0400</lastBuildDate>
     <atom:link href="https://crazymole.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -647,8 +648,6 @@ Hugunin，IronPython的开发者，已经加入了微软公司，将在将来全
 &lt;p&gt;以上摘自维基百科，既然你已经看到了这篇文章，就不用过多介绍Markdown了
 &lt;a href=&#34;https://daringfireball.net/projects/markdown/basics&#34;&gt;John Gruber&lt;/a&gt;&lt;/p&gt;
 
-&lt;p class=&#34;text-warning&#34;&gt;&lt;span class=&#34;fa fa-warning&#34;&gt;注意空格&lt;/p&gt;
-
 &lt;h2 id=&#34;标题:e77435f84038bcc5acc4c0efe3683d5e&#34;&gt;标题&lt;/h2&gt;
 
 &lt;p&gt;标题前输入多个#对应级别的HTML标题，h1和h2可在标题的下一行加任意数量=或-实现&lt;/p&gt;
@@ -751,9 +750,9 @@ _我是斜体_
 
 &lt;h2 id=&#34;图片:e77435f84038bcc5acc4c0efe3683d5e&#34;&gt;图片&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://crazymole.github.io/images/avatar.jpg&#34; alt=&#34;alt信息&#34; title=&#34;标题&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://crazymole.github.io/img/avatar.jpg&#34; alt=&#34;alt信息&#34; title=&#34;标题&#34; /&gt;&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;![alt信息](/images/avatar.jpg &amp;quot;标题&amp;quot;)
+&lt;pre&gt;&lt;code&gt;![alt信息](/img/avatar.jpg &amp;quot;标题&amp;quot;)
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;h2 id=&#34;链接:e77435f84038bcc5acc4c0efe3683d5e&#34;&gt;链接&lt;/h2&gt;
@@ -768,7 +767,7 @@ _我是斜体_
 
 &lt;p&gt;&lt;a href=&#34;http://google.com&#34; title=&#34;Google&#34;&gt;Google&lt;/a&gt;
 &lt;a href=&#34;http://search.yahoo.com&#34; title=&#34;Yahoo serach&#34;&gt;Yahoo&lt;/a&gt;
-&lt;img src=&#34;https://crazymole.github.io/images/avatar.jpg&#34; alt=&#34;mole&#34; title=&#34;mole&#34; /&gt;&lt;/p&gt;
+&lt;img src=&#34;https://crazymole.github.io/img/avatar.jpg&#34; alt=&#34;mole&#34; title=&#34;mole&#34; /&gt;&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;[链接文字][索引id]
 `[索引id]:索引地址 标题`
@@ -779,7 +778,7 @@ _我是斜体_
 
 `[g]:http://google.com &amp;quot;Google&amp;quot;`
 `[y]:http://search.yahoo.com &amp;quot;Yahoo serach&amp;quot;`
-`[m]:/images/avatar.jpg &amp;quot;mole&amp;quot;`
+`[m]:/img/avatar.jpg &amp;quot;mole&amp;quot;`
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;h2 id=&#34;自动链接:e77435f84038bcc5acc4c0efe3683d5e&#34;&gt;自动链接&lt;/h2&gt;
