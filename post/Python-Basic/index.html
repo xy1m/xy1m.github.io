@@ -13,7 +13,7 @@
     <link href="https://crazymole.github.io/post/index.xml" rel="alternate" type="application/rss+xml" title="新猿一码" >
     <link href="https://crazymole.github.io/post/index.xml" rel="feed" type="application/rss+xml" title="新猿一码" >
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/fontawesome/4.4.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bootswatch/3.3.5/paper/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bootswatch/3.3.5/flatly/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/highlight.js/9.1.0/styles/monokai_sublime.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,300,700|Noto+Serif:400,400italic,700,700italic">
     <link rel="icon" href="https://crazymole.github.io/img/logo.png">
@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="https://crazymole.github.io/css/global.css">
   </head>
   <body>
-    <nav class="navbar navbar-default navbar-static-top">
+    <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -721,6 +721,9 @@ Hugunin，IronPython的开发者，已经加入了微软公司，将在将来全
         </main>
         <aside class="col-md-3">
             <div class="panel panel-default">
+	<div class="panel-heading">
+		<h3 class="panel-title">作者</h3>
+	</div>
 	<div class="panel-body thumbnail">
 		<img class="img-circle img-responsive" src="https://crazymole.github.io/img/coding-mole.gif" alt="George Zhang">
 		<div class="text-center">
@@ -743,6 +746,9 @@ Hugunin，IronPython的开发者，已经加入了微软公司，将在将来全
 	</div>
 </div>
             <div class="panel panel-default">
+	<div class="panel-heading">
+		<h3 class="panel-title">标签</h3>
+	</div>
 	<div class="panel-body">
 		
 		<a class="label label-default" href="https://crazymole.github.io/tags/dynamic-programming">dynamic-programming</a>
@@ -759,9 +765,35 @@ Hugunin，IronPython的开发者，已经加入了微软公司，将在将来全
 		
 	</div>
 </div>
+
+<div class="panel panel-default">
+	<div class="panel-heading">最近文章</div>
+	<ul class="list-group">
+	
+	    <a class="list-group-item" href="https://crazymole.github.io/post/Python-Basic/" title="Python 2 基本语法">Python 2 基本语法</a>
+	
+	    <a class="list-group-item" href="https://crazymole.github.io/post/Markdown-Basic/" title="Markdown基本语法">Markdown基本语法</a>
+	
+	    <a class="list-group-item" href="https://crazymole.github.io/post/Number-of-Digit-One/" title="Number of Digit One">Number of Digit One</a>
+	
+	    <a class="list-group-item" href="https://crazymole.github.io/post/Longest-Palindromic-Substring/" title="Longest Palindromic Substring">Longest Palindromic Substring</a>
+	
+	    <a class="list-group-item" href="https://crazymole.github.io/post/Range-Sum-Query-2D-Immutable/" title="Range Sum Query 2D Immutable">Range Sum Query 2D Immutable</a>
+	
+	    <a class="list-group-item" href="https://crazymole.github.io/post/Reverse-Words-in-a-String/" title="Reverse Words in a String">Reverse Words in a String</a>
+	
+	    <a class="list-group-item" href="https://crazymole.github.io/post/Surrounded-Regions/" title="Surrounded Regions">Surrounded Regions</a>
+	
+	    <a class="list-group-item" href="https://crazymole.github.io/post/Integer-to-English-Words/" title="Inter to English Words">Inter to English Words</a>
+	
+	</ul>
+</div>
+
+
+
         </aside>
     </div>
-    <a href="#" class="backtotop"><span class="fa fa-rocket fa-3x"></span></a>
+    <a href="#" class="backtotop"><i class="fa fa-arrow-up"></i></a>
 </div>
 <footer class="footer">
   <div class="container">
@@ -774,7 +806,7 @@ Hugunin，IronPython的开发者，已经加入了微软公司，将在将来全
 <script src="https://crazymole.github.io/js/backtotop.js"></script>
 <script>
 $(document).ready(function(){
-	$('pre').each(function(i, block) {
+	$('code').parents('pre').each(function(i, block) {
 	  hljs.highlightBlock(block);
 	});
 });
