@@ -1,14 +1,72 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Leetcode on Crazy mole</title>
-    <link>https://crazymole.github.io/tags/leetcode/</link>
-    <description>Recent content in Leetcode on Crazy mole</description>
+    <title>Algorithms on Crazy mole</title>
+    <link>https://crazymole.github.io/categories/algorithms/</link>
+    <description>Recent content in Algorithms on Crazy mole</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>Powered by [Hugo](http://gohugo.io).</copyright>
-    <lastBuildDate>Thu, 04 Feb 2016 00:17:36 -0500</lastBuildDate>
-    <atom:link href="https://crazymole.github.io/tags/leetcode/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 01 Aug 2016 18:20:14 -0700</lastBuildDate>
+    <atom:link href="https://crazymole.github.io/categories/algorithms/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Xor sequence</title>
+      <link>https://crazymole.github.io/post/Xor-sequence/</link>
+      <pubDate>Mon, 01 Aug 2016 18:20:14 -0700</pubDate>
+      
+      <guid>https://crazymole.github.io/post/Xor-sequence/</guid>
+      <description>&lt;p&gt;We can easily find a pattern &lt;code&gt;F(n)=0^1^...^n&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;So for &lt;code&gt;F(L)^F(L+1)^...^F(R)&lt;/code&gt; should look like below&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;F(L)=0^...^L;
+F(L+1)=0^...^L^(L+1);
+F(L+2)=0^...^L^(L+1)^L(+2);
+...
+F(R)=0^...^L^(L+1)^(L+2)...^R;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;There is another import pattern that every 4 odd xor is 0, and every 4 even xor is also 0, R is always in the formula because it only appears once, so is (R-2) appear 3 times and so on.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Guess what?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;If (R-L+1) is odd, then result is &lt;code&gt;0^1^...^L^(L+2)^(L+4)^...^R&lt;/code&gt;,that&amp;rsquo;s &lt;code&gt;0^...^(L-2)^L^(L+2)^...^R&lt;/code&gt;^&lt;code&gt;0^...^(L-3)^(L-1)&lt;/code&gt;,
+else &lt;code&gt;(L+1)^(L+3)^...^R&lt;/code&gt;, that&amp;rsquo;s &lt;code&gt;0^...^(L-1)^(L+1)^...R&lt;/code&gt;^&lt;code&gt;0^...^(L-1)&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;We define a function xor2(I really don&amp;rsquo;t good at naming &lt;code&gt;:(&lt;/code&gt;) means how many numbers(who are with same parity) with N then %4 and then calculate the result, we don&amp;rsquo;t care about the parity of L or R, so the result should be &lt;code&gt;xor2(R)^xor2(L-1)&lt;/code&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int Q = in.nextInt();
+        StringBuilder sb=new StringBuilder();
+        for(int a0 = 0; a0 &amp;lt; Q; a0++){
+            long L = in.nextLong();
+            long R = in.nextLong();
+            sb.append(xor2(R)^xor2(L-1)).append(&amp;quot;\n&amp;quot;);
+        }
+        System.out.println(sb.toString());
+    }
+    
+    public static long xor2(long n){
+        long res=0;
+        for(int i=0;i&amp;lt;(n+1)%8;i+=2){
+            res^=n-i;
+        }
+        return res;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
     
     <item>
       <title>Number of Digit One</title>

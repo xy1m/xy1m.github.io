@@ -8,9 +8,8 @@
     <meta name="generator" content="Hugo 0.15" />
     <title>Crazy mole</title>
     <meta name="author" content="George Zhang">
-    <meta name="keywords" content="[]">
-    <meta name="description" content="Convert a non-negative integer to its english words representation. Given input is guaranteed to be less than 2^31 - 1.
-">
+    <meta name="keywords" content="Algorithms Leetcode Software Engineer">
+    <meta name="description" content="George blog about code, thoughts and life">
     <link href="https://crazymole.github.io/post/index.xml" rel="alternate" type="application/rss+xml" title="Crazy mole" >
     <link href="https://crazymole.github.io/post/index.xml" rel="feed" type="application/rss+xml" title="Crazy mole" >
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/fontawesome/4.4.0/css/font-awesome.min.css">
@@ -53,137 +52,43 @@
 </nav>
     
     <div class="page-header">
-        <h1 class="text-center">Inter to English Words</h1>
+        <h1 class="text-center">Hackerrank</h1>
     </div>
     
 <div class="container clearfix">
-    <div class="row">
-        <main role="main" class="col-md-9">
-        <article>
-            <aside>
+	<div class="row">
+		<main role="main" class="col-md-9">
+		<ul class="list-unstyled">
+			
+			
+			<li>
+	<h3><a href="https://crazymole.github.io/post/Xor-sequence/" title="Xor sequence">Xor sequence</a></h3>
+	<aside>
 	<ul class="list-inline">
 		<li><i class="fa fa-calendar"></i></li>
-		<li><time datetime="Wednesday, Feb 3, 2016">Wednesday, Feb 3, 2016</time></li>
+		<li><time datetime="Monday, Aug 1, 2016">Monday, Aug 1, 2016</time></li>
 		<li><i class="fa fa-tag"></i></li>
 		
-		<li><a class="label label-default" href="https://crazymole.github.io/tags/leetcode">leetcode</a></li>
+		<li><a class="label label-default" href="https://crazymole.github.io/tags/bit">bit</a></li>
 		
-		<li><a class="label label-default" href="https://crazymole.github.io/tags/math">math</a></li>
-		
-		<li><a class="label label-default" href="https://crazymole.github.io/tags/string">string</a></li>
+		<li><a class="label label-default" href="https://crazymole.github.io/tags/hackerrank">hackerrank</a></li>
 		
 	</ul>
 </aside>
-            <p>Convert a non-negative integer to its english words representation. Given input is guaranteed to be less than 2^31 - 1.</p>
-
-<p>For example,</p>
-
-<p>123 -&gt; <code>&quot;One Hundred Twenty Three&quot;</code></p>
-
-<p>12345 -&gt; <code>&quot;Twelve Thousand Three Hundred Forty Five&quot;</code></p>
-
-<p>1234567 -&gt; <code>&quot;One Million Two Hundred Thirty Four Thousand Five Hundred Sixty Seven&quot;</code></p>
-
-<pre><code>public class Solution {
-    //0-19的字典
-    private String[] dic_0_19={&quot;&quot;, &quot;One&quot;, &quot;Two&quot;, &quot;Three&quot;, &quot;Four&quot;, &quot;Five&quot;, &quot;Six&quot;, &quot;Seven&quot;, &quot;Eight&quot;, &quot;Nine&quot;, &quot;Ten&quot;, &quot;Eleven&quot;, &quot;Twelve&quot;, &quot;Thirteen&quot;, &quot;Fourteen&quot;, &quot;Fifteen&quot;, &quot;Sixteen&quot;, &quot;Seventeen&quot;, &quot;Eighteen&quot;, &quot;Nineteen&quot;};
-    //20-90之间整十位的字典
-    private String[] dic_20_90={&quot;&quot;, &quot;&quot;, &quot;Twenty&quot;, &quot;Thirty&quot;, &quot;Forty&quot;, &quot;Fifty&quot;, &quot;Sixty&quot;, &quot;Seventy&quot;, &quot;Eighty&quot;, &quot;Ninety&quot;};
-    //大数位字典
-    private String[] big={&quot;Thousand&quot;,&quot;Million&quot;,&quot;Billion&quot;};
-    public String numberToWords(int num) {
-        //百位
-        String res=convertHundred(num%1000);
-        //千，百万，十亿
-        for(int i=0;i&lt;3;i++){
-            num=num/1000;
-            if(num%1000&gt;0){
-                String leftStr=convertHundred(num%1000)+&quot; &quot;+big[i];
-                //处理空格
-                if(res.length()!=0){
-                    res=leftStr+&quot; &quot;+res;
-                }else{
-                    res=leftStr;
-                }
-            }
-        }
-        return res.length()==0?&quot;Zero&quot;:res;
-    }
-    
-    //返回小于1000的结果
-    public String convertHundred(int num){
-        StringBuilder sb=new StringBuilder();
-        int huns=num/100;
-        int ten=num%100;
-        int tens=ten/10;
-        int digit=ten%10;
-        
-        String hundredStr,tenStr,digitStr;
-        if(huns&gt;0){
-            sb.append(dic_0_19[huns]).append(&quot; &quot;).append(&quot;Hundred&quot;);
-        }
-        if(ten&gt;0){
-            if(huns&gt;0){
-                sb.append(&quot; &quot;);
-            }
-            if(ten&lt;20){
-                sb.append(dic_0_19[ten]);
-            }else{
-                if(tens&gt;0){
-                    sb.append(dic_20_90[tens]);
-                }
-                if(digit&gt;0){
-                    if(tens&gt;0){
-                        sb.append(&quot; &quot;);
-                    }
-                    sb.append(dic_0_19[digit]);
-                }
-                
-            }
-        }
-        return sb.toString();
-        
-    }
-}
-</code></pre>
-
-            <hr>
-<ul class="list-inline">
-    <li>Share</li>
-    <li>
-        <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fcrazymole.github.io%2fpost%2fInteger-to-English-Words%2f" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;" title="Share on Facebook"><i class="fa fa-facebook"></i></a>
-    </li>
-    <li>
-        <a href="https://twitter.com/share?text=Inter%20to%20English%20Words&amp;url=https%3a%2f%2fcrazymole.github.io%2fpost%2fInteger-to-English-Words%2f" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" title="Share on Twitter"><i class="fa fa-twitter"></i></a>
-    </li>
-    <li>
-        <a href="https://plus.google.com/share?url=https%3a%2f%2fcrazymole.github.io%2fpost%2fInteger-to-English-Words%2f" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;" title="Share on Google Plus"><i class="fa fa-twitter"></i></a>
-    </li>
-    <li>
-        <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fcrazymole.github.io%2fpost%2fInteger-to-English-Words%2f&title=Inter%20to%20English%20Words" onclick="window.open(this.href, 'linkedin-share', 'width=600,height=494');return false;" title="Share on LinkedIn"><i class="fa fa-linkedin"></i></a>
-    </li>
-</ul>
-        </article>
-        <div>
-            <div id="disqus_thread"></div>
-<script type="text/javascript">
-    var disqus_shortname = 'excareers';
-    var disqus_identifier = 'https:\/\/crazymole.github.io\/post\/Integer-to-English-Words\/';
-    var disqus_title = 'Inter to English Words';
-    var disqus_url = 'https:\/\/crazymole.github.io\/post\/Integer-to-English-Words\/';
-
-    (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-        </div>
-        </main>
-        <aside class="col-md-3">
-            <div class="panel panel-default">
+	<hr>
+</li>
+			
+			<nav>
+	<ul class="pager">
+		
+		<li><label class="text-muted">Page 1 of 1</label><li>
+		
+	</ul>
+</nav>
+		</ul>
+		</main>
+		<aside class="col-md-3">
+			<div class="panel panel-default">
 	<div class="panel-heading">
 		<h3 class="panel-title">Author</h3>
 	</div>
@@ -208,7 +113,7 @@
 		</div>
 	</div>
 </div>
-            <div class="panel panel-default">
+			<div class="panel panel-default">
 	<div class="panel-heading">
 		<h3 class="panel-title">Tags</h3>
 	</div>
@@ -260,9 +165,8 @@
 
 
 
-        </aside>
-    </div>
-    <a href="#" class="backtotop"><i class="fa fa-arrow-up"></i></a>
+		</aside>
+	</div>
 </div>
 <footer class="footer">
   <div class="container">

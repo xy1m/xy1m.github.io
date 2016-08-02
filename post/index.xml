@@ -1,16 +1,75 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on 新猿一码</title>
+    <title>Posts on Crazy mole</title>
     <link>https://crazymole.github.io/post/</link>
-    <description>Recent content in Posts on 新猿一码</description>
+    <description>Recent content in Posts on Crazy mole</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Mon, 21 Mar 2016 14:32:43 -0400</lastBuildDate>
+    <language>en-US</language>
+    <copyright>Powered by [Hugo](http://gohugo.io).</copyright>
+    <lastBuildDate>Mon, 01 Aug 2016 18:20:14 -0700</lastBuildDate>
     <atom:link href="https://crazymole.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Python 2 基本语法</title>
+      <title>Xor sequence</title>
+      <link>https://crazymole.github.io/post/Xor-sequence/</link>
+      <pubDate>Mon, 01 Aug 2016 18:20:14 -0700</pubDate>
+      
+      <guid>https://crazymole.github.io/post/Xor-sequence/</guid>
+      <description>&lt;p&gt;We can easily find a pattern &lt;code&gt;F(n)=0^1^...^n&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;So for &lt;code&gt;F(L)^F(L+1)^...^F(R)&lt;/code&gt; should look like below&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;F(L)=0^...^L;
+F(L+1)=0^...^L^(L+1);
+F(L+2)=0^...^L^(L+1)^L(+2);
+...
+F(R)=0^...^L^(L+1)^(L+2)...^R;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;There is another import pattern that every 4 odd xor is 0, and every 4 even xor is also 0, R is always in the formula because it only appears once, so is (R-2) appear 3 times and so on.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Guess what?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;If (R-L+1) is odd, then result is &lt;code&gt;0^1^...^L^(L+2)^(L+4)^...^R&lt;/code&gt;,that&amp;rsquo;s &lt;code&gt;0^...^(L-2)^L^(L+2)^...^R&lt;/code&gt;^&lt;code&gt;0^...^(L-3)^(L-1)&lt;/code&gt;,
+else &lt;code&gt;(L+1)^(L+3)^...^R&lt;/code&gt;, that&amp;rsquo;s &lt;code&gt;0^...^(L-1)^(L+1)^...R&lt;/code&gt;^&lt;code&gt;0^...^(L-1)&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;We define a function xor2(I really don&amp;rsquo;t good at naming &lt;code&gt;:(&lt;/code&gt;) means how many numbers(who are with same parity) with N then %4 and then calculate the result, we don&amp;rsquo;t care about the parity of L or R, so the result should be &lt;code&gt;xor2(R)^xor2(L-1)&lt;/code&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int Q = in.nextInt();
+        StringBuilder sb=new StringBuilder();
+        for(int a0 = 0; a0 &amp;lt; Q; a0++){
+            long L = in.nextLong();
+            long R = in.nextLong();
+            sb.append(xor2(R)^xor2(L-1)).append(&amp;quot;\n&amp;quot;);
+        }
+        System.out.println(sb.toString());
+    }
+    
+    public static long xor2(long n){
+        long res=0;
+        for(int i=0;i&amp;lt;(n+1)%8;i+=2){
+            res^=n-i;
+        }
+        return res;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Python 2 Basic</title>
       <link>https://crazymole.github.io/post/Python-Basic/</link>
       <pubDate>Mon, 21 Mar 2016 14:32:43 -0400</pubDate>
       
@@ -633,7 +692,7 @@ Hugunin，IronPython的开发者，已经加入了微软公司，将在将来全
     </item>
     
     <item>
-      <title>Markdown基本语法</title>
+      <title>Markdown Basic</title>
       <link>https://crazymole.github.io/post/Markdown-Basic/</link>
       <pubDate>Thu, 17 Mar 2016 09:24:23 -0400</pubDate>
       
@@ -646,8 +705,6 @@ Hugunin，IronPython的开发者，已经加入了微软公司，将在将来全
 
 &lt;p&gt;以上摘自维基百科，既然你已经看到了这篇文章，就不用过多介绍Markdown了
 &lt;a href=&#34;https://daringfireball.net/projects/markdown/basics&#34;&gt;John Gruber&lt;/a&gt;&lt;/p&gt;
-
-&lt;p class=&#34;text-warning&#34;&gt;&lt;span class=&#34;fa fa-warning&#34;&gt;注意空格&lt;/p&gt;
 
 &lt;h2 id=&#34;标题:e77435f84038bcc5acc4c0efe3683d5e&#34;&gt;标题&lt;/h2&gt;
 
@@ -751,9 +808,9 @@ _我是斜体_
 
 &lt;h2 id=&#34;图片:e77435f84038bcc5acc4c0efe3683d5e&#34;&gt;图片&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://crazymole.github.io/images/avatar.jpg&#34; alt=&#34;alt信息&#34; title=&#34;标题&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://crazymole.github.io/img/avatar.jpg&#34; alt=&#34;alt信息&#34; title=&#34;标题&#34; /&gt;&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;![alt信息](/images/avatar.jpg &amp;quot;标题&amp;quot;)
+&lt;pre&gt;&lt;code&gt;![alt信息](/img/avatar.jpg &amp;quot;标题&amp;quot;)
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;h2 id=&#34;链接:e77435f84038bcc5acc4c0efe3683d5e&#34;&gt;链接&lt;/h2&gt;
@@ -768,7 +825,7 @@ _我是斜体_
 
 &lt;p&gt;&lt;a href=&#34;http://google.com&#34; title=&#34;Google&#34;&gt;Google&lt;/a&gt;
 &lt;a href=&#34;http://search.yahoo.com&#34; title=&#34;Yahoo serach&#34;&gt;Yahoo&lt;/a&gt;
-&lt;img src=&#34;https://crazymole.github.io/images/avatar.jpg&#34; alt=&#34;mole&#34; title=&#34;mole&#34; /&gt;&lt;/p&gt;
+&lt;img src=&#34;https://crazymole.github.io/img/avatar.jpg&#34; alt=&#34;mole&#34; title=&#34;mole&#34; /&gt;&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;[链接文字][索引id]
 `[索引id]:索引地址 标题`
@@ -779,7 +836,7 @@ _我是斜体_
 
 `[g]:http://google.com &amp;quot;Google&amp;quot;`
 `[y]:http://search.yahoo.com &amp;quot;Yahoo serach&amp;quot;`
-`[m]:/images/avatar.jpg &amp;quot;mole&amp;quot;`
+`[m]:/img/avatar.jpg &amp;quot;mole&amp;quot;`
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;h2 id=&#34;自动链接:e77435f84038bcc5acc4c0efe3683d5e&#34;&gt;自动链接&lt;/h2&gt;

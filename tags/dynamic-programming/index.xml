@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Dynamic Programming on 新猿一码</title>
+    <title>Dynamic Programming on Crazy mole</title>
     <link>https://crazymole.github.io/tags/dynamic-programming/</link>
-    <description>Recent content in Dynamic Programming on 新猿一码</description>
+    <description>Recent content in Dynamic Programming on Crazy mole</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en-US</language>
+    <copyright>Powered by [Hugo](http://gohugo.io).</copyright>
     <lastBuildDate>Thu, 04 Feb 2016 00:16:24 -0500</lastBuildDate>
     <atom:link href="https://crazymole.github.io/tags/dynamic-programming/index.xml" rel="self" type="application/rss+xml" />
     
