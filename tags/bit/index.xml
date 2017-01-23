@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Bit on xy1m</title>
-    <link>https://crazymole.github.io/tags/bit/</link>
+    <link>https://xy1m.github.io/tags/bit/</link>
     <description>Recent content in Bit on xy1m</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>Powered by [Hugo](http://gohugo.io).</copyright>
     <lastBuildDate>Mon, 01 Aug 2016 18:20:14 -0700</lastBuildDate>
-    <atom:link href="https://crazymole.github.io/tags/bit/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://xy1m.github.io/tags/bit/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Xor sequence</title>
-      <link>https://crazymole.github.io/post/Xor-sequence/</link>
+      <link>https://xy1m.github.io/post/Xor-sequence/</link>
       <pubDate>Mon, 01 Aug 2016 18:20:14 -0700</pubDate>
       
-      <guid>https://crazymole.github.io/post/Xor-sequence/</guid>
+      <guid>https://xy1m.github.io/post/Xor-sequence/</guid>
       <description>&lt;p&gt;We can easily find a pattern &lt;code&gt;F(n)=0^1^...^n&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;So for &lt;code&gt;F(L)^F(L+1)^...^F(R)&lt;/code&gt; should look like below&lt;/p&gt;
