@@ -5,10 +5,9 @@ html {
 
 body {
   /* Margin bottom by footer height */
-  margin-top: 90px;
-  margin-bottom: 60px;
+  margin-top: 50px;
+  margin-bottom: 50px;
   font-family: 'Roboto', sans-serif;
-  font-size: 18px;
 }
 
 .footer {
@@ -31,4 +30,13 @@ a.backtotop {
     letter-spacing: 3px;
     line-height: 5pt;
     font-weight: bold;
+}
+
+.cover {
+  display: block;
+  background-image: url("/img/404.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100%;
 }

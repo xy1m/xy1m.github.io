@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tools on Crazy mole</title>
+    <title>Tools on xy1m</title>
     <link>https://crazymole.github.io/categories/tools/</link>
-    <description>Recent content in Tools on Crazy mole</description>
+    <description>Recent content in Tools on xy1m</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>Powered by [Hugo](http://gohugo.io).</copyright>
@@ -25,19 +25,19 @@
 &lt;p&gt;以上摘自维基百科，既然你已经看到了这篇文章，就不用过多介绍Markdown了
 &lt;a href=&#34;https://daringfireball.net/projects/markdown/basics&#34;&gt;John Gruber&lt;/a&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;标题:e77435f84038bcc5acc4c0efe3683d5e&#34;&gt;标题&lt;/h2&gt;
+&lt;h2 id=&#34;标题&#34;&gt;标题&lt;/h2&gt;
 
 &lt;p&gt;标题前输入多个#对应级别的HTML标题，h1和h2可在标题的下一行加任意数量=或-实现&lt;/p&gt;
 
-&lt;h1 id=&#34;一级标题:e77435f84038bcc5acc4c0efe3683d5e&#34;&gt;一级标题&lt;/h1&gt;
+&lt;h1 id=&#34;一级标题&#34;&gt;一级标题&lt;/h1&gt;
 
-&lt;h2 id=&#34;二级标题:e77435f84038bcc5acc4c0efe3683d5e&#34;&gt;二级标题&lt;/h2&gt;
+&lt;h2 id=&#34;二级标题&#34;&gt;二级标题&lt;/h2&gt;
 
-&lt;h1 id=&#34;标题1:e77435f84038bcc5acc4c0efe3683d5e&#34;&gt;标题1&lt;/h1&gt;
+&lt;h1 id=&#34;标题1&#34;&gt;标题1&lt;/h1&gt;
 
-&lt;h3 id=&#34;标题3:e77435f84038bcc5acc4c0efe3683d5e&#34;&gt;标题3&lt;/h3&gt;
+&lt;h3 id=&#34;标题3&#34;&gt;标题3&lt;/h3&gt;
 
-&lt;h6 id=&#34;标题6:e77435f84038bcc5acc4c0efe3683d5e&#34;&gt;标题6&lt;/h6&gt;
+&lt;h6 id=&#34;标题6&#34;&gt;标题6&lt;/h6&gt;
 
 &lt;pre&gt;&lt;code&gt;一级标题
 ===================
@@ -48,7 +48,7 @@
 ###### 标题6
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;粗体-斜体:e77435f84038bcc5acc4c0efe3683d5e&#34;&gt;粗体/斜体&lt;/h2&gt;
+&lt;h2 id=&#34;粗体-斜体&#34;&gt;粗体/斜体&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;我是粗体&lt;/strong&gt;
 &lt;em&gt;我是斜体&lt;/em&gt;
@@ -59,7 +59,7 @@ _我是斜体_
 **_我是粗斜体_**
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;引用:e77435f84038bcc5acc4c0efe3683d5e&#34;&gt;引用&lt;/h2&gt;
+&lt;h2 id=&#34;引用&#34;&gt;引用&lt;/h2&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;My life for AIUR&lt;/p&gt;
@@ -68,7 +68,7 @@ _我是斜体_
 &lt;pre&gt;&lt;code&gt;&amp;gt; My life for AIUR
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;分割线:e77435f84038bcc5acc4c0efe3683d5e&#34;&gt;分割线&lt;/h2&gt;
+&lt;h2 id=&#34;分割线&#34;&gt;分割线&lt;/h2&gt;
 
 &lt;p&gt;3个或以上的短横线、星号或者下划线实现。短横线和星号之间可以输入任意空格&lt;/p&gt;
 
@@ -89,7 +89,7 @@ _我是斜体_
 ---------------------------------------
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;无序列表:e77435f84038bcc5acc4c0efe3683d5e&#34;&gt;无序列表&lt;/h2&gt;
+&lt;h2 id=&#34;无序列表&#34;&gt;无序列表&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;项目1&lt;/li&gt;
@@ -107,7 +107,7 @@ _我是斜体_
   + 项目4
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;有序列表:e77435f84038bcc5acc4c0efe3683d5e&#34;&gt;有序列表&lt;/h2&gt;
+&lt;h2 id=&#34;有序列表&#34;&gt;有序列表&lt;/h2&gt;
 
 &lt;ol&gt;
 &lt;li&gt;项目1&lt;/li&gt;
@@ -125,14 +125,14 @@ _我是斜体_
 	* 项目4
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;图片:e77435f84038bcc5acc4c0efe3683d5e&#34;&gt;图片&lt;/h2&gt;
+&lt;h2 id=&#34;图片&#34;&gt;图片&lt;/h2&gt;
 
 &lt;p&gt;&lt;img src=&#34;https://crazymole.github.io/img/avatar.jpg&#34; alt=&#34;alt信息&#34; title=&#34;标题&#34; /&gt;&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;![alt信息](/img/avatar.jpg &amp;quot;标题&amp;quot;)
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;链接:e77435f84038bcc5acc4c0efe3683d5e&#34;&gt;链接&lt;/h2&gt;
+&lt;h2 id=&#34;链接&#34;&gt;链接&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://github.com&#34; title=&#34;Go to github&#34;&gt;GitHub&lt;/a&gt;&lt;/p&gt;
 
@@ -140,7 +140,7 @@ _我是斜体_
 [GitHub](http://github.com &amp;quot;Go to github&amp;quot;)
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;索引链接:e77435f84038bcc5acc4c0efe3683d5e&#34;&gt;索引链接&lt;/h2&gt;
+&lt;h2 id=&#34;索引链接&#34;&gt;索引链接&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://google.com&#34; title=&#34;Google&#34;&gt;Google&lt;/a&gt;
 &lt;a href=&#34;http://search.yahoo.com&#34; title=&#34;Yahoo serach&#34;&gt;Yahoo&lt;/a&gt;
@@ -158,20 +158,20 @@ _我是斜体_
 `[m]:/img/avatar.jpg &amp;quot;mole&amp;quot;`
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;自动链接:e77435f84038bcc5acc4c0efe3683d5e&#34;&gt;自动链接&lt;/h2&gt;
+&lt;h2 id=&#34;自动链接&#34;&gt;自动链接&lt;/h2&gt;
 
 &lt;p&gt;尖括号或者直接输入地址&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://google.com&#34;&gt;http://google.com&lt;/a&gt;
 &lt;code&gt;&amp;lt;http://google.com&amp;gt;&lt;/code&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;行内代码:e77435f84038bcc5acc4c0efe3683d5e&#34;&gt;行内代码&lt;/h2&gt;
+&lt;h2 id=&#34;行内代码&#34;&gt;行内代码&lt;/h2&gt;
 
 &lt;p&gt;&lt;code&gt;System.out.println(&amp;quot;Hello World&amp;quot;);&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;`System.out.println(&amp;ldquo;Hello World&amp;rdquo;);`&lt;/p&gt;
 
-&lt;h2 id=&#34;多行代码:e77435f84038bcc5acc4c0efe3683d5e&#34;&gt;多行代码&lt;/h2&gt;
+&lt;h2 id=&#34;多行代码&#34;&gt;多行代码&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code&gt;	```
 	public static void main(String args[]){
@@ -184,7 +184,7 @@ _我是斜体_
 	}
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;转义符:e77435f84038bcc5acc4c0efe3683d5e&#34;&gt;转义符&lt;/h2&gt;
+&lt;h2 id=&#34;转义符&#34;&gt;转义符&lt;/h2&gt;
 
 &lt;p&gt;\ 反斜杠
 ` 反引号
@@ -213,7 +213,7 @@ _ 下划线
 \! 感叹号
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;表格:e77435f84038bcc5acc4c0efe3683d5e&#34;&gt;表格&lt;/h2&gt;
+&lt;h2 id=&#34;表格&#34;&gt;表格&lt;/h2&gt;
 
 &lt;table&gt;
 &lt;thead&gt;
@@ -245,11 +245,11 @@ _ 下划线
 &lt;/tbody&gt;
 &lt;/table&gt;
 
-&lt;h2 id=&#34;其他:e77435f84038bcc5acc4c0efe3683d5e&#34;&gt;其他&lt;/h2&gt;
+&lt;h2 id=&#34;其他&#34;&gt;其他&lt;/h2&gt;
 
 &lt;p&gt;可以写HTML，前后加空行&lt;/p&gt;
 
-&lt;h2 id=&#34;参考:e77435f84038bcc5acc4c0efe3683d5e&#34;&gt;参考&lt;/h2&gt;
+&lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://daringfireball.net/projects/markdown/basics&#34;&gt;https://daringfireball.net/projects/markdown/basics&lt;/a&gt;
 &lt;a href=&#34;http://ibruce.info/2013/11/26/markdown/&#34;&gt;http://ibruce.info/2013/11/26/markdown/&lt;/a&gt;&lt;/p&gt;

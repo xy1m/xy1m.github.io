@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Language on Crazy mole</title>
+    <title>Language on xy1m</title>
     <link>https://crazymole.github.io/categories/language/</link>
-    <description>Recent content in Language on Crazy mole</description>
+    <description>Recent content in Language on xy1m</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>Powered by [Hugo](http://gohugo.io).</copyright>
@@ -27,7 +27,7 @@
 &lt;p&gt;Python语言的创造者Guido van Rossum是根据英国广播公司的节目“蟒蛇飞行马戏”命名这个语言的，并非他本人特别喜欢蛇缠起它们的长身躯碾死动物觅食&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h2 id=&#34;简介:d5aab23f47bd33f6075d67d639d1ee83&#34;&gt;简介&lt;/h2&gt;
+&lt;h2 id=&#34;简介&#34;&gt;简介&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;简单
@@ -82,7 +82,7 @@
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;安装python:d5aab23f47bd33f6075d67d639d1ee83&#34;&gt;安装Python&lt;/h2&gt;
+&lt;h2 id=&#34;安装python&#34;&gt;安装Python&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;yum install python&lt;/code&gt;&lt;/li&gt;
@@ -90,20 +90,20 @@
 &lt;li&gt;&lt;code&gt;help(命令)&lt;/code&gt; 获取帮助&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;基本概念:d5aab23f47bd33f6075d67d639d1ee83&#34;&gt;基本概念&lt;/h2&gt;
+&lt;h2 id=&#34;基本概念&#34;&gt;基本概念&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;# 注释&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Python 区分大小写&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;字面意义常量:d5aab23f47bd33f6075d67d639d1ee83&#34;&gt;字面意义常量&lt;/h3&gt;
+&lt;h3 id=&#34;字面意义常量&#34;&gt;字面意义常量&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;字面具有意义，无法改变&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;4种数-整数-长整数-浮点数-复数:d5aab23f47bd33f6075d67d639d1ee83&#34;&gt;4种数&amp;ndash;整数，长整数，浮点数，复数&lt;/h3&gt;
+&lt;h3 id=&#34;4种数-整数-长整数-浮点数-复数&#34;&gt;4种数&amp;ndash;整数，长整数，浮点数，复数&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;2是整数&lt;/li&gt;
@@ -112,7 +112,7 @@
 &lt;li&gt;(-5+4j)(2.3-4.6j)是复数&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;字符串:d5aab23f47bd33f6075d67d639d1ee83&#34;&gt;字符串&lt;/h3&gt;
+&lt;h3 id=&#34;字符串&#34;&gt;字符串&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;单引号，双引号&lt;/li&gt;
@@ -127,7 +127,7 @@
 &lt;li&gt;正则用自然字符串处理&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;变量:d5aab23f47bd33f6075d67d639d1ee83&#34;&gt;变量&lt;/h3&gt;
+&lt;h3 id=&#34;变量&#34;&gt;变量&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;变量首字符是字母或下划线&lt;/li&gt;
@@ -139,9 +139,9 @@
 &lt;li&gt;缩进代表层次，1个TAB或者2个或者4个空格&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;运算符和表达式:d5aab23f47bd33f6075d67d639d1ee83&#34;&gt;运算符和表达式&lt;/h2&gt;
+&lt;h2 id=&#34;运算符和表达式&#34;&gt;运算符和表达式&lt;/h2&gt;
 
-&lt;h3 id=&#34;运算符:d5aab23f47bd33f6075d67d639d1ee83&#34;&gt;运算符&lt;/h3&gt;
+&lt;h3 id=&#34;运算符&#34;&gt;运算符&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;*两数相乘或者得到若干次数字符串&lt;/li&gt;
@@ -152,13 +152,13 @@
 &lt;li&gt;not and or 非，与，或 True False&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;运算符优先级:d5aab23f47bd33f6075d67d639d1ee83&#34;&gt;运算符优先级&lt;/h3&gt;
+&lt;h3 id=&#34;运算符优先级&#34;&gt;运算符优先级&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;从左向右计算，从右向左赋值&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;控制流:d5aab23f47bd33f6075d67d639d1ee83&#34;&gt;控制流&lt;/h2&gt;
+&lt;h2 id=&#34;控制流&#34;&gt;控制流&lt;/h2&gt;
 
 &lt;p&gt;控制流语句后面加:表示下面跟着一个语句块&lt;/p&gt;
 
@@ -170,7 +170,7 @@
 &lt;li&gt;使用break后else不执行&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;函数:d5aab23f47bd33f6075d67d639d1ee83&#34;&gt;函数&lt;/h2&gt;
+&lt;h2 id=&#34;函数&#34;&gt;函数&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;形参&lt;/li&gt;
@@ -204,7 +204,7 @@ Value of x is 2
 &lt;li&gt;&lt;code&gt;__doc__&lt;/code&gt;文档字符串属性，help抓取函数&lt;code&gt;__doc__&lt;/code&gt;属性&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;模块:d5aab23f47bd33f6075d67d639d1ee83&#34;&gt;模块&lt;/h2&gt;
+&lt;h2 id=&#34;模块&#34;&gt;模块&lt;/h2&gt;
 
 &lt;p&gt;模块基本是包含所有你定义的函数和变量的文件，以便重用，必须.py扩展名&lt;/p&gt;
 
@@ -236,35 +236,35 @@ sys.path包含输入模块的目录名列表。我们可以观察到sys.path的�
 味着你可以直接输入位于当前目录的模块。否则，你得把你的模块放在sys.path所列的目录之
 一。&lt;/p&gt;
 
-&lt;h3 id=&#34;字节编译的-pyc文件:d5aab23f47bd33f6075d67d639d1ee83&#34;&gt;字节编译的.pyc文件&lt;/h3&gt;
+&lt;h3 id=&#34;字节编译的-pyc文件&#34;&gt;字节编译的.pyc文件&lt;/h3&gt;
 
 &lt;p&gt;输入一个模块相对来说是一个比较费时的事情，所以Python做了一些技巧，以便使输入模块更
 加快一些。一种方法是创建字节编译的文件,这些文件以.pyc作为扩展名。字节编译的文件与
 Python变换程序的中间状态有关,当你在下次从别的程序输入这个模块的时候,.pyc文件是十分有用的——它会快得多,因为一部分输入模块所需
 的处理已经完成了,这些字节编译的文件也是与平台无关的。&lt;/p&gt;
 
-&lt;h3 id=&#34;from-import:d5aab23f47bd33f6075d67d639d1ee83&#34;&gt;from..import&lt;/h3&gt;
+&lt;h3 id=&#34;from-import&#34;&gt;from..import&lt;/h3&gt;
 
 &lt;p&gt;如果你想要直接输入argv变量到你的程序中（避免在每次使用它时打sys.），那么你可以使用
 from sys import argv语句。如果你想要输入所有sys模块使用的名字，那么你可以使用from sys
 import *语句。这对于所有模块都适用。一般说来，应该避免使用from..import而使用import语
 句，因为这样可以使你的程序更加易读，也可以避免名称的冲突。&lt;/p&gt;
 
-&lt;h3 id=&#34;模块的-name:d5aab23f47bd33f6075d67d639d1ee83&#34;&gt;模块的&lt;code&gt;__name__&lt;/code&gt;&lt;/h3&gt;
+&lt;h3 id=&#34;模块的-name&#34;&gt;模块的&lt;code&gt;__name__&lt;/code&gt;&lt;/h3&gt;
 
 &lt;p&gt;python 模块有它的&lt;code&gt;__name__&lt;/code&gt;，如果是&lt;code&gt;__main__&lt;/code&gt;，说明被单独运行。&lt;/p&gt;
 
-&lt;h3 id=&#34;制造自己模块:d5aab23f47bd33f6075d67d639d1ee83&#34;&gt;制造自己模块&lt;/h3&gt;
+&lt;h3 id=&#34;制造自己模块&#34;&gt;制造自己模块&lt;/h3&gt;
 
 &lt;p&gt;模块放在输入它的程序同一个目录或者sys.path之一。&lt;/p&gt;
 
-&lt;h3 id=&#34;dir-函数:d5aab23f47bd33f6075d67d639d1ee83&#34;&gt;dir()函数&lt;/h3&gt;
+&lt;h3 id=&#34;dir-函数&#34;&gt;dir()函数&lt;/h3&gt;
 
 &lt;p&gt;你可以使用内建的dir函数来列出模块定义的标识符。标识符有函数、类和变量。
 当你为dir()提供一个模块名的时候，它返回模块定义的名称列表。如果不提供参数，它返回当
 前模块中定义的名称列表。&lt;/p&gt;
 
-&lt;h2 id=&#34;数据结构:d5aab23f47bd33f6075d67d639d1ee83&#34;&gt;数据结构&lt;/h2&gt;
+&lt;h2 id=&#34;数据结构&#34;&gt;数据结构&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;3种内建数据结构，列表，元组，字典&lt;/li&gt;
@@ -283,7 +283,7 @@ import *语句。这对于所有模块都适用。一般说来，应该避免使
 &lt;li&gt;字符串方法 &lt;code&gt;&amp;quot;apple&amp;quot;.startswith(&amp;quot;a&amp;quot;)==True,&#39;a&#39; in &amp;quot;apple&amp;quot;==True,&amp;quot;apple&amp;quot;.find(a)==0,&amp;quot;-&amp;quot;.join([&amp;quot;Hello&amp;quot;,&amp;quot;World&amp;quot;])&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;编写python脚本:d5aab23f47bd33f6075d67d639d1ee83&#34;&gt;编写Python脚本&lt;/h2&gt;
+&lt;h2 id=&#34;编写python脚本&#34;&gt;编写Python脚本&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code&gt;#!/usr/bin/python
 # Filename: backup_ver4.py
@@ -320,7 +320,7 @@ else:
 print &#39;Backup FAILED&#39;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;面向对象编程:d5aab23f47bd33f6075d67d639d1ee83&#34;&gt;面向对象编程&lt;/h2&gt;
+&lt;h2 id=&#34;面向对象编程&#34;&gt;面向对象编程&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;成员变量叫域，成员方法叫类的方法,域分为实例变量和类变量&lt;/li&gt;
@@ -337,9 +337,9 @@ print &#39;Backup FAILED&#39;
 &lt;li&gt;继承元组中使用一个以上的类称作多重继承&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;输入输出:d5aab23f47bd33f6075d67d639d1ee83&#34;&gt;输入输出&lt;/h2&gt;
+&lt;h2 id=&#34;输入输出&#34;&gt;输入输出&lt;/h2&gt;
 
-&lt;h3 id=&#34;文件:d5aab23f47bd33f6075d67d639d1ee83&#34;&gt;文件&lt;/h3&gt;
+&lt;h3 id=&#34;文件&#34;&gt;文件&lt;/h3&gt;
 
 &lt;p&gt;使用File类的read，readline和write方法读写文件，对文件的读写能力依赖于开发文件的模式，完成文件操作，调用close&lt;/p&gt;
 
@@ -371,7 +371,7 @@ f.close() # close the file
 &lt;li&gt;,消除换行&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;存储器:d5aab23f47bd33f6075d67d639d1ee83&#34;&gt;存储器&lt;/h3&gt;
+&lt;h3 id=&#34;存储器&#34;&gt;存储器&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Python标准模块，称为pickle，在文件中存储Python对象，之后可以取出来。相当于Java中的持久化&lt;/li&gt;
@@ -397,9 +397,9 @@ storedlist = p.load(f)
 print storedlist
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;异常:d5aab23f47bd33f6075d67d639d1ee83&#34;&gt;异常&lt;/h2&gt;
+&lt;h2 id=&#34;异常&#34;&gt;异常&lt;/h2&gt;
 
-&lt;h3 id=&#34;try-except:d5aab23f47bd33f6075d67d639d1ee83&#34;&gt;try..except&lt;/h3&gt;
+&lt;h3 id=&#34;try-except&#34;&gt;try..except&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code&gt;#!/usr/bin/python
 # Filename: try_except.py
@@ -443,7 +443,7 @@ else:
 print &#39;No exception was raised.&#39;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;try-finally:d5aab23f47bd33f6075d67d639d1ee83&#34;&gt;try..finally&lt;/h3&gt;
+&lt;h3 id=&#34;try-finally&#34;&gt;try..finally&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code&gt;#!/usr/bin/python
 # Filename: finally.py
@@ -461,9 +461,9 @@ f.close()
 print &#39;Cleaning up...closed the file&#39;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;python标准库:d5aab23f47bd33f6075d67d639d1ee83&#34;&gt;Python标准库&lt;/h2&gt;
+&lt;h2 id=&#34;python标准库&#34;&gt;Python标准库&lt;/h2&gt;
 
-&lt;h3 id=&#34;sys模块:d5aab23f47bd33f6075d67d639d1ee83&#34;&gt;sys模块&lt;/h3&gt;
+&lt;h3 id=&#34;sys模块&#34;&gt;sys模块&lt;/h3&gt;
 
 &lt;p&gt;sys模块包含系统对应功能, sys.stdin,sys.stdout,sys.stderr对应标准输入，输出，错误流&lt;/p&gt;
 
@@ -503,7 +503,7 @@ for filename in sys.argv[1:]:
 readfile(filename)
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;os模块:d5aab23f47bd33f6075d67d639d1ee83&#34;&gt;os模块&lt;/h3&gt;
+&lt;h3 id=&#34;os模块&#34;&gt;os模块&lt;/h3&gt;
 
 &lt;p&gt;包含普遍操作系统功能，对平台无关很重要&lt;/p&gt;
 
@@ -520,9 +520,9 @@ readfile(filename)
 &lt;li&gt;os.path.exists()判断路径是否存在&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;更多python内容:d5aab23f47bd33f6075d67d639d1ee83&#34;&gt;更多Python内容&lt;/h2&gt;
+&lt;h2 id=&#34;更多python内容&#34;&gt;更多Python内容&lt;/h2&gt;
 
-&lt;h3 id=&#34;特殊方法:d5aab23f47bd33f6075d67d639d1ee83&#34;&gt;特殊方法&lt;/h3&gt;
+&lt;h3 id=&#34;特殊方法&#34;&gt;特殊方法&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;__init__(self...)&lt;/code&gt; 新建对象调用&lt;/li&gt;
@@ -533,11 +533,11 @@ readfile(filename)
 &lt;li&gt;&lt;code&gt;__len(self)__&lt;/code&gt;内建len()函数调用&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;单语句块:d5aab23f47bd33f6075d67d639d1ee83&#34;&gt;单语句块&lt;/h3&gt;
+&lt;h3 id=&#34;单语句块&#34;&gt;单语句块&lt;/h3&gt;
 
 &lt;p&gt;语句块只包含一句，可以在条件或者循环语句同一行指明&lt;/p&gt;
 
-&lt;h3 id=&#34;列表综合:d5aab23f47bd33f6075d67d639d1ee83&#34;&gt;列表综合&lt;/h3&gt;
+&lt;h3 id=&#34;列表综合&#34;&gt;列表综合&lt;/h3&gt;
 
 &lt;p&gt;从已有列表导出一个新的列表&lt;/p&gt;
 
@@ -548,7 +548,7 @@ listtwo = [2*i for i in listone if i &amp;gt; 2]
 print listtwo
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;函数中接收元组和列表:d5aab23f47bd33f6075d67d639d1ee83&#34;&gt;函数中接收元组和列表&lt;/h3&gt;
+&lt;h3 id=&#34;函数中接收元组和列表&#34;&gt;函数中接收元组和列表&lt;/h3&gt;
 
 &lt;p&gt;使用函数接受元组或者字典参数，可以加*和**前缀
 由于args变量前有*前缀，多余参数会作为元组存储在args上，如果使用的是**前缀，多余参数被认为是字典的键值对&lt;/p&gt;
@@ -566,7 +566,7 @@ print listtwo
 100
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;lambda形式:d5aab23f47bd33f6075d67d639d1ee83&#34;&gt;lambda形式&lt;/h3&gt;
+&lt;h3 id=&#34;lambda形式&#34;&gt;lambda形式&lt;/h3&gt;
 
 &lt;p&gt;lambda用来创建新的函数对象，运行时返回&lt;/p&gt;
 
@@ -579,26 +579,26 @@ print twice(&#39;word&#39;)
 print twice(5)
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;exec-和-eval:d5aab23f47bd33f6075d67d639d1ee83&#34;&gt;exec 和 eval&lt;/h3&gt;
+&lt;h3 id=&#34;exec-和-eval&#34;&gt;exec 和 eval&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;exec用来执行字符串或者文件中的python语句&lt;/li&gt;
 &lt;li&gt;eval 用来计算存储在字符串中的有效python表达式&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;assert:d5aab23f47bd33f6075d67d639d1ee83&#34;&gt;assert&lt;/h3&gt;
+&lt;h3 id=&#34;assert&#34;&gt;assert&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;和Java类似，assert验证某个条件为真，如果为假，触发AssertError&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;repr函数:d5aab23f47bd33f6075d67d639d1ee83&#34;&gt;repr函数&lt;/h3&gt;
+&lt;h3 id=&#34;repr函数&#34;&gt;repr函数&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;取得对象的规范字符串表示，`完成相同功能&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;接下来学什么:d5aab23f47bd33f6075d67d639d1ee83&#34;&gt;接下来学什么&lt;/h2&gt;
+&lt;h2 id=&#34;接下来学什么&#34;&gt;接下来学什么&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Python标准库是一个丰富的库，在大多数时候，你可以在这个库中找到你所需的东西。
@@ -627,7 +627,7 @@ Hugunin，IronPython的开发者，已经加入了微软公司，将在将来全
 &lt;li&gt;另外还有很多很多的Python资源。其中比较有趣的有Daily Python-URL!，它使你保持与Python的最新进展同步。另外还有Vaults of Parnassus、ONLamp.com Python DevCenter、dirtSimple.org、Python Notes等等。&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;参考:d5aab23f47bd33f6075d67d639d1ee83&#34;&gt;参考&lt;/h2&gt;
+&lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;
 
 &lt;p&gt;《Python简明教程》&lt;/p&gt;
 </description>
