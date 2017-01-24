@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Math on xy1m</title>
-    <link>/tags/math/</link>
+    <link>http://excareers.com/tags/math/</link>
     <description>Recent content in Math on xy1m</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>Powered by [Hugo](http://gohugo.io).</copyright>
     <lastBuildDate>Thu, 04 Feb 2016 00:17:36 -0500</lastBuildDate>
-    <atom:link href="/tags/math/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://excareers.com/tags/math/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Number of Digit One</title>
-      <link>/post/Number-of-Digit-One/</link>
+      <link>http://excareers.com/post/Number-of-Digit-One/</link>
       <pubDate>Thu, 04 Feb 2016 00:17:36 -0500</pubDate>
       
-      <guid>/post/Number-of-Digit-One/</guid>
+      <guid>http://excareers.com/post/Number-of-Digit-One/</guid>
       <description>&lt;p&gt;Given an integer n, count the total number of digit 1 appearing in all non-negative integers less than or equal to n.&lt;/p&gt;
 
 &lt;p&gt;For example:&lt;/p&gt;
@@ -50,10 +50,10 @@ Return 6, because digit 1 occurred in the following numbers: 1, 10, 11, 12, 13.&
     
     <item>
       <title>Inter to English Words</title>
-      <link>/post/Integer-to-English-Words/</link>
+      <link>http://excareers.com/post/Integer-to-English-Words/</link>
       <pubDate>Wed, 03 Feb 2016 22:28:08 -0500</pubDate>
       
-      <guid>/post/Integer-to-English-Words/</guid>
+      <guid>http://excareers.com/post/Integer-to-English-Words/</guid>
       <description>&lt;p&gt;Convert a non-negative integer to its english words representation. Given input is guaranteed to be less than 2^31 - 1.&lt;/p&gt;
 
 &lt;p&gt;For example,&lt;/p&gt;

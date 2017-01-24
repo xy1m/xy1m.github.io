@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Leetcode on xy1m</title>
-    <link>/tags/leetcode/</link>
+    <link>http://excareers.com/tags/leetcode/</link>
     <description>Recent content in Leetcode on xy1m</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>Powered by [Hugo](http://gohugo.io).</copyright>
     <lastBuildDate>Thu, 04 Feb 2016 00:17:36 -0500</lastBuildDate>
-    <atom:link href="/tags/leetcode/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://excareers.com/tags/leetcode/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Number of Digit One</title>
-      <link>/post/Number-of-Digit-One/</link>
+      <link>http://excareers.com/post/Number-of-Digit-One/</link>
       <pubDate>Thu, 04 Feb 2016 00:17:36 -0500</pubDate>
       
-      <guid>/post/Number-of-Digit-One/</guid>
+      <guid>http://excareers.com/post/Number-of-Digit-One/</guid>
       <description>&lt;p&gt;Given an integer n, count the total number of digit 1 appearing in all non-negative integers less than or equal to n.&lt;/p&gt;
 
 &lt;p&gt;For example:&lt;/p&gt;
@@ -50,10 +50,10 @@ Return 6, because digit 1 occurred in the following numbers: 1, 10, 11, 12, 13.&
     
     <item>
       <title>Longest Palindromic Substring</title>
-      <link>/post/Longest-Palindromic-Substring/</link>
+      <link>http://excareers.com/post/Longest-Palindromic-Substring/</link>
       <pubDate>Thu, 04 Feb 2016 00:17:00 -0500</pubDate>
       
-      <guid>/post/Longest-Palindromic-Substring/</guid>
+      <guid>http://excareers.com/post/Longest-Palindromic-Substring/</guid>
       <description>&lt;p&gt;Given a string S, find the longest palindromic substring in S. You may assume that the maximum length of S is 1000, and there exists one unique longest palindromic substring.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;public class Solution {
@@ -89,10 +89,10 @@ Return 6, because digit 1 occurred in the following numbers: 1, 10, 11, 12, 13.&
     
     <item>
       <title>Range Sum Query 2D Immutable</title>
-      <link>/post/Range-Sum-Query-2D-Immutable/</link>
+      <link>http://excareers.com/post/Range-Sum-Query-2D-Immutable/</link>
       <pubDate>Thu, 04 Feb 2016 00:16:24 -0500</pubDate>
       
-      <guid>/post/Range-Sum-Query-2D-Immutable/</guid>
+      <guid>http://excareers.com/post/Range-Sum-Query-2D-Immutable/</guid>
       <description>&lt;p&gt;Given a 2D matrix matrix, find the sum of the elements inside the rectangle defined by its upper left corner (row1, col1) and lower right corner (row2, col2).&lt;/p&gt;
 
 &lt;p&gt;The above rectangle (with the red border) is defined by (row1, col1) = (2, 1) and (row2, col2) = (4, 3), which contains sum = 8.&lt;/p&gt;
@@ -164,10 +164,10 @@ sumRegion(1, 2, 2, 4) -&amp;gt; 12
     
     <item>
       <title>Reverse Words in a String</title>
-      <link>/post/Reverse-Words-in-a-String/</link>
+      <link>http://excareers.com/post/Reverse-Words-in-a-String/</link>
       <pubDate>Thu, 04 Feb 2016 00:15:13 -0500</pubDate>
       
-      <guid>/post/Reverse-Words-in-a-String/</guid>
+      <guid>http://excareers.com/post/Reverse-Words-in-a-String/</guid>
       <description>&lt;p&gt;Given an input string, reverse the string word by word.&lt;/p&gt;
 
 &lt;p&gt;For example,&lt;/p&gt;
@@ -235,10 +235,10 @@ For C programmers: Try to solve it in-place in O(1) space.&lt;/p&gt;
     
     <item>
       <title>Surrounded Regions</title>
-      <link>/post/Surrounded-Regions/</link>
+      <link>http://excareers.com/post/Surrounded-Regions/</link>
       <pubDate>Thu, 04 Feb 2016 00:13:52 -0500</pubDate>
       
-      <guid>/post/Surrounded-Regions/</guid>
+      <guid>http://excareers.com/post/Surrounded-Regions/</guid>
       <description>&lt;p&gt;Given a 2D board containing &amp;lsquo;X&amp;rsquo; and &amp;lsquo;O&amp;rsquo;, capture all regions surrounded by &amp;lsquo;X&amp;rsquo;.&lt;/p&gt;
 
 &lt;p&gt;A region is captured by flipping all &amp;lsquo;O&amp;rsquo;s into &amp;lsquo;X&amp;rsquo;s in that surrounded region.&lt;/p&gt;
@@ -326,10 +326,10 @@ X O X X
     
     <item>
       <title>Inter to English Words</title>
-      <link>/post/Integer-to-English-Words/</link>
+      <link>http://excareers.com/post/Integer-to-English-Words/</link>
       <pubDate>Wed, 03 Feb 2016 22:28:08 -0500</pubDate>
       
-      <guid>/post/Integer-to-English-Words/</guid>
+      <guid>http://excareers.com/post/Integer-to-English-Words/</guid>
       <description>&lt;p&gt;Convert a non-negative integer to its english words representation. Given input is guaranteed to be less than 2^31 - 1.&lt;/p&gt;
 
 &lt;p&gt;For example,&lt;/p&gt;
