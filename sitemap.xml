@@ -5,7 +5,7 @@
         <loc>https://blog.excareers.com/</loc>
         <lastmod>2016-08-01T18:20:14-07:00</lastmod>
         
-        <changefreq>dayly</changefreq>
+        <changefreq>weekly</changefreq>
         
         
         <priority>0.5</priority>
@@ -16,7 +16,7 @@
         <loc>https://blog.excareers.com/post/Xor-sequence/</loc>
         <lastmod>2016-08-01T18:20:14-07:00</lastmod>
         
-        <changefreq>dayly</changefreq>
+        <changefreq>weekly</changefreq>
         
         
         <priority>0.5</priority>
@@ -27,7 +27,7 @@
         <loc>https://blog.excareers.com/post/Python-Basic/</loc>
         <lastmod>2016-03-21T14:32:43-04:00</lastmod>
         
-        <changefreq>dayly</changefreq>
+        <changefreq>weekly</changefreq>
         
         
         <priority>0.5</priority>
@@ -38,7 +38,7 @@
         <loc>https://blog.excareers.com/post/Markdown-Basic/</loc>
         <lastmod>2016-03-17T09:24:23-04:00</lastmod>
         
-        <changefreq>dayly</changefreq>
+        <changefreq>weekly</changefreq>
         
         
         <priority>0.5</priority>
@@ -49,7 +49,7 @@
         <loc>https://blog.excareers.com/post/Number-of-Digit-One/</loc>
         <lastmod>2016-02-04T00:17:36-05:00</lastmod>
         
-        <changefreq>dayly</changefreq>
+        <changefreq>weekly</changefreq>
         
         
         <priority>0.5</priority>
@@ -60,7 +60,7 @@
         <loc>https://blog.excareers.com/post/Longest-Palindromic-Substring/</loc>
         <lastmod>2016-02-04T00:17:00-05:00</lastmod>
         
-        <changefreq>dayly</changefreq>
+        <changefreq>weekly</changefreq>
         
         
         <priority>0.5</priority>
@@ -71,7 +71,7 @@
         <loc>https://blog.excareers.com/post/Range-Sum-Query-2D-Immutable/</loc>
         <lastmod>2016-02-04T00:16:24-05:00</lastmod>
         
-        <changefreq>dayly</changefreq>
+        <changefreq>weekly</changefreq>
         
         
         <priority>0.5</priority>
@@ -82,7 +82,7 @@
         <loc>https://blog.excareers.com/post/Reverse-Words-in-a-String/</loc>
         <lastmod>2016-02-04T00:15:13-05:00</lastmod>
         
-        <changefreq>dayly</changefreq>
+        <changefreq>weekly</changefreq>
         
         
         <priority>0.5</priority>
@@ -93,7 +93,7 @@
         <loc>https://blog.excareers.com/post/Surrounded-Regions/</loc>
         <lastmod>2016-02-04T00:13:52-05:00</lastmod>
         
-        <changefreq>dayly</changefreq>
+        <changefreq>weekly</changefreq>
         
         
         <priority>0.5</priority>
@@ -104,7 +104,7 @@
         <loc>https://blog.excareers.com/post/Integer-to-English-Words/</loc>
         <lastmod>2016-02-03T22:28:08-05:00</lastmod>
         
-        <changefreq>dayly</changefreq>
+        <changefreq>weekly</changefreq>
         
         
         <priority>0.5</priority>
