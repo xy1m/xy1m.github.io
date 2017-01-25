@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on xy1m</title>
-    <link>http://blog.excareers.com/post/</link>
-    <description>Recent content in Posts on xy1m</description>
+    <title>Posts on 心猿译码</title>
+    <link>https://blog.excareers.com/post/</link>
+    <description>Recent content in Posts on 心猿译码</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-US</language>
+    <language>zh-CN</language>
     <copyright>Powered by [Hugo](http://gohugo.io).</copyright>
     <lastBuildDate>Mon, 01 Aug 2016 18:20:14 -0700</lastBuildDate>
-    <atom:link href="http://blog.excareers.com/post/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.excareers.com/post/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Xor sequence</title>
-      <link>http://blog.excareers.com/post/Xor-sequence/</link>
+      <link>https://blog.excareers.com/post/Xor-sequence/</link>
       <pubDate>Mon, 01 Aug 2016 18:20:14 -0700</pubDate>
       
-      <guid>http://blog.excareers.com/post/Xor-sequence/</guid>
+      <guid>https://blog.excareers.com/post/Xor-sequence/</guid>
       <description>&lt;p&gt;We can easily find a pattern &lt;code&gt;F(n)=0^1^...^n&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;So for &lt;code&gt;F(L)^F(L+1)^...^F(R)&lt;/code&gt; should look like below&lt;/p&gt;
@@ -70,10 +70,10 @@ public class Solution {
     
     <item>
       <title>Python 2 Basic</title>
-      <link>http://blog.excareers.com/post/Python-Basic/</link>
+      <link>https://blog.excareers.com/post/Python-Basic/</link>
       <pubDate>Mon, 21 Mar 2016 14:32:43 -0400</pubDate>
       
-      <guid>http://blog.excareers.com/post/Python-Basic/</guid>
+      <guid>https://blog.excareers.com/post/Python-Basic/</guid>
       <description>
 
 &lt;blockquote&gt;
@@ -693,10 +693,10 @@ Hugunin，IronPython的开发者，已经加入了微软公司，将在将来全
     
     <item>
       <title>Markdown Basic</title>
-      <link>http://blog.excareers.com/post/Markdown-Basic/</link>
+      <link>https://blog.excareers.com/post/Markdown-Basic/</link>
       <pubDate>Thu, 17 Mar 2016 09:24:23 -0400</pubDate>
       
-      <guid>http://blog.excareers.com/post/Markdown-Basic/</guid>
+      <guid>https://blog.excareers.com/post/Markdown-Basic/</guid>
       <description>
 
 &lt;blockquote&gt;
@@ -808,7 +808,7 @@ _我是斜体_
 
 &lt;h2 id=&#34;图片&#34;&gt;图片&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://blog.excareers.com/img/avatar.jpg&#34; alt=&#34;alt信息&#34; title=&#34;标题&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://blog.excareers.com/img/avatar.jpg&#34; alt=&#34;alt信息&#34; title=&#34;标题&#34; /&gt;&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;![alt信息](/img/avatar.jpg &amp;quot;标题&amp;quot;)
 &lt;/code&gt;&lt;/pre&gt;
@@ -825,7 +825,7 @@ _我是斜体_
 
 &lt;p&gt;&lt;a href=&#34;http://google.com&#34; title=&#34;Google&#34;&gt;Google&lt;/a&gt;
 &lt;a href=&#34;http://search.yahoo.com&#34; title=&#34;Yahoo serach&#34;&gt;Yahoo&lt;/a&gt;
-&lt;img src=&#34;http://blog.excareers.com/img/avatar.jpg&#34; alt=&#34;mole&#34; title=&#34;mole&#34; /&gt;&lt;/p&gt;
+&lt;img src=&#34;https://blog.excareers.com/img/avatar.jpg&#34; alt=&#34;mole&#34; title=&#34;mole&#34; /&gt;&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;[链接文字][索引id]
 `[索引id]:索引地址 标题`
@@ -939,10 +939,10 @@ _ 下划线
     
     <item>
       <title>Number of Digit One</title>
-      <link>http://blog.excareers.com/post/Number-of-Digit-One/</link>
+      <link>https://blog.excareers.com/post/Number-of-Digit-One/</link>
       <pubDate>Thu, 04 Feb 2016 00:17:36 -0500</pubDate>
       
-      <guid>http://blog.excareers.com/post/Number-of-Digit-One/</guid>
+      <guid>https://blog.excareers.com/post/Number-of-Digit-One/</guid>
       <description>&lt;p&gt;Given an integer n, count the total number of digit 1 appearing in all non-negative integers less than or equal to n.&lt;/p&gt;
 
 &lt;p&gt;For example:&lt;/p&gt;
@@ -977,10 +977,10 @@ Return 6, because digit 1 occurred in the following numbers: 1, 10, 11, 12, 13.&
     
     <item>
       <title>Longest Palindromic Substring</title>
-      <link>http://blog.excareers.com/post/Longest-Palindromic-Substring/</link>
+      <link>https://blog.excareers.com/post/Longest-Palindromic-Substring/</link>
       <pubDate>Thu, 04 Feb 2016 00:17:00 -0500</pubDate>
       
-      <guid>http://blog.excareers.com/post/Longest-Palindromic-Substring/</guid>
+      <guid>https://blog.excareers.com/post/Longest-Palindromic-Substring/</guid>
       <description>&lt;p&gt;Given a string S, find the longest palindromic substring in S. You may assume that the maximum length of S is 1000, and there exists one unique longest palindromic substring.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;public class Solution {
@@ -1016,10 +1016,10 @@ Return 6, because digit 1 occurred in the following numbers: 1, 10, 11, 12, 13.&
     
     <item>
       <title>Range Sum Query 2D Immutable</title>
-      <link>http://blog.excareers.com/post/Range-Sum-Query-2D-Immutable/</link>
+      <link>https://blog.excareers.com/post/Range-Sum-Query-2D-Immutable/</link>
       <pubDate>Thu, 04 Feb 2016 00:16:24 -0500</pubDate>
       
-      <guid>http://blog.excareers.com/post/Range-Sum-Query-2D-Immutable/</guid>
+      <guid>https://blog.excareers.com/post/Range-Sum-Query-2D-Immutable/</guid>
       <description>&lt;p&gt;Given a 2D matrix matrix, find the sum of the elements inside the rectangle defined by its upper left corner (row1, col1) and lower right corner (row2, col2).&lt;/p&gt;
 
 &lt;p&gt;The above rectangle (with the red border) is defined by (row1, col1) = (2, 1) and (row2, col2) = (4, 3), which contains sum = 8.&lt;/p&gt;
@@ -1091,10 +1091,10 @@ sumRegion(1, 2, 2, 4) -&amp;gt; 12
     
     <item>
       <title>Reverse Words in a String</title>
-      <link>http://blog.excareers.com/post/Reverse-Words-in-a-String/</link>
+      <link>https://blog.excareers.com/post/Reverse-Words-in-a-String/</link>
       <pubDate>Thu, 04 Feb 2016 00:15:13 -0500</pubDate>
       
-      <guid>http://blog.excareers.com/post/Reverse-Words-in-a-String/</guid>
+      <guid>https://blog.excareers.com/post/Reverse-Words-in-a-String/</guid>
       <description>&lt;p&gt;Given an input string, reverse the string word by word.&lt;/p&gt;
 
 &lt;p&gt;For example,&lt;/p&gt;
@@ -1162,10 +1162,10 @@ For C programmers: Try to solve it in-place in O(1) space.&lt;/p&gt;
     
     <item>
       <title>Surrounded Regions</title>
-      <link>http://blog.excareers.com/post/Surrounded-Regions/</link>
+      <link>https://blog.excareers.com/post/Surrounded-Regions/</link>
       <pubDate>Thu, 04 Feb 2016 00:13:52 -0500</pubDate>
       
-      <guid>http://blog.excareers.com/post/Surrounded-Regions/</guid>
+      <guid>https://blog.excareers.com/post/Surrounded-Regions/</guid>
       <description>&lt;p&gt;Given a 2D board containing &amp;lsquo;X&amp;rsquo; and &amp;lsquo;O&amp;rsquo;, capture all regions surrounded by &amp;lsquo;X&amp;rsquo;.&lt;/p&gt;
 
 &lt;p&gt;A region is captured by flipping all &amp;lsquo;O&amp;rsquo;s into &amp;lsquo;X&amp;rsquo;s in that surrounded region.&lt;/p&gt;
@@ -1253,10 +1253,10 @@ X O X X
     
     <item>
       <title>Inter to English Words</title>
-      <link>http://blog.excareers.com/post/Integer-to-English-Words/</link>
+      <link>https://blog.excareers.com/post/Integer-to-English-Words/</link>
       <pubDate>Wed, 03 Feb 2016 22:28:08 -0500</pubDate>
       
-      <guid>http://blog.excareers.com/post/Integer-to-English-Words/</guid>
+      <guid>https://blog.excareers.com/post/Integer-to-English-Words/</guid>
       <description>&lt;p&gt;Convert a non-negative integer to its english words representation. Given input is guaranteed to be less than 2^31 - 1.&lt;/p&gt;
 
 &lt;p&gt;For example,&lt;/p&gt;
