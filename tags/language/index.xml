@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Language on 心猿译码</title>
-    <link>blog.excareers.com/tags/language/</link>
+    <link>http://blog.excareers.com/tags/language/</link>
     <description>Recent content in Language on 心猿译码</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <copyright>Powered by [Hugo](http://gohugo.io).</copyright>
     <lastBuildDate>Mon, 21 Mar 2016 14:32:43 -0400</lastBuildDate>
-    <atom:link href="blog.excareers.com/tags/language/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://blog.excareers.com/tags/language/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Python 2 Basic</title>
-      <link>/blog.excareers.com/post/Python-Basic/</link>
+      <link>http://blog.excareers.com/post/Python-Basic/</link>
       <pubDate>Mon, 21 Mar 2016 14:32:43 -0400</pubDate>
       
-      <guid>/blog.excareers.com/post/Python-Basic/</guid>
+      <guid>http://blog.excareers.com/post/Python-Basic/</guid>
       <description>
 
 &lt;blockquote&gt;
