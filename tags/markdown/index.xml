@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Markdown on 心猿译码</title>
-    <link>http://blog.excareers.com/tags/markdown/</link>
+    <link>blog.excareers.com/tags/markdown/</link>
     <description>Recent content in Markdown on 心猿译码</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <copyright>Powered by [Hugo](http://gohugo.io).</copyright>
     <lastBuildDate>Thu, 17 Mar 2016 09:24:23 -0400</lastBuildDate>
-    <atom:link href="http://blog.excareers.com/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="blog.excareers.com/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Markdown Basic</title>
-      <link>http://blog.excareers.com/post/Markdown-Basic/</link>
+      <link>/blog.excareers.com/post/Markdown-Basic/</link>
       <pubDate>Thu, 17 Mar 2016 09:24:23 -0400</pubDate>
       
-      <guid>http://blog.excareers.com/post/Markdown-Basic/</guid>
+      <guid>/blog.excareers.com/post/Markdown-Basic/</guid>
       <description>
 
 &lt;blockquote&gt;
@@ -127,7 +127,7 @@ _我是斜体_
 
 &lt;h2 id=&#34;图片&#34;&gt;图片&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://blog.excareers.com/img/avatar.jpg&#34; alt=&#34;alt信息&#34; title=&#34;标题&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;blog.excareers.com/img/avatar.jpg&#34; alt=&#34;alt信息&#34; title=&#34;标题&#34; /&gt;&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;![alt信息](/img/avatar.jpg &amp;quot;标题&amp;quot;)
 &lt;/code&gt;&lt;/pre&gt;
@@ -144,7 +144,7 @@ _我是斜体_
 
 &lt;p&gt;&lt;a href=&#34;http://google.com&#34; title=&#34;Google&#34;&gt;Google&lt;/a&gt;
 &lt;a href=&#34;http://search.yahoo.com&#34; title=&#34;Yahoo serach&#34;&gt;Yahoo&lt;/a&gt;
-&lt;img src=&#34;http://blog.excareers.com/img/avatar.jpg&#34; alt=&#34;mole&#34; title=&#34;mole&#34; /&gt;&lt;/p&gt;
+&lt;img src=&#34;blog.excareers.com/img/avatar.jpg&#34; alt=&#34;mole&#34; title=&#34;mole&#34; /&gt;&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;[链接文字][索引id]
 `[索引id]:索引地址 标题`
