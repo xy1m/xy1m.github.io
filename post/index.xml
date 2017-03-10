@@ -7,8 +7,194 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <copyright>Powered by [Hugo](http://gohugo.io).</copyright>
-    <lastBuildDate>Mon, 01 Aug 2016 18:20:14 -0700</lastBuildDate>
+    <lastBuildDate>Fri, 10 Mar 2017 03:16:32 -0800</lastBuildDate>
     <atom:link href="http://blog.excareers.com/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Mac Terminal Shortcuts</title>
+      <link>http://blog.excareers.com/post/Mac-Terminal-Shortcuts/</link>
+      <pubDate>Fri, 10 Mar 2017 03:16:32 -0800</pubDate>
+      
+      <guid>http://blog.excareers.com/post/Mac-Terminal-Shortcuts/</guid>
+      <description>
+
+&lt;h1 id=&#34;navigate-and-operation&#34;&gt;Navigate and Operation&lt;/h1&gt;
+
+&lt;h2 id=&#34;alt-left-or-right-escape-b-or-f&#34;&gt;Alt + Left or Right Escape + B or F&lt;/h2&gt;
+
+&lt;p&gt;Move cursor between separate words&lt;/p&gt;
+
+&lt;h2 id=&#34;control-w&#34;&gt;Control + W&lt;/h2&gt;
+
+&lt;p&gt;Delete word before cursor&lt;/p&gt;
+
+&lt;h2 id=&#34;escape-t&#34;&gt;Escape + T&lt;/h2&gt;
+
+&lt;p&gt;Swap two wors before cursor&lt;/p&gt;
+
+&lt;h2 id=&#34;control-a&#34;&gt;Control + A&lt;/h2&gt;
+
+&lt;p&gt;Take cursor to the begining of the line&lt;/p&gt;
+
+&lt;h2 id=&#34;control-e&#34;&gt;Control + E&lt;/h2&gt;
+
+&lt;p&gt;Take cursor to the end of the line&lt;/p&gt;
+
+&lt;h2 id=&#34;control-u&#34;&gt;Control + U&lt;/h2&gt;
+
+&lt;p&gt;Clear everything before cursor&lt;/p&gt;
+
+&lt;h2 id=&#34;control-k&#34;&gt;Control + K&lt;/h2&gt;
+
+&lt;p&gt;Clear everything after cursor&lt;/p&gt;
+
+&lt;h2 id=&#34;control-h&#34;&gt;Control + H&lt;/h2&gt;
+
+&lt;p&gt;Equals delete&lt;/p&gt;
+
+&lt;h2 id=&#34;control-f&#34;&gt;Control + F&lt;/h2&gt;
+
+&lt;p&gt;Same with right arrow&lt;/p&gt;
+
+&lt;h2 id=&#34;control-b&#34;&gt;Control + B&lt;/h2&gt;
+
+&lt;p&gt;Same with left arrow&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&#34;search&#34;&gt;Search&lt;/h1&gt;
+
+&lt;h2 id=&#34;control-r&#34;&gt;Control + R&lt;/h2&gt;
+
+&lt;p&gt;Search previous command&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_13&#34;&gt;!!&lt;/h2&gt;
+
+&lt;p&gt;Execute last command&lt;/p&gt;
+
+&lt;h2 id=&#34;history-number&#34;&gt;History + number&lt;/h2&gt;
+
+&lt;p&gt;Show last n(the number you set) commands&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&#34;process&#34;&gt;Process&lt;/h1&gt;
+
+&lt;h2 id=&#34;control-c&#34;&gt;Control + C&lt;/h2&gt;
+
+&lt;p&gt;Kill command&lt;/p&gt;
+
+&lt;h2 id=&#34;control-d&#34;&gt;Control + D&lt;/h2&gt;
+
+&lt;p&gt;Kill session&lt;/p&gt;
+
+&lt;h2 id=&#34;control-z&#34;&gt;Control + Z&lt;/h2&gt;
+
+&lt;p&gt;Suspends current job in the background&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&#34;shortcuts&#34;&gt;Shortcuts&lt;/h1&gt;
+
+&lt;h2 id=&#34;command-n&#34;&gt;Command + N&lt;/h2&gt;
+
+&lt;p&gt;Open a new window&lt;/p&gt;
+
+&lt;h2 id=&#34;command-t&#34;&gt;Command + T&lt;/h2&gt;
+
+&lt;p&gt;Open a new tab&lt;/p&gt;
+
+&lt;h2 id=&#34;command-c&#34;&gt;Command + C&lt;/h2&gt;
+
+&lt;p&gt;Copy&lt;/p&gt;
+
+&lt;h2 id=&#34;command-v&#34;&gt;Command + V&lt;/h2&gt;
+
+&lt;p&gt;Paste&lt;/p&gt;
+
+&lt;h2 id=&#34;command-a&#34;&gt;Command + A&lt;/h2&gt;
+
+&lt;p&gt;Select all&lt;/p&gt;
+
+&lt;h2 id=&#34;shift-command-a&#34;&gt;Shift + Command + A&lt;/h2&gt;
+
+&lt;p&gt;Select output of last command&lt;/p&gt;
+
+&lt;h2 id=&#34;alt-command-v&#34;&gt;Alt + Command + V&lt;/h2&gt;
+
+&lt;p&gt;Paste escaped text&lt;/p&gt;
+
+&lt;h2 id=&#34;control-command-v&#34;&gt;Control + Command + V&lt;/h2&gt;
+
+&lt;p&gt;Paste selection&lt;/p&gt;
+
+&lt;h2 id=&#34;control-command-f&#34;&gt;Control + Command + F&lt;/h2&gt;
+
+&lt;p&gt;Full screen&lt;/p&gt;
+
+&lt;h2 id=&#34;command-l&#34;&gt;Command + L&lt;/h2&gt;
+
+&lt;p&gt;Clear last output&lt;/p&gt;
+
+&lt;h2 id=&#34;command-k&#34;&gt;Command + K&lt;/h2&gt;
+
+&lt;p&gt;Clear whole output&lt;/p&gt;
+
+&lt;h2 id=&#34;shift-command-m&#34;&gt;Shift + Command + M&lt;/h2&gt;
+
+&lt;p&gt;Add bookmark&lt;/p&gt;
+
+&lt;h2 id=&#34;shift-control-command-m&#34;&gt;Shift + Control + Command + M&lt;/h2&gt;
+
+&lt;p&gt;Add bookmark with name&lt;/p&gt;
+
+&lt;h2 id=&#34;command-f&#34;&gt;Command + F&lt;/h2&gt;
+
+&lt;p&gt;Find&lt;/p&gt;
+
+&lt;h2 id=&#34;command-g&#34;&gt;Command + G&lt;/h2&gt;
+
+&lt;p&gt;Find next&lt;/p&gt;
+
+&lt;h2 id=&#34;command-or&#34;&gt;Command + + or -&lt;/h2&gt;
+
+&lt;p&gt;Addjust size&lt;/p&gt;
+
+&lt;h2 id=&#34;command-d&#34;&gt;Command + D&lt;/h2&gt;
+
+&lt;p&gt;Split Pane&lt;/p&gt;
+
+&lt;h2 id=&#34;command-up-or-down&#34;&gt;Command + Up or Down&lt;/h2&gt;
+
+&lt;p&gt;Jump between commands&lt;/p&gt;
+
+&lt;h2 id=&#34;alt-command-up-or-down&#34;&gt;Alt + Command + Up or Down&lt;/h2&gt;
+
+&lt;p&gt;Jump to top or bottom&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&#34;tips&#34;&gt;Tips&lt;/h1&gt;
+
+&lt;p&gt;clipboard works with Control + V&lt;/p&gt;
+
+&lt;h2 id=&#34;copy-command-output-to-clipboard&#34;&gt;Copy command output to clipboard&lt;/h2&gt;
+
+&lt;p&gt;&lt;code&gt;pwd | pbcopy&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;copy-content-of-file-to-clipboard&#34;&gt;Copy content of file to clipboard&lt;/h2&gt;
+
+&lt;p&gt;&lt;code&gt;pbcopy &amp;lt; /etc/passwd&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;paste-clipboard-to-command&#34;&gt;Paste clipboard to command&lt;/h2&gt;
+
+&lt;p&gt;&lt;code&gt;pbpaste | ls&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;paste-clipboard-to-file&#34;&gt;Paste clipboard to file&lt;/h2&gt;
+
+&lt;p&gt;&lt;code&gt;pbpaste &amp;gt; 1.txt&lt;/code&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Xor sequence</title>
@@ -1329,192 +1515,6 @@ X O X X
     }
 }
 &lt;/code&gt;&lt;/pre&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Mac Terminal Shortcuts</title>
-      <link>http://blog.excareers.com/post/Mac-Terminal-Shortcuts/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://blog.excareers.com/post/Mac-Terminal-Shortcuts/</guid>
-      <description>
-
-&lt;h1 id=&#34;navigate-and-operation&#34;&gt;Navigate and Operation&lt;/h1&gt;
-
-&lt;h2 id=&#34;alt-left-or-right-escape-b-or-f&#34;&gt;Alt + Left or Right Escape + B or F&lt;/h2&gt;
-
-&lt;p&gt;Move cursor between separate words&lt;/p&gt;
-
-&lt;h2 id=&#34;control-w&#34;&gt;Control + W&lt;/h2&gt;
-
-&lt;p&gt;Delete word before cursor&lt;/p&gt;
-
-&lt;h2 id=&#34;escape-t&#34;&gt;Escape + T&lt;/h2&gt;
-
-&lt;p&gt;Swap two wors before cursor&lt;/p&gt;
-
-&lt;h2 id=&#34;control-a&#34;&gt;Control + A&lt;/h2&gt;
-
-&lt;p&gt;Take cursor to the begining of the line&lt;/p&gt;
-
-&lt;h2 id=&#34;control-e&#34;&gt;Control + E&lt;/h2&gt;
-
-&lt;p&gt;Take cursor to the end of the line&lt;/p&gt;
-
-&lt;h2 id=&#34;control-u&#34;&gt;Control + U&lt;/h2&gt;
-
-&lt;p&gt;Clear everything before cursor&lt;/p&gt;
-
-&lt;h2 id=&#34;control-k&#34;&gt;Control + K&lt;/h2&gt;
-
-&lt;p&gt;Clear everything after cursor&lt;/p&gt;
-
-&lt;h2 id=&#34;control-h&#34;&gt;Control + H&lt;/h2&gt;
-
-&lt;p&gt;Equals delete&lt;/p&gt;
-
-&lt;h2 id=&#34;control-f&#34;&gt;Control + F&lt;/h2&gt;
-
-&lt;p&gt;Same with right arrow&lt;/p&gt;
-
-&lt;h2 id=&#34;control-b&#34;&gt;Control + B&lt;/h2&gt;
-
-&lt;p&gt;Same with left arrow&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h1 id=&#34;search&#34;&gt;Search&lt;/h1&gt;
-
-&lt;h2 id=&#34;control-r&#34;&gt;Control + R&lt;/h2&gt;
-
-&lt;p&gt;Search previous command&lt;/p&gt;
-
-&lt;h2 id=&#34;toc_13&#34;&gt;!!&lt;/h2&gt;
-
-&lt;p&gt;Execute last command&lt;/p&gt;
-
-&lt;h2 id=&#34;history-number&#34;&gt;History + number&lt;/h2&gt;
-
-&lt;p&gt;Show last n(the number you set) commands&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h1 id=&#34;process&#34;&gt;Process&lt;/h1&gt;
-
-&lt;h2 id=&#34;control-c&#34;&gt;Control + C&lt;/h2&gt;
-
-&lt;p&gt;Kill command&lt;/p&gt;
-
-&lt;h2 id=&#34;control-d&#34;&gt;Control + D&lt;/h2&gt;
-
-&lt;p&gt;Kill session&lt;/p&gt;
-
-&lt;h2 id=&#34;control-z&#34;&gt;Control + Z&lt;/h2&gt;
-
-&lt;p&gt;Suspends current job in the background&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h1 id=&#34;shortcuts&#34;&gt;Shortcuts&lt;/h1&gt;
-
-&lt;h2 id=&#34;command-n&#34;&gt;Command + N&lt;/h2&gt;
-
-&lt;p&gt;Open a new window&lt;/p&gt;
-
-&lt;h2 id=&#34;command-t&#34;&gt;Command + T&lt;/h2&gt;
-
-&lt;p&gt;Open a new tab&lt;/p&gt;
-
-&lt;h2 id=&#34;command-c&#34;&gt;Command + C&lt;/h2&gt;
-
-&lt;p&gt;Copy&lt;/p&gt;
-
-&lt;h2 id=&#34;command-v&#34;&gt;Command + V&lt;/h2&gt;
-
-&lt;p&gt;Paste&lt;/p&gt;
-
-&lt;h2 id=&#34;command-a&#34;&gt;Command + A&lt;/h2&gt;
-
-&lt;p&gt;Select all&lt;/p&gt;
-
-&lt;h2 id=&#34;shift-command-a&#34;&gt;Shift + Command + A&lt;/h2&gt;
-
-&lt;p&gt;Select output of last command&lt;/p&gt;
-
-&lt;h2 id=&#34;alt-command-v&#34;&gt;Alt + Command + V&lt;/h2&gt;
-
-&lt;p&gt;Paste escaped text&lt;/p&gt;
-
-&lt;h2 id=&#34;control-command-v&#34;&gt;Control + Command + V&lt;/h2&gt;
-
-&lt;p&gt;Paste selection&lt;/p&gt;
-
-&lt;h2 id=&#34;control-command-f&#34;&gt;Control + Command + F&lt;/h2&gt;
-
-&lt;p&gt;Full screen&lt;/p&gt;
-
-&lt;h2 id=&#34;command-l&#34;&gt;Command + L&lt;/h2&gt;
-
-&lt;p&gt;Clear last output&lt;/p&gt;
-
-&lt;h2 id=&#34;command-k&#34;&gt;Command + K&lt;/h2&gt;
-
-&lt;p&gt;Clear whole output&lt;/p&gt;
-
-&lt;h2 id=&#34;shift-command-m&#34;&gt;Shift + Command + M&lt;/h2&gt;
-
-&lt;p&gt;Add bookmark&lt;/p&gt;
-
-&lt;h2 id=&#34;shift-control-command-m&#34;&gt;Shift + Control + Command + M&lt;/h2&gt;
-
-&lt;p&gt;Add bookmark with name&lt;/p&gt;
-
-&lt;h2 id=&#34;command-f&#34;&gt;Command + F&lt;/h2&gt;
-
-&lt;p&gt;Find&lt;/p&gt;
-
-&lt;h2 id=&#34;command-g&#34;&gt;Command + G&lt;/h2&gt;
-
-&lt;p&gt;Find next&lt;/p&gt;
-
-&lt;h2 id=&#34;command-or&#34;&gt;Command + + or -&lt;/h2&gt;
-
-&lt;p&gt;Addjust size&lt;/p&gt;
-
-&lt;h2 id=&#34;command-d&#34;&gt;Command + D&lt;/h2&gt;
-
-&lt;p&gt;Split Pane&lt;/p&gt;
-
-&lt;h2 id=&#34;command-up-or-down&#34;&gt;Command + Up or Down&lt;/h2&gt;
-
-&lt;p&gt;Jump between commands&lt;/p&gt;
-
-&lt;h2 id=&#34;alt-command-up-or-down&#34;&gt;Alt + Command + Up or Down&lt;/h2&gt;
-
-&lt;p&gt;Jump to top or bottom&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h1 id=&#34;tips&#34;&gt;Tips&lt;/h1&gt;
-
-&lt;p&gt;clipboard works with Control + V&lt;/p&gt;
-
-&lt;h2 id=&#34;copy-command-output-to-clipboard&#34;&gt;Copy command output to clipboard&lt;/h2&gt;
-
-&lt;p&gt;&lt;code&gt;pwd | pbcopy&lt;/code&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;copy-content-of-file-to-clipboard&#34;&gt;Copy content of file to clipboard&lt;/h2&gt;
-
-&lt;p&gt;&lt;code&gt;pbcopy &amp;lt; /etc/passwd&lt;/code&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;paste-clipboard-to-command&#34;&gt;Paste clipboard to command&lt;/h2&gt;
-
-&lt;p&gt;&lt;code&gt;pbpaste | ls&lt;/code&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;paste-clipboard-to-file&#34;&gt;Paste clipboard to file&lt;/h2&gt;
-
-&lt;p&gt;&lt;code&gt;pbpaste &amp;gt; 1.txt&lt;/code&gt;&lt;/p&gt;
 </description>
     </item>
     
