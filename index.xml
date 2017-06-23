@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>xy1m</title>
+    <link>http://blog.excareers.com/</link>
+    <description>Recent content on xy1m</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Powered by [Hugo](http://gohugo.io).</copyright>
+    <lastBuildDate>Fri, 10 Mar 2017 03:16:32 -0800</lastBuildDate>
+    
+	<atom:link href="http://blog.excareers.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Mac Terminal Shortcuts</title>
+      <link>http://blog.excareers.com/post/mac-terminal-shortcuts/</link>
+      <pubDate>Fri, 10 Mar 2017 03:16:32 -0800</pubDate>
+      
+      <guid>http://blog.excareers.com/post/mac-terminal-shortcuts/</guid>
+      <description>Navigate and Operation Alt + Left or Right Escape + B or F Move cursor between separate words
+Control + W Delete word before cursor
+Escape + T Swap two wors before cursor
+Control + A Take cursor to the begining of the line
+Control + E Take cursor to the end of the line
+Control + U Clear everything before cursor
+Control + K Clear everything after cursor</description>
+    </item>
+    
+    <item>
+      <title>Xor sequence</title>
+      <link>http://blog.excareers.com/post/xor-sequence/</link>
+      <pubDate>Mon, 01 Aug 2016 18:20:14 -0700</pubDate>
+      
+      <guid>http://blog.excareers.com/post/xor-sequence/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python Basic</title>
+      <link>http://blog.excareers.com/post/python-basic/</link>
+      <pubDate>Mon, 21 Mar 2016 14:32:43 -0400</pubDate>
+      
+      <guid>http://blog.excareers.com/post/python-basic/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Python是一种简单易学，功能强大的编程语言，它有高效率的高层数据结构，简
+单而有效地实现面向对象编程。Python简洁的语法和对动态输入的支持，再加上
+解释性语言的本质，使得它在大多数平台上的许多领域都是一个理想的脚本语
+言，特别适用于快速的应用程序开发。&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>Markdown Basic</title>
+      <link>http://blog.excareers.com/post/markdown-basic/</link>
+      <pubDate>Thu, 17 Mar 2016 09:24:23 -0400</pubDate>
+      
+      <guid>http://blog.excareers.com/post/markdown-basic/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Markdown 是一种轻量级标记语言，创始人为約翰·格魯伯（John Gruber）。它允许人们“使用易读易写的纯文本格式编写文档，然后转换成有效的XHTML(或者HTML)文档”。[3]这种语言吸收了很多在电子邮件中已有的纯文本标记的特性。&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>Number of Digit One</title>
+      <link>http://blog.excareers.com/post/number-of-digit-one/</link>
+      <pubDate>Thu, 04 Feb 2016 00:17:36 -0500</pubDate>
+      
+      <guid>http://blog.excareers.com/post/number-of-digit-one/</guid>
+      <description>&lt;p&gt;Given an integer n, count the total number of digit 1 appearing in all non-negative integers less than or equal to n.
+
+For example:&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Longest Palindromic Substring</title>
+      <link>http://blog.excareers.com/post/longest-palindromic-substring/</link>
+      <pubDate>Thu, 04 Feb 2016 00:17:00 -0500</pubDate>
+      
+      <guid>http://blog.excareers.com/post/longest-palindromic-substring/</guid>
+      <description>&lt;p&gt;Given a string S, find the longest palindromic substring in S. You may assume that the maximum length of S is 1000, and there exists one unique longest palindromic substring.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Range Sum Query 2D Immutable</title>
+      <link>http://blog.excareers.com/post/range-sum-query-2d-immutable/</link>
+      <pubDate>Thu, 04 Feb 2016 00:16:24 -0500</pubDate>
+      
+      <guid>http://blog.excareers.com/post/range-sum-query-2d-immutable/</guid>
+      <description>&lt;p&gt;Given a 2D matrix matrix, find the sum of the elements inside the rectangle defined by its upper left corner (row1, col1) and lower right corner (row2, col2).&lt;/p&gt;
+
+&lt;p&gt;The above rectangle (with the red border) is defined by (row1, col1) = (2, 1) and (row2, col2) = (4, 3), which contains sum = 8.
+
+Example:&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Reverse Words in a String</title>
+      <link>http://blog.excareers.com/post/reverse-words-in-a-string/</link>
+      <pubDate>Thu, 04 Feb 2016 00:15:13 -0500</pubDate>
+      
+      <guid>http://blog.excareers.com/post/reverse-words-in-a-string/</guid>
+      <description>&lt;p&gt;Given an input string, reverse the string word by word.
+
+For example,&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Surrounded Regions</title>
+      <link>http://blog.excareers.com/post/surrounded-regions/</link>
+      <pubDate>Thu, 04 Feb 2016 00:13:52 -0500</pubDate>
+      
+      <guid>http://blog.excareers.com/post/surrounded-regions/</guid>
+      <description>&lt;p&gt;Given a 2D board containing &amp;lsquo;X&amp;rsquo; and &amp;lsquo;O&amp;rsquo;, capture all regions surrounded by &amp;lsquo;X&amp;rsquo;.&lt;/p&gt;
+
+&lt;p&gt;A region is captured by flipping all &amp;lsquo;O&amp;rsquo;s into &amp;lsquo;X&amp;rsquo;s in that surrounded region.
+
+For example,&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Integer to English Words</title>
+      <link>http://blog.excareers.com/post/integer-to-english-words/</link>
+      <pubDate>Wed, 03 Feb 2016 22:28:08 -0500</pubDate>
+      
+      <guid>http://blog.excareers.com/post/integer-to-english-words/</guid>
+      <description>&lt;p&gt;Convert a non-negative integer to its english words representation. Given input is guaranteed to be less than 2^31 - 1.
+
+For example,&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

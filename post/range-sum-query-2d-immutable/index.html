@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="generator" content="Hugo 0.24" />
+    <title>Range Sum Query 2D Immutable</title>
+    <meta name="keywords" content="Range Sum Query 2D Immutable">
+    <meta name="description" content="Given a 2D matrix matrix, find the sum of the elements inside the rectangle defined by its upper left corner (row1, col1) and lower right corner (row2, col2).
+
+The above rectangle (with the red border) is defined by (row1, col1) = (2, 1) and (row2, col2) = (4, 3), which contains sum = 8.
+
+Example:">
+    <link href="http://blog.excareers.com/post/index.xml" rel="alternate" type="application/rss+xml" title="xy1m" >
+    <link href="http://blog.excareers.com/post/index.xml" rel="feed" type="application/rss+xml" title="xy1m" >
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/fontawesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/highlight.js/9.1.0/styles/monokai_sublime.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,300,700|Noto+Serif:400,400italic,700,700italic">
+    <link rel="icon" href="http://blog.excareers.com/img/logo.png">
+    <link rel="apple-touch-icon" href="http://blog.excareers.com/img/logo.png">
+    <link rel="stylesheet" href="http://blog.excareers.com/css/global.css">
+    
+    
+    <!-- Google Analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', "UA-68632304-1", 'auto');
+      ga('send', 'pageview');
+    </script>
+    
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://blog.excareers.com/">xy1m</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false">Categories<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        
+                        <li><a href="http://blog.excareers.com/categories/algorithms/">algorithms</a></li>
+                        
+                        <li><a href="http://blog.excareers.com/categories/language/">language</a></li>
+                        
+                        <li><a href="http://blog.excareers.com/categories/tools/">tools</a></li>
+                        
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+    
+
+    
+<div class="container">
+    <p></p>
+</div>
+<div class="container clearfix">
+    <div class="row">
+        <main role="main" class="col-md-9">
+            <article>
+                <h1 class="text-center text-primary">Range Sum Query 2D Immutable</h1>
+                
+<aside>
+    <ul class="list-inline">
+        <li><i class="fa fa-user-circle-o"></i></li>
+		<li class="name">Zhenpeng</li>
+		<li class="fa fa-calendar"></li>
+		<li><time>2016-02-04 00:16:24</time></li>
+		<li class="fa fa-tag"></li>
+		
+		<li><a class="label label-warning" href="http://blog.excareers.com/tags/leetcode/">leetcode</a></li>
+		
+		<li><a class="label label-warning" href="http://blog.excareers.com/tags/dynamic-programming/">dynamic programming</a></li>
+		
+	</ul>
+</aside>
+                <p>Given a 2D matrix matrix, find the sum of the elements inside the rectangle defined by its upper left corner (row1, col1) and lower right corner (row2, col2).</p>
+
+<p>The above rectangle (with the red border) is defined by (row1, col1) = (2, 1) and (row2, col2) = (4, 3), which contains sum = 8.
+
+Example:</p>
+
+<pre><code>Given matrix = [
+  [3, 0, 1, 4, 2],
+  [5, 6, 3, 2, 1],
+  [1, 2, 0, 1, 5],
+  [4, 1, 0, 1, 7],
+  [1, 0, 3, 0, 5]
+]
+
+sumRegion(2, 1, 4, 3) -&gt; 8
+sumRegion(1, 1, 2, 2) -&gt; 11
+sumRegion(1, 2, 2, 4) -&gt; 12
+</code></pre>
+
+<p><strong>Note</strong>:</p>
+
+<ol>
+<li>You may assume that the matrix does not change.</li>
+<li>There are many calls to sumRegion function.</li>
+<li>You may assume that row1 ≤ row2 and col1 ≤ col2.</li>
+</ol>
+
+<pre><code>public class NumMatrix {
+    int[][] p=null;
+    public NumMatrix(int[][] matrix) {
+        int n=matrix.length;
+        if(n==0){
+            return;
+        }
+        int m=matrix[0].length;
+        if(m==0){
+            return;
+        }
+        p=new int[n+1][m+1];
+        for(int i=0;i&lt;=n;i++){
+            p[i][0]=0;
+        }
+        for(int i=0;i&lt;=m;i++){
+            p[0][i]=0;
+        }
+        for(int i=1;i&lt;=n;i++){
+            for(int j=1;j&lt;=m;j++){
+                p[i][j]=p[i-1][j]+p[i][j-1]-p[i-1][j-1]+matrix[i-1][j-1];
+            }
+        }
+    }
+
+    public int sumRegion(int row1, int col1, int row2, int col2) {
+        if(p==null){
+            return 0;
+        }
+        return p[row2+1][col2+1]-p[row2+1][col1]-p[row1][col2+1]+p[row1][col1];
+    }
+}
+
+
+// Your NumMatrix object will be instantiated and called as such:
+// NumMatrix numMatrix = new NumMatrix(matrix);
+// numMatrix.sumRegion(0, 1, 2, 3);
+// numMatrix.sumRegion(1, 2, 3, 4);
+</code></pre>
+                <ul class="list-inline">
+    <li>Share</li>
+    <li>
+        <a href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fblog.excareers.com%2fpost%2frange-sum-query-2d-immutable%2f" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;" title="Share on Facebook"><i class="fa fa-facebook"></i></a>
+    </li>
+    <li>
+        <a href="https://twitter.com/share?text=Range%20Sum%20Query%202D%20Immutable&amp;url=http%3a%2f%2fblog.excareers.com%2fpost%2frange-sum-query-2d-immutable%2f" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" title="Share on Twitter"><i class="fa fa-twitter"></i></a>
+    </li>
+    <li>
+        <a href="https://plus.google.com/share?url=http%3a%2f%2fblog.excareers.com%2fpost%2frange-sum-query-2d-immutable%2f" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;" title="Share on Google Plus"><i class="fa fa-twitter"></i></a>
+    </li>
+    <li>
+        <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3a%2f%2fblog.excareers.com%2fpost%2frange-sum-query-2d-immutable%2f&title=Range%20Sum%20Query%202D%20Immutable" onclick="window.open(this.href, 'linkedin-share', 'width=600,height=494');return false;" title="Share on LinkedIn"><i class="fa fa-linkedin"></i></a>
+    </li>
+</ul>
+            </article>
+            <div>
+                <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'excareers';
+    var disqus_identifier = 'http:\/\/blog.excareers.com\/post\/range-sum-query-2d-immutable\/';
+    var disqus_title = 'Range Sum Query 2D Immutable';
+    var disqus_url = 'http:\/\/blog.excareers.com\/post\/range-sum-query-2d-immutable\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+            </div>
+        </main>
+        <aside class="col-md-3">
+            
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">Author</h3>
+    </div>
+    <div class="panel-body">
+        <div>
+            <img class="center-block img-circle img-responsive" src="http://blog.excareers.com/img/zhenpeng.gif" alt="Zhenpeng">
+            <p class="text-center name"><strong>Zhenpeng</strong></p>
+        </div>
+        <div>
+            <ul class="list-inline">
+                <li><i class="fa fa-group fa-fw"></i></li>
+                <li class="company">GE</li>
+            </ul>
+            <ul class="list-inline">
+                <li><i class="fa fa-map-marker fa-fw"></i></li>
+                <li class="address">Sunnyvale, CA, US</li>
+            </ul>
+            <ul class="list-inline">
+                <li><i class="fa fa-envelope fa-fw"></i></li>
+                <li class="email"><a href="mailto:zhangzhpeng@gmail.com">zhangzhpeng@gmail.com</a></li>
+            </ul>
+            <ul class="list-inline">
+                
+                
+                
+                <li><a href="//linkedin.com/in/zhangzhpeng" target="_blank" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                
+                
+                <li><a href="//github.com/xy1m" target="_blank" title="Github"><i class="fa fa-github"></i></a></li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+            <div class="panel panel-default">
+	<div class="panel-heading">
+		<h3 class="panel-title">Tags</h3>
+	</div>
+	<div class="panel-body">
+		<ul class="list-inline">
+			<li>
+				
+				<a class="label label-warning" href="http://blog.excareers.com/tags/bit/">bit</a>
+				
+				<a class="label label-warning" href="http://blog.excareers.com/tags/dynamic-programming/">dynamic-programming</a>
+				
+				<a class="label label-warning" href="http://blog.excareers.com/tags/hackerrank/">hackerrank</a>
+				
+				<a class="label label-warning" href="http://blog.excareers.com/tags/language/">language</a>
+				
+				<a class="label label-warning" href="http://blog.excareers.com/tags/leetcode/">leetcode</a>
+				
+				<a class="label label-warning" href="http://blog.excareers.com/tags/mac/">mac</a>
+				
+				<a class="label label-warning" href="http://blog.excareers.com/tags/markdown/">markdown</a>
+				
+				<a class="label label-warning" href="http://blog.excareers.com/tags/math/">math</a>
+				
+				<a class="label label-warning" href="http://blog.excareers.com/tags/string/">string</a>
+				
+				<a class="label label-warning" href="http://blog.excareers.com/tags/terminal/">terminal</a>
+				
+				<a class="label label-warning" href="http://blog.excareers.com/tags/tools/">tools</a>
+				
+			</li>
+		</ul>
+	</div>
+</div>
+<div class="panel panel-default">
+	<div class="panel-heading">Recent</div>
+	<ul class="list-group">
+	
+	    <a class="list-group-item" href="http://blog.excareers.com/post/mac-terminal-shortcuts/" title="Mac Terminal Shortcuts">Mac Terminal Shortcuts</a>
+	
+	    <a class="list-group-item" href="http://blog.excareers.com/post/xor-sequence/" title="Xor sequence">Xor sequence</a>
+	
+	    <a class="list-group-item" href="http://blog.excareers.com/post/python-basic/" title="Python Basic">Python Basic</a>
+	
+	    <a class="list-group-item" href="http://blog.excareers.com/post/markdown-basic/" title="Markdown Basic">Markdown Basic</a>
+	
+	    <a class="list-group-item" href="http://blog.excareers.com/post/number-of-digit-one/" title="Number of Digit One">Number of Digit One</a>
+	
+	    <a class="list-group-item" href="http://blog.excareers.com/post/longest-palindromic-substring/" title="Longest Palindromic Substring">Longest Palindromic Substring</a>
+	
+	    <a class="list-group-item" href="http://blog.excareers.com/post/range-sum-query-2d-immutable/" title="Range Sum Query 2D Immutable">Range Sum Query 2D Immutable</a>
+	
+	    <a class="list-group-item" href="http://blog.excareers.com/post/reverse-words-in-a-string/" title="Reverse Words in a String">Reverse Words in a String</a>
+	
+	    <a class="list-group-item" href="http://blog.excareers.com/post/surrounded-regions/" title="Surrounded Regions">Surrounded Regions</a>
+	
+	    <a class="list-group-item" href="http://blog.excareers.com/post/integer-to-english-words/" title="Integer to English Words">Integer to English Words</a>
+	
+	</ul>
+</div>
+
+
+
+        </aside>
+    </div>
+    <a href="#" class="backtotop"><i class="fa fa-arrow-up"></i></a>
+</div>
+<footer class="footer">
+    <div class="container">
+        <p class="text-center"><a href="http://blog.excareers.com/post/index.xml" target="_blank" title="RSS"><i
+                class="fa fa-rss"></i></a> &copy; 2017 &middot; Powered by <a href="http://gohugo.io">Hugo</a>.
+        </p>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/highlight.js/9.1.0/highlight.min.js"></script>
+<script src="http://blog.excareers.com/js/backtotop.js"></script>
+<script>
+$(document).ready(function(){
+	$('code').parents('pre').each(function(i, block) {
+	  hljs.highlightBlock(block);
+	});
+});
+</script>
+</body>
+</html>
