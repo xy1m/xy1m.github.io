@@ -167,7 +167,7 @@
     </url>
     
     <url>
-        <loc>http://blog.excareers.com/categories/language/</loc>
+        <loc>http://blog.excareers.com/tags/language/</loc>
         <lastmod>2016-03-21T14:32:43-04:00</lastmod>
         
         <changefreq>weekly</changefreq>
@@ -178,7 +178,7 @@
     </url>
     
     <url>
-        <loc>http://blog.excareers.com/tags/language/</loc>
+        <loc>http://blog.excareers.com/categories/language/</loc>
         <lastmod>2016-03-21T14:32:43-04:00</lastmod>
         
         <changefreq>weekly</changefreq>
@@ -277,7 +277,7 @@
     </url>
     
     <url>
-        <loc>http://blog.excareers.com/categories/tools/</loc>
+        <loc>http://blog.excareers.com/tags/tools/</loc>
         <lastmod>2017-03-10T03:16:32-08:00</lastmod>
         
         <changefreq>weekly</changefreq>
@@ -288,7 +288,7 @@
     </url>
     
     <url>
-        <loc>http://blog.excareers.com/tags/tools/</loc>
+        <loc>http://blog.excareers.com/categories/tools/</loc>
         <lastmod>2017-03-10T03:16:32-08:00</lastmod>
         
         <changefreq>weekly</changefreq>
