@@ -8,401 +8,77 @@
     <language>en-us</language>
     <copyright>Powered by [Hugo](http://gohugo.io).</copyright>
     <lastBuildDate>Thu, 04 Feb 2016 00:17:36 -0500</lastBuildDate>
-    <atom:link href="http://blog.excareers.com/tags/leetcode/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://blog.excareers.com/tags/leetcode/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Number of Digit One</title>
-      <link>http://blog.excareers.com/post/Number-of-Digit-One/</link>
+      <link>http://blog.excareers.com/post/number-of-digit-one/</link>
       <pubDate>Thu, 04 Feb 2016 00:17:36 -0500</pubDate>
       
-      <guid>http://blog.excareers.com/post/Number-of-Digit-One/</guid>
-      <description>&lt;p&gt;Given an integer n, count the total number of digit 1 appearing in all non-negative integers less than or equal to n.&lt;/p&gt;
+      <guid>http://blog.excareers.com/post/number-of-digit-one/</guid>
+      <description>&lt;p&gt;Given an integer n, count the total number of digit 1 appearing in all non-negative integers less than or equal to n.
 
-&lt;p&gt;For example:&lt;/p&gt;
-
-&lt;p&gt;Given n = 13,
-Return 6, because digit 1 occurred in the following numbers: 1, 10, 11, 12, 13.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;public class Solution {
-    public int countDigitOne(int n) {
-        long count=0;
-        long factor=1;
-        while(n/factor!=0){
-            long high=n/factor/10;
-            long low=n%factor;
-            long cur=n/factor%10;
-            if(cur&amp;gt;=2){
-                count+=(high+1)*factor;
-            }else if(cur==1){
-                count+=high*factor;
-                count+=low+1;
-            }else{
-                count+=high*factor;
-            }
-            factor*=10;
-        }
-        return (int)count;
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
-</description>
+For example:&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Longest Palindromic Substring</title>
-      <link>http://blog.excareers.com/post/Longest-Palindromic-Substring/</link>
+      <link>http://blog.excareers.com/post/longest-palindromic-substring/</link>
       <pubDate>Thu, 04 Feb 2016 00:17:00 -0500</pubDate>
       
-      <guid>http://blog.excareers.com/post/Longest-Palindromic-Substring/</guid>
-      <description>&lt;p&gt;Given a string S, find the longest palindromic substring in S. You may assume that the maximum length of S is 1000, and there exists one unique longest palindromic substring.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;public class Solution {
-    public String longestPalindrome(String s) {
-        if(s==null||s.equals(&amp;quot;&amp;quot;)){
-            return &amp;quot;&amp;quot;;
-        }
-        String p=expendPalindrome(s,0,0);
-        for(int i=0;i&amp;lt;s.length();i++){
-            String p1=expendPalindrome(s,i,i);
-            if(p1.length()&amp;gt;p.length()){
-                p=p1;
-            }
-            String p2=expendPalindrome(s,i,i+1);
-            if(p2.length()&amp;gt;p.length()){
-                p=p2;
-            }
-        }
-        return p;
-    }
-    public String expendPalindrome(String s,int l,int r){
-        int n=s.length();
-        while(l&amp;gt;=0&amp;amp;&amp;amp;r&amp;lt;=n-1&amp;amp;&amp;amp;s.charAt(l)==s.charAt(r)){
-            l--;
-            r++;
-        }
-        return s.substring(l+1,r);
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
-</description>
+      <guid>http://blog.excareers.com/post/longest-palindromic-substring/</guid>
+      <description>&lt;p&gt;Given a string S, find the longest palindromic substring in S. You may assume that the maximum length of S is 1000, and there exists one unique longest palindromic substring.
+&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Range Sum Query 2D Immutable</title>
-      <link>http://blog.excareers.com/post/Range-Sum-Query-2D-Immutable/</link>
+      <link>http://blog.excareers.com/post/range-sum-query-2d-immutable/</link>
       <pubDate>Thu, 04 Feb 2016 00:16:24 -0500</pubDate>
       
-      <guid>http://blog.excareers.com/post/Range-Sum-Query-2D-Immutable/</guid>
+      <guid>http://blog.excareers.com/post/range-sum-query-2d-immutable/</guid>
       <description>&lt;p&gt;Given a 2D matrix matrix, find the sum of the elements inside the rectangle defined by its upper left corner (row1, col1) and lower right corner (row2, col2).&lt;/p&gt;
 
-&lt;p&gt;The above rectangle (with the red border) is defined by (row1, col1) = (2, 1) and (row2, col2) = (4, 3), which contains sum = 8.&lt;/p&gt;
+&lt;p&gt;The above rectangle (with the red border) is defined by (row1, col1) = (2, 1) and (row2, col2) = (4, 3), which contains sum = 8.
 
-&lt;p&gt;Example:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;Given matrix = [
-  [3, 0, 1, 4, 2],
-  [5, 6, 3, 2, 1],
-  [1, 2, 0, 1, 5],
-  [4, 1, 0, 1, 7],
-  [1, 0, 3, 0, 5]
-]
-
-sumRegion(2, 1, 4, 3) -&amp;gt; 8
-sumRegion(1, 1, 2, 2) -&amp;gt; 11
-sumRegion(1, 2, 2, 4) -&amp;gt; 12
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;You may assume that the matrix does not change.&lt;/li&gt;
-&lt;li&gt;There are many calls to sumRegion function.&lt;/li&gt;
-&lt;li&gt;You may assume that row1 ≤ row2 and col1 ≤ col2.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;pre&gt;&lt;code&gt;public class NumMatrix {
-    int[][] p=null;
-    public NumMatrix(int[][] matrix) {
-        int n=matrix.length;
-        if(n==0){
-            return;
-        }
-        int m=matrix[0].length;
-        if(m==0){
-            return;
-        }
-        p=new int[n+1][m+1];
-        for(int i=0;i&amp;lt;=n;i++){
-            p[i][0]=0;
-        }
-        for(int i=0;i&amp;lt;=m;i++){
-            p[0][i]=0;
-        }
-        for(int i=1;i&amp;lt;=n;i++){
-            for(int j=1;j&amp;lt;=m;j++){
-                p[i][j]=p[i-1][j]+p[i][j-1]-p[i-1][j-1]+matrix[i-1][j-1];
-            }
-        }
-    }
-
-    public int sumRegion(int row1, int col1, int row2, int col2) {
-        if(p==null){
-            return 0;
-        }
-        return p[row2+1][col2+1]-p[row2+1][col1]-p[row1][col2+1]+p[row1][col1];
-    }
-}
-
-
-// Your NumMatrix object will be instantiated and called as such:
-// NumMatrix numMatrix = new NumMatrix(matrix);
-// numMatrix.sumRegion(0, 1, 2, 3);
-// numMatrix.sumRegion(1, 2, 3, 4);
-&lt;/code&gt;&lt;/pre&gt;
-</description>
+Example:&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Reverse Words in a String</title>
-      <link>http://blog.excareers.com/post/Reverse-Words-in-a-String/</link>
+      <link>http://blog.excareers.com/post/reverse-words-in-a-string/</link>
       <pubDate>Thu, 04 Feb 2016 00:15:13 -0500</pubDate>
       
-      <guid>http://blog.excareers.com/post/Reverse-Words-in-a-String/</guid>
-      <description>&lt;p&gt;Given an input string, reverse the string word by word.&lt;/p&gt;
+      <guid>http://blog.excareers.com/post/reverse-words-in-a-string/</guid>
+      <description>&lt;p&gt;Given an input string, reverse the string word by word.
 
-&lt;p&gt;For example,&lt;/p&gt;
-
-&lt;p&gt;Given s = &lt;code&gt;&amp;quot;the sky is blue&amp;quot;&lt;/code&gt;,&lt;/p&gt;
-
-&lt;p&gt;return &lt;code&gt;&amp;quot;blue is sky the&amp;quot;&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;Update (2015-02-12):
-For C programmers: Try to solve it in-place in O(1) space.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Clarification:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;What constitutes a word?
-
-&lt;ul&gt;
-&lt;li&gt;A sequence of non-space characters constitutes a word.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Could the input string contain leading or trailing spaces?
-
-&lt;ul&gt;
-&lt;li&gt;Yes. However, your reversed string should not contain leading or trailing spaces.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;How about multiple spaces between two words?
-
-&lt;ul&gt;
-&lt;li&gt;Reduce them to a single space in the reversed string.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code&gt;public class Solution {
-    public String reverseWords(String s) {
-        String[] arr=s.split(&amp;quot; &amp;quot;);
-        StringBuilder sb=new StringBuilder();
-        for(int i=arr.length-1;i&amp;gt;=0;i--){
-            if(!arr[i].trim().equals(&amp;quot;&amp;quot;)){
-                if(sb.length()!=0){
-                    sb.append(&amp;quot; &amp;quot;);
-                }
-                sb.append(arr[i]);
-            }
-        }
-        return sb.toString();
-    }
-    public String reverse(String s){
-        if(s!=null){
-            char[] ch=s.toCharArray();
-            int l=0,r=ch.length-1;
-            while(l&amp;lt;r){
-                char c=ch[l];
-                ch[l]=ch[r];
-                ch[r]=c;
-                l++;
-                r--;
-            }
-            return new String(ch,0,ch.length);
-        }
-        return null;
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
-</description>
+For example,&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Surrounded Regions</title>
-      <link>http://blog.excareers.com/post/Surrounded-Regions/</link>
+      <link>http://blog.excareers.com/post/surrounded-regions/</link>
       <pubDate>Thu, 04 Feb 2016 00:13:52 -0500</pubDate>
       
-      <guid>http://blog.excareers.com/post/Surrounded-Regions/</guid>
+      <guid>http://blog.excareers.com/post/surrounded-regions/</guid>
       <description>&lt;p&gt;Given a 2D board containing &amp;lsquo;X&amp;rsquo; and &amp;lsquo;O&amp;rsquo;, capture all regions surrounded by &amp;lsquo;X&amp;rsquo;.&lt;/p&gt;
 
-&lt;p&gt;A region is captured by flipping all &amp;lsquo;O&amp;rsquo;s into &amp;lsquo;X&amp;rsquo;s in that surrounded region.&lt;/p&gt;
+&lt;p&gt;A region is captured by flipping all &amp;lsquo;O&amp;rsquo;s into &amp;lsquo;X&amp;rsquo;s in that surrounded region.
 
-&lt;p&gt;For example,&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;X X X X
-X O O X
-X X O X
-X O X X
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;After running your function, the board should be:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;X X X X
-X X X X
-X X X X
-X O X X
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;pre&gt;&lt;code&gt;public class Solution {
-    public void solve(char[][] board) {
-        //left top to right down
-        int n=board.length;
-        if(n==0){
-            return;
-        }
-        int m=board[0].length;
-        if(n&amp;lt;=2||m&amp;lt;=2){
-            return;
-        }
-        for(int i=0;i&amp;lt;n;i++){
-            if(board[i][0]==&#39;O&#39;){
-                board[i][0]=&#39;P&#39;;
-            }
-            if(board[i][m-1]==&#39;O&#39;){
-                board[i][m-1]=&#39;P&#39;;
-            }
-        }
-        for(int i=0;i&amp;lt;m;i++){
-            if(board[0][i]==&#39;O&#39;){
-                board[0][i]=&#39;P&#39;;
-            }
-            if(board[n-1][i]==&#39;O&#39;){
-                board[n-1][i]=&#39;P&#39;;
-            }
-        }
-        for(int i=1;i&amp;lt;n-1;i++){
-            trigger(board,i,1);
-            trigger(board,i,m-2);
-        }
-        for(int i=1;i&amp;lt;m-1;i++){
-            trigger(board,1,i);
-            trigger(board,n-2,i);
-        }
-        for(int i=0;i&amp;lt;n;i++){
-            for(int j=0;j&amp;lt;m;j++){
-                if(board[i][j]==&#39;O&#39;){
-                    board[i][j]=&#39;X&#39;;
-                }else if(board[i][j]==&#39;P&#39;){
-                    board[i][j]=&#39;O&#39;;
-                }
-            }
-        }
-        
-    }
-    public void trigger(char[][] board,int i,int j){
-        int n=board.length;
-        int m=board[0].length;
-        if(board[i][j]==&#39;O&#39;){
-            if(board[i][j-1]==&#39;P&#39;||board[i][j+1]==&#39;P&#39;||board[i-1][j]==&#39;P&#39;||board[i+1][j]==&#39;P&#39;){
-                board[i][j]=&#39;P&#39;;
-                trigger(board,i+1,j);
-                trigger(board,i-1,j);
-                trigger(board,i,j+1);
-                trigger(board,i,j-1);
-            }
-        }
-    }
-    
-}
-&lt;/code&gt;&lt;/pre&gt;
-</description>
+For example,&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Inter to English Words</title>
-      <link>http://blog.excareers.com/post/Integer-to-English-Words/</link>
+      <title>Integer to English Words</title>
+      <link>http://blog.excareers.com/post/integer-to-english-words/</link>
       <pubDate>Wed, 03 Feb 2016 22:28:08 -0500</pubDate>
       
-      <guid>http://blog.excareers.com/post/Integer-to-English-Words/</guid>
-      <description>&lt;p&gt;Convert a non-negative integer to its english words representation. Given input is guaranteed to be less than 2^31 - 1.&lt;/p&gt;
+      <guid>http://blog.excareers.com/post/integer-to-english-words/</guid>
+      <description>&lt;p&gt;Convert a non-negative integer to its english words representation. Given input is guaranteed to be less than 2^31 - 1.
 
-&lt;p&gt;For example,&lt;/p&gt;
-
-&lt;p&gt;123 -&amp;gt; &lt;code&gt;&amp;quot;One Hundred Twenty Three&amp;quot;&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;12345 -&amp;gt; &lt;code&gt;&amp;quot;Twelve Thousand Three Hundred Forty Five&amp;quot;&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;1234567 -&amp;gt; &lt;code&gt;&amp;quot;One Million Two Hundred Thirty Four Thousand Five Hundred Sixty Seven&amp;quot;&lt;/code&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;public class Solution {
-    //0-19的字典
-    private String[] dic_0_19={&amp;quot;&amp;quot;, &amp;quot;One&amp;quot;, &amp;quot;Two&amp;quot;, &amp;quot;Three&amp;quot;, &amp;quot;Four&amp;quot;, &amp;quot;Five&amp;quot;, &amp;quot;Six&amp;quot;, &amp;quot;Seven&amp;quot;, &amp;quot;Eight&amp;quot;, &amp;quot;Nine&amp;quot;, &amp;quot;Ten&amp;quot;, &amp;quot;Eleven&amp;quot;, &amp;quot;Twelve&amp;quot;, &amp;quot;Thirteen&amp;quot;, &amp;quot;Fourteen&amp;quot;, &amp;quot;Fifteen&amp;quot;, &amp;quot;Sixteen&amp;quot;, &amp;quot;Seventeen&amp;quot;, &amp;quot;Eighteen&amp;quot;, &amp;quot;Nineteen&amp;quot;};
-    //20-90之间整十位的字典
-    private String[] dic_20_90={&amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;Twenty&amp;quot;, &amp;quot;Thirty&amp;quot;, &amp;quot;Forty&amp;quot;, &amp;quot;Fifty&amp;quot;, &amp;quot;Sixty&amp;quot;, &amp;quot;Seventy&amp;quot;, &amp;quot;Eighty&amp;quot;, &amp;quot;Ninety&amp;quot;};
-    //大数位字典
-    private String[] big={&amp;quot;Thousand&amp;quot;,&amp;quot;Million&amp;quot;,&amp;quot;Billion&amp;quot;};
-    public String numberToWords(int num) {
-        //百位
-        String res=convertHundred(num%1000);
-        //千，百万，十亿
-        for(int i=0;i&amp;lt;3;i++){
-            num=num/1000;
-            if(num%1000&amp;gt;0){
-                String leftStr=convertHundred(num%1000)+&amp;quot; &amp;quot;+big[i];
-                //处理空格
-                if(res.length()!=0){
-                    res=leftStr+&amp;quot; &amp;quot;+res;
-                }else{
-                    res=leftStr;
-                }
-            }
-        }
-        return res.length()==0?&amp;quot;Zero&amp;quot;:res;
-    }
-    
-    //返回小于1000的结果
-    public String convertHundred(int num){
-        StringBuilder sb=new StringBuilder();
-        int huns=num/100;
-        int ten=num%100;
-        int tens=ten/10;
-        int digit=ten%10;
-        
-        String hundredStr,tenStr,digitStr;
-        if(huns&amp;gt;0){
-            sb.append(dic_0_19[huns]).append(&amp;quot; &amp;quot;).append(&amp;quot;Hundred&amp;quot;);
-        }
-        if(ten&amp;gt;0){
-            if(huns&amp;gt;0){
-                sb.append(&amp;quot; &amp;quot;);
-            }
-            if(ten&amp;lt;20){
-                sb.append(dic_0_19[ten]);
-            }else{
-                if(tens&amp;gt;0){
-                    sb.append(dic_20_90[tens]);
-                }
-                if(digit&amp;gt;0){
-                    if(tens&amp;gt;0){
-                        sb.append(&amp;quot; &amp;quot;);
-                    }
-                    sb.append(dic_0_19[digit]);
-                }
-                
-            }
-        }
-        return sb.toString();
-        
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
-</description>
+For example,&lt;/p&gt;</description>
     </item>
     
   </channel>

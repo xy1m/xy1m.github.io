@@ -8,125 +8,30 @@
     <language>en-us</language>
     <copyright>Powered by [Hugo](http://gohugo.io).</copyright>
     <lastBuildDate>Thu, 04 Feb 2016 00:17:36 -0500</lastBuildDate>
-    <atom:link href="http://blog.excareers.com/tags/math/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://blog.excareers.com/tags/math/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Number of Digit One</title>
-      <link>http://blog.excareers.com/post/Number-of-Digit-One/</link>
+      <link>http://blog.excareers.com/post/number-of-digit-one/</link>
       <pubDate>Thu, 04 Feb 2016 00:17:36 -0500</pubDate>
       
-      <guid>http://blog.excareers.com/post/Number-of-Digit-One/</guid>
-      <description>&lt;p&gt;Given an integer n, count the total number of digit 1 appearing in all non-negative integers less than or equal to n.&lt;/p&gt;
+      <guid>http://blog.excareers.com/post/number-of-digit-one/</guid>
+      <description>&lt;p&gt;Given an integer n, count the total number of digit 1 appearing in all non-negative integers less than or equal to n.
 
-&lt;p&gt;For example:&lt;/p&gt;
-
-&lt;p&gt;Given n = 13,
-Return 6, because digit 1 occurred in the following numbers: 1, 10, 11, 12, 13.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;public class Solution {
-    public int countDigitOne(int n) {
-        long count=0;
-        long factor=1;
-        while(n/factor!=0){
-            long high=n/factor/10;
-            long low=n%factor;
-            long cur=n/factor%10;
-            if(cur&amp;gt;=2){
-                count+=(high+1)*factor;
-            }else if(cur==1){
-                count+=high*factor;
-                count+=low+1;
-            }else{
-                count+=high*factor;
-            }
-            factor*=10;
-        }
-        return (int)count;
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
-</description>
+For example:&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Inter to English Words</title>
-      <link>http://blog.excareers.com/post/Integer-to-English-Words/</link>
+      <title>Integer to English Words</title>
+      <link>http://blog.excareers.com/post/integer-to-english-words/</link>
       <pubDate>Wed, 03 Feb 2016 22:28:08 -0500</pubDate>
       
-      <guid>http://blog.excareers.com/post/Integer-to-English-Words/</guid>
-      <description>&lt;p&gt;Convert a non-negative integer to its english words representation. Given input is guaranteed to be less than 2^31 - 1.&lt;/p&gt;
+      <guid>http://blog.excareers.com/post/integer-to-english-words/</guid>
+      <description>&lt;p&gt;Convert a non-negative integer to its english words representation. Given input is guaranteed to be less than 2^31 - 1.
 
-&lt;p&gt;For example,&lt;/p&gt;
-
-&lt;p&gt;123 -&amp;gt; &lt;code&gt;&amp;quot;One Hundred Twenty Three&amp;quot;&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;12345 -&amp;gt; &lt;code&gt;&amp;quot;Twelve Thousand Three Hundred Forty Five&amp;quot;&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;1234567 -&amp;gt; &lt;code&gt;&amp;quot;One Million Two Hundred Thirty Four Thousand Five Hundred Sixty Seven&amp;quot;&lt;/code&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;public class Solution {
-    //0-19的字典
-    private String[] dic_0_19={&amp;quot;&amp;quot;, &amp;quot;One&amp;quot;, &amp;quot;Two&amp;quot;, &amp;quot;Three&amp;quot;, &amp;quot;Four&amp;quot;, &amp;quot;Five&amp;quot;, &amp;quot;Six&amp;quot;, &amp;quot;Seven&amp;quot;, &amp;quot;Eight&amp;quot;, &amp;quot;Nine&amp;quot;, &amp;quot;Ten&amp;quot;, &amp;quot;Eleven&amp;quot;, &amp;quot;Twelve&amp;quot;, &amp;quot;Thirteen&amp;quot;, &amp;quot;Fourteen&amp;quot;, &amp;quot;Fifteen&amp;quot;, &amp;quot;Sixteen&amp;quot;, &amp;quot;Seventeen&amp;quot;, &amp;quot;Eighteen&amp;quot;, &amp;quot;Nineteen&amp;quot;};
-    //20-90之间整十位的字典
-    private String[] dic_20_90={&amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;Twenty&amp;quot;, &amp;quot;Thirty&amp;quot;, &amp;quot;Forty&amp;quot;, &amp;quot;Fifty&amp;quot;, &amp;quot;Sixty&amp;quot;, &amp;quot;Seventy&amp;quot;, &amp;quot;Eighty&amp;quot;, &amp;quot;Ninety&amp;quot;};
-    //大数位字典
-    private String[] big={&amp;quot;Thousand&amp;quot;,&amp;quot;Million&amp;quot;,&amp;quot;Billion&amp;quot;};
-    public String numberToWords(int num) {
-        //百位
-        String res=convertHundred(num%1000);
-        //千，百万，十亿
-        for(int i=0;i&amp;lt;3;i++){
-            num=num/1000;
-            if(num%1000&amp;gt;0){
-                String leftStr=convertHundred(num%1000)+&amp;quot; &amp;quot;+big[i];
-                //处理空格
-                if(res.length()!=0){
-                    res=leftStr+&amp;quot; &amp;quot;+res;
-                }else{
-                    res=leftStr;
-                }
-            }
-        }
-        return res.length()==0?&amp;quot;Zero&amp;quot;:res;
-    }
-    
-    //返回小于1000的结果
-    public String convertHundred(int num){
-        StringBuilder sb=new StringBuilder();
-        int huns=num/100;
-        int ten=num%100;
-        int tens=ten/10;
-        int digit=ten%10;
-        
-        String hundredStr,tenStr,digitStr;
-        if(huns&amp;gt;0){
-            sb.append(dic_0_19[huns]).append(&amp;quot; &amp;quot;).append(&amp;quot;Hundred&amp;quot;);
-        }
-        if(ten&amp;gt;0){
-            if(huns&amp;gt;0){
-                sb.append(&amp;quot; &amp;quot;);
-            }
-            if(ten&amp;lt;20){
-                sb.append(dic_0_19[ten]);
-            }else{
-                if(tens&amp;gt;0){
-                    sb.append(dic_20_90[tens]);
-                }
-                if(digit&amp;gt;0){
-                    if(tens&amp;gt;0){
-                        sb.append(&amp;quot; &amp;quot;);
-                    }
-                    sb.append(dic_0_19[digit]);
-                }
-                
-            }
-        }
-        return sb.toString();
-        
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
-</description>
+For example,&lt;/p&gt;</description>
     </item>
     
   </channel>

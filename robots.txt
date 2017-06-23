@@ -1,8 +1,1 @@
 User-agent: *
-Disallow: /tags/
-Disallow: /categories/
-Allow: /tags/*
-Allow: /categories/*
-Sitemap: http://excareers.com/sitemap.xml
-
-
