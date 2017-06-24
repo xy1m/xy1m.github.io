@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Markdown on xy1m</title>
-    <link>http://excareers.com/tags/markdown/</link>
+    <link>https://www.excareers.com/tags/markdown/</link>
     <description>Recent content in Markdown on xy1m</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Powered by [Hugo](http://gohugo.io).</copyright>
     <lastBuildDate>Thu, 17 Mar 2016 09:24:23 -0400</lastBuildDate>
     
-	<atom:link href="http://excareers.com/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.excareers.com/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Markdown Basic</title>
-      <link>http://excareers.com/post/markdown-basic/</link>
+      <link>https://www.excareers.com/post/markdown-basic/</link>
       <pubDate>Thu, 17 Mar 2016 09:24:23 -0400</pubDate>
       
-      <guid>http://excareers.com/post/markdown-basic/</guid>
+      <guid>https://www.excareers.com/post/markdown-basic/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;Markdown 是一种轻量级标记语言，创始人为約翰·格魯伯（John Gruber）。它允许人们“使用易读易写的纯文本格式编写文档，然后转换成有效的XHTML(或者HTML)文档”。[3]这种语言吸收了很多在电子邮件中已有的纯文本标记的特性。&lt;/p&gt;
 &lt;/blockquote&gt;</description>

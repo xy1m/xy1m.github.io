@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Terminal on xy1m</title>
-    <link>http://excareers.com/tags/terminal/</link>
+    <link>https://www.excareers.com/tags/terminal/</link>
     <description>Recent content in Terminal on xy1m</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Powered by [Hugo](http://gohugo.io).</copyright>
     <lastBuildDate>Fri, 10 Mar 2017 03:16:32 -0800</lastBuildDate>
     
-	<atom:link href="http://excareers.com/tags/terminal/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.excareers.com/tags/terminal/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Mac Terminal Shortcuts</title>
-      <link>http://excareers.com/post/mac-terminal-shortcuts/</link>
+      <link>https://www.excareers.com/post/mac-terminal-shortcuts/</link>
       <pubDate>Fri, 10 Mar 2017 03:16:32 -0800</pubDate>
       
-      <guid>http://excareers.com/post/mac-terminal-shortcuts/</guid>
+      <guid>https://www.excareers.com/post/mac-terminal-shortcuts/</guid>
       <description>Navigate and Operation Alt + Left or Right Escape + B or F Move cursor between separate words
 Control + W Delete word before cursor
 Escape + T Swap two wors before cursor
