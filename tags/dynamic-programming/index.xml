@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Dynamic Programming on xy1m</title>
-    <link>https://www.excareers.com/tags/dynamic-programming/</link>
+    <link>http://excareers.com/tags/dynamic-programming/</link>
     <description>Recent content in Dynamic Programming on xy1m</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Powered by [Hugo](http://gohugo.io).</copyright>
     <lastBuildDate>Thu, 04 Feb 2016 00:16:24 -0500</lastBuildDate>
     
-	<atom:link href="https://www.excareers.com/tags/dynamic-programming/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://excareers.com/tags/dynamic-programming/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Range Sum Query 2D Immutable</title>
-      <link>https://www.excareers.com/post/range-sum-query-2d-immutable/</link>
+      <link>http://excareers.com/post/range-sum-query-2d-immutable/</link>
       <pubDate>Thu, 04 Feb 2016 00:16:24 -0500</pubDate>
       
-      <guid>https://www.excareers.com/post/range-sum-query-2d-immutable/</guid>
+      <guid>http://excareers.com/post/range-sum-query-2d-immutable/</guid>
       <description>&lt;p&gt;Given a 2D matrix matrix, find the sum of the elements inside the rectangle defined by its upper left corner (row1, col1) and lower right corner (row2, col2).&lt;/p&gt;
 
 &lt;p&gt;The above rectangle (with the red border) is defined by (row1, col1) = (2, 1) and (row2, col2) = (4, 3), which contains sum = 8.

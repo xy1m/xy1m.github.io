@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hackerrank on xy1m</title>
-    <link>https://www.excareers.com/tags/hackerrank/</link>
+    <link>http://excareers.com/tags/hackerrank/</link>
     <description>Recent content in Hackerrank on xy1m</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Powered by [Hugo](http://gohugo.io).</copyright>
     <lastBuildDate>Mon, 01 Aug 2016 18:20:14 -0700</lastBuildDate>
     
-	<atom:link href="https://www.excareers.com/tags/hackerrank/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://excareers.com/tags/hackerrank/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Xor sequence</title>
-      <link>https://www.excareers.com/post/xor-sequence/</link>
+      <link>http://excareers.com/post/xor-sequence/</link>
       <pubDate>Mon, 01 Aug 2016 18:20:14 -0700</pubDate>
       
-      <guid>https://www.excareers.com/post/xor-sequence/</guid>
+      <guid>http://excareers.com/post/xor-sequence/</guid>
       <description></description>
     </item>
     
