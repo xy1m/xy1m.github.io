@@ -2,112 +2,112 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on xy1m</title>
-    <link>http://excareers.com/tags/</link>
+    <link>http://www.excareers.com/tags/</link>
     <description>Recent content in Tags on xy1m</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Powered by [Hugo](http://gohugo.io).</copyright>
     <lastBuildDate>Mon, 01 Aug 2016 18:20:14 -0700</lastBuildDate>
     
-	<atom:link href="http://excareers.com/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://www.excareers.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Bit</title>
-      <link>http://excareers.com/tags/bit/</link>
+      <link>http://www.excareers.com/tags/bit/</link>
       <pubDate>Mon, 01 Aug 2016 18:20:14 -0700</pubDate>
       
-      <guid>http://excareers.com/tags/bit/</guid>
+      <guid>http://www.excareers.com/tags/bit/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Dynamic Programming</title>
-      <link>http://excareers.com/tags/dynamic-programming/</link>
+      <link>http://www.excareers.com/tags/dynamic-programming/</link>
       <pubDate>Thu, 04 Feb 2016 00:16:24 -0500</pubDate>
       
-      <guid>http://excareers.com/tags/dynamic-programming/</guid>
+      <guid>http://www.excareers.com/tags/dynamic-programming/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Hackerrank</title>
-      <link>http://excareers.com/tags/hackerrank/</link>
+      <link>http://www.excareers.com/tags/hackerrank/</link>
       <pubDate>Mon, 01 Aug 2016 18:20:14 -0700</pubDate>
       
-      <guid>http://excareers.com/tags/hackerrank/</guid>
+      <guid>http://www.excareers.com/tags/hackerrank/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Language</title>
-      <link>http://excareers.com/tags/language/</link>
+      <link>http://www.excareers.com/tags/language/</link>
       <pubDate>Mon, 21 Mar 2016 14:32:43 -0400</pubDate>
       
-      <guid>http://excareers.com/tags/language/</guid>
+      <guid>http://www.excareers.com/tags/language/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Leetcode</title>
-      <link>http://excareers.com/tags/leetcode/</link>
+      <link>http://www.excareers.com/tags/leetcode/</link>
       <pubDate>Thu, 04 Feb 2016 00:17:36 -0500</pubDate>
       
-      <guid>http://excareers.com/tags/leetcode/</guid>
+      <guid>http://www.excareers.com/tags/leetcode/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Mac</title>
-      <link>http://excareers.com/tags/mac/</link>
+      <link>http://www.excareers.com/tags/mac/</link>
       <pubDate>Fri, 10 Mar 2017 03:16:32 -0800</pubDate>
       
-      <guid>http://excareers.com/tags/mac/</guid>
+      <guid>http://www.excareers.com/tags/mac/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Markdown</title>
-      <link>http://excareers.com/tags/markdown/</link>
+      <link>http://www.excareers.com/tags/markdown/</link>
       <pubDate>Thu, 17 Mar 2016 09:24:23 -0400</pubDate>
       
-      <guid>http://excareers.com/tags/markdown/</guid>
+      <guid>http://www.excareers.com/tags/markdown/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Math</title>
-      <link>http://excareers.com/tags/math/</link>
+      <link>http://www.excareers.com/tags/math/</link>
       <pubDate>Thu, 04 Feb 2016 00:17:36 -0500</pubDate>
       
-      <guid>http://excareers.com/tags/math/</guid>
+      <guid>http://www.excareers.com/tags/math/</guid>
       <description></description>
     </item>
     
     <item>
       <title>String</title>
-      <link>http://excareers.com/tags/string/</link>
+      <link>http://www.excareers.com/tags/string/</link>
       <pubDate>Thu, 04 Feb 2016 00:17:00 -0500</pubDate>
       
-      <guid>http://excareers.com/tags/string/</guid>
+      <guid>http://www.excareers.com/tags/string/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Terminal</title>
-      <link>http://excareers.com/tags/terminal/</link>
+      <link>http://www.excareers.com/tags/terminal/</link>
       <pubDate>Fri, 10 Mar 2017 03:16:32 -0800</pubDate>
       
-      <guid>http://excareers.com/tags/terminal/</guid>
+      <guid>http://www.excareers.com/tags/terminal/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Tools</title>
-      <link>http://excareers.com/tags/tools/</link>
+      <link>http://www.excareers.com/tags/tools/</link>
       <pubDate>Fri, 10 Mar 2017 03:16:32 -0800</pubDate>
       
-      <guid>http://excareers.com/tags/tools/</guid>
+      <guid>http://www.excareers.com/tags/tools/</guid>
       <description></description>
     </item>
     
