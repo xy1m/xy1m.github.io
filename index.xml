@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Powered by [Hugo](http://gohugo.io).</copyright>
-    <lastBuildDate>Fri, 10 Mar 2017 03:16:32 -0800</lastBuildDate>
+    <lastBuildDate>Tue, 05 Sep 2017 12:40:59 -0700</lastBuildDate>
     
 	<atom:link href="https://www.excareers.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Recursive And Dynamic Programming</title>
+      <link>https://www.excareers.com/post/recursive-and-dynamic-programming/</link>
+      <pubDate>Tue, 05 Sep 2017 12:40:59 -0700</pubDate>
+      
+      <guid>https://www.excareers.com/post/recursive-and-dynamic-programming/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Mac Terminal Shortcuts</title>

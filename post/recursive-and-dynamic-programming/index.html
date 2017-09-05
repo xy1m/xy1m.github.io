@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="generator" content="Hugo 0.24" />
-    <title>Math</title>
-    <meta name="keywords" content="Algorithms Leetcode Software Engineer">
-    <meta name="description" content="About code, thoughts and life">
+    <title>Recursive And Dynamic Programming</title>
+    <meta name="keywords" content="Recursive And Dynamic Programming">
+    <meta name="description" content="">
     <link href="https://www.excareers.com/post/index.xml" rel="alternate" type="application/rss+xml" title="xy1m" >
     <link href="https://www.excareers.com/post/index.xml" rel="feed" type="application/rss+xml" title="xy1m" >
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/fontawesome/4.7.0/css/font-awesome.min.css">
@@ -67,68 +67,195 @@
     
 
     
-<div class="jumbotron">
-    <div class="container text-center">
-        <h1>Math</h1>
-    </div>
+<div class="container">
+    <p></p>
 </div>
 <div class="container clearfix">
     <div class="row">
         <main role="main" class="col-md-9">
-            <ul class="list-unstyled">
-              
-                <li>
-    <h3><a href="https://www.excareers.com/post/number-of-digit-one/" title="Number of Digit One">Number of Digit One</a></h3>
-    
+            <article>
+                <h1 class="text-center">Recursive And Dynamic Programming</h1>
+                
 <aside>
     <ul class="list-inline">
         <li><i class="fa fa-user-circle-o"></i></li>
 		<li class="name">Zhenpeng</li>
 		<li class="fa fa-calendar"></li>
-		<li><time>2016-02-04 00:17:36</time></li>
+		<li><time>2017-09-05 12:40:59</time></li>
 		<li class="fa fa-tag"></li>
-		
-		<li><a class="label label-warning" href="https://www.excareers.com/tags/leetcode/">leetcode</a></li>
-		
-		<li><a class="label label-warning" href="https://www.excareers.com/tags/math/">math</a></li>
 		
 	</ul>
 </aside>
-    <hr>
-</li>
-              
-                <li>
-    <h3><a href="https://www.excareers.com/post/integer-to-english-words/" title="Integer to English Words">Integer to English Words</a></h3>
-    
-<aside>
-    <ul class="list-inline">
-        <li><i class="fa fa-user-circle-o"></i></li>
-		<li class="name">Zhenpeng</li>
-		<li class="fa fa-calendar"></li>
-		<li><time>2016-02-03 22:28:08</time></li>
-		<li class="fa fa-tag"></li>
-		
-		<li><a class="label label-warning" href="https://www.excareers.com/tags/leetcode/">leetcode</a></li>
-		
-		<li><a class="label label-warning" href="https://www.excareers.com/tags/math/">math</a></li>
-		
-		<li><a class="label label-warning" href="https://www.excareers.com/tags/string/">string</a></li>
-		
-	</ul>
-</aside>
-    <hr>
-</li>
-              
-            </ul>
-            <nav>
-    <ul class="pager">
-        
-        <li><label class="text-muted">Page 1 of 1</label></li>
-        
-    </ul>
-</nav>
+                <p></p>
+
+<h2 id="pattern">Pattern</h2>
+
+<p>Usually comes with nth, first n, compute all</p>
+
+<h2 id="how-to-approach">How to Approach</h2>
+
+<h3 id="bottom-up">Bottom-Up</h3>
+
+<ul>
+<li><p>Start with one element</p>
+
+<h3 id="top-down">Top-Down</h3></li>
+
+<li><p>Start from N to N-1</p>
+
+<h3 id="half-and-half">Half and half</h3></li>
+
+<li><p>Compute first half and last half, then merge</p></li>
+
+<li><p>Binary search</p></li>
+
+<li><p>Merge sort</p></li>
+</ul>
+
+<h2 id="recursive-vs-iterative">Recursive vs Iterative</h2>
+
+<p>All recursive problem can be done with iterative solution</p>
+
+<h3 id="iterative">Iterative</h3>
+
+<ul>
+<li>not intuit</li>
+<li>more complex</li>
+</ul>
+
+<h3 id="recursive">Recursive</h3>
+
+<ul>
+<li>space inefficient</li>
+<li>O(n) memory usage, n is the deepth of call layers</li>
+</ul>
+
+<h2 id="dynamic-programming-and-memoization">Dynamic Programming and Memoization</h2>
+
+<p>Dynamic Programming= Recursive + Cache</p>
+
+<h3 id="fibonacci">Fibonacci</h3>
+
+<h4 id="recursive-solution">Recursive solution</h4>
+
+<ul>
+<li>Time O(2^n)</li>
+<li>Space O(1)</li>
+</ul>
+
+<pre><code>    public int f1(int i) {
+        if (i == 0) return 0;
+        if (i == 1) return 1;
+        return f1(i - 1) + f1(i - 2);
+    }
+</code></pre>
+
+<h4 id="dp-solution">DP solution</h4>
+
+<ul>
+<li>Time O(n)</li>
+<li>Space O(n)</li>
+</ul>
+
+<pre><code>    public int f2(int i, int[] memo) {
+        if (i == 0 || i == 1) return i;
+        if (memo[i] == 0) {
+            memo[i] = f2(i - 1, memo) + f2(i - 2, memo);
+        }
+        return memo[i];
+    }
+</code></pre>
+
+<h4 id="iterative-solution">Iterative solution</h4>
+
+<ul>
+<li>Time O(n)</li>
+<li>Space O(1)</li>
+</ul>
+
+<pre><code>    public int f3(int n) {
+        if (n == 0 || n == 1) return n;
+        int a = 0;
+        int b = 1;
+        for (int i = 2; i &lt; n; i++) {
+            int c = a + b;
+            a = b;
+            b = c;
+        }
+        return a + b;
+    }
+</code></pre>
+                <ul class="list-inline">
+    <li>Share</li>
+    <li>
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fwww.excareers.com%2fpost%2frecursive-and-dynamic-programming%2f" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;" title="Share on Facebook"><i class="fa fa-facebook"></i></a>
+    </li>
+    <li>
+        <a href="https://twitter.com/share?text=Recursive%20And%20Dynamic%20Programming&amp;url=https%3a%2f%2fwww.excareers.com%2fpost%2frecursive-and-dynamic-programming%2f" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" title="Share on Twitter"><i class="fa fa-twitter"></i></a>
+    </li>
+    <li>
+        <a href="https://plus.google.com/share?url=https%3a%2f%2fwww.excareers.com%2fpost%2frecursive-and-dynamic-programming%2f" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;" title="Share on Google Plus"><i class="fa fa-twitter"></i></a>
+    </li>
+    <li>
+        <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fwww.excareers.com%2fpost%2frecursive-and-dynamic-programming%2f&title=Recursive%20And%20Dynamic%20Programming" onclick="window.open(this.href, 'linkedin-share', 'width=600,height=494');return false;" title="Share on LinkedIn"><i class="fa fa-linkedin"></i></a>
+    </li>
+</ul>
+            </article>
+            <div>
+                <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'excareers';
+    var disqus_identifier = 'https:\/\/www.excareers.com\/post\/recursive-and-dynamic-programming\/';
+    var disqus_title = 'Recursive And Dynamic Programming';
+    var disqus_url = 'https:\/\/www.excareers.com\/post\/recursive-and-dynamic-programming\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+            </div>
         </main>
         <aside class="col-md-3">
+            
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">Author</h3>
+    </div>
+    <div class="panel-body">
+        <div>
+            <img class="center-block img-circle img-responsive" src="https://www.excareers.com/img/zhenpeng.gif" alt="Zhenpeng">
+            <p class="text-center name"><strong>Zhenpeng</strong></p>
+        </div>
+        <div>
+            <ul class="list-inline">
+                <li><i class="fa fa-group fa-fw"></i></li>
+                <li class="company">GE</li>
+            </ul>
+            <ul class="list-inline">
+                <li><i class="fa fa-map-marker fa-fw"></i></li>
+                <li class="address">Sunnyvale, CA, US</li>
+            </ul>
+            <ul class="list-inline">
+                <li><i class="fa fa-envelope fa-fw"></i></li>
+                <li class="email"><a href="mailto:zhangzhpeng@gmail.com">zhangzhpeng@gmail.com</a></li>
+            </ul>
+            <ul class="list-inline">
+                
+                
+                
+                <li><a href="//linkedin.com/in/zhangzhpeng" target="_blank" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                
+                
+                <li><a href="//github.com/xy1m" target="_blank" title="Github"><i class="fa fa-github"></i></a></li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
             <div class="panel panel-default">
 	<div class="panel-heading">
 		<h3 class="panel-title">Tags</h3>
@@ -194,6 +321,7 @@
 
         </aside>
     </div>
+    <a href="#" class="backtotop"><i class="fa fa-arrow-up"></i></a>
 </div>
 <footer class="footer">
     <div class="container">
