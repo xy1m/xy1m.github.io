@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Algorithms on xy1m</title>
+    <link>https://xy1m.github.io/tags/algorithms/</link>
+    <description>Recent content in Algorithms on xy1m</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Powered by [Hugo](http://gohugo.io).</copyright>
+    <lastBuildDate>Tue, 05 Sep 2017 12:40:59 -0700</lastBuildDate>
+    
+	<atom:link href="https://xy1m.github.io/tags/algorithms/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Recursive And Dynamic Programming</title>
+      <link>https://xy1m.github.io/post/recursive-and-dynamic-programming/</link>
+      <pubDate>Tue, 05 Sep 2017 12:40:59 -0700</pubDate>
+      
+      <guid>https://xy1m.github.io/post/recursive-and-dynamic-programming/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

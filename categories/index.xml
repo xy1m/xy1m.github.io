@@ -2,40 +2,49 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on xy1m</title>
-    <link>https://www.excareers.com/categories/</link>
+    <link>https://xy1m.github.io/categories/</link>
     <description>Recent content in Categories on xy1m</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Powered by [Hugo](http://gohugo.io).</copyright>
     <lastBuildDate>Mon, 01 Aug 2016 18:20:14 -0700</lastBuildDate>
     
-	<atom:link href="https://www.excareers.com/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://xy1m.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Algorithms</title>
-      <link>https://www.excareers.com/categories/algorithms/</link>
+      <link>https://xy1m.github.io/categories/algorithms/</link>
       <pubDate>Mon, 01 Aug 2016 18:20:14 -0700</pubDate>
       
-      <guid>https://www.excareers.com/categories/algorithms/</guid>
+      <guid>https://xy1m.github.io/categories/algorithms/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Language</title>
-      <link>https://www.excareers.com/categories/language/</link>
+      <link>https://xy1m.github.io/categories/language/</link>
       <pubDate>Mon, 21 Mar 2016 14:32:43 -0400</pubDate>
       
-      <guid>https://www.excareers.com/categories/language/</guid>
+      <guid>https://xy1m.github.io/categories/language/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Summary</title>
+      <link>https://xy1m.github.io/categories/summary/</link>
+      <pubDate>Tue, 05 Sep 2017 12:40:59 -0700</pubDate>
+      
+      <guid>https://xy1m.github.io/categories/summary/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Tools</title>
-      <link>https://www.excareers.com/categories/tools/</link>
+      <link>https://xy1m.github.io/categories/tools/</link>
       <pubDate>Fri, 10 Mar 2017 03:16:32 -0800</pubDate>
       
-      <guid>https://www.excareers.com/categories/tools/</guid>
+      <guid>https://xy1m.github.io/categories/tools/</guid>
       <description></description>
     </item>
     
